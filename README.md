@@ -2,14 +2,14 @@
 
 2026-09-08 已实际更新两份完整数据的家庭画像：iFlex 补回家庭成员、经济资料、设备数量、偏好和使用习惯；SGSC 补回同户记录中的节电努力、互联网接入等信息。原始回答、异常标记和信息时点说明一并保留。详见 [本次更新](docs/PROFILE_UPDATE_20260908.md)。原始来源没有提供的信息仍为未知。
 
-这里整理了用于家庭负荷模拟模型研究的家庭用电观测，供分析家庭特征、设备、活动安排与负荷之间的关系，并为后续 SFT 样本构造做准备。模型的目标是根据家庭资料、历史用电和活动条件预测负荷；数据的使用不限定于某个调度系统。每条记录都包含同一户的家庭资料、此前七天的用电、活动条件和实测电量。
+本仓库提供 SGSC 和 iFlex 的同户家庭观测、构造脚本、字段定义及验证记录。研究思路、论文依据、方案取舍和后续计划统一维护在 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)。
 
 | 数据 | 家庭数 | 记录数 | 当前答案覆盖范围 | 时间粒度 |
 |---|---:|---:|---|---|
 | SGSC（澳大利亚） | 2,078 | 16,342 | 活动期间，2–4 小时 | 半小时 |
 | iFlex（挪威） | 314 | 2,071 | 活动当天，24 小时 | 小时 |
 
-这些是已清洗并筛选的研究候选观测。同一家庭可以出现多次。我们后续希望统一为“七天历史输入、全天电量输出”的 SFT 样本；**SGSC 的全量全天答案尚未构建，这个仓库先提供已有观测，供关联分析使用。**
+**当前完整文件是观测数据，尚未发布全量 SFT 数据。** 同一家庭可以出现多次；SGSC 全量仍保留活动窗口答案。仓库另有两条全天示例和两条使用部分画像的消息格式演示，不能将这些示例的完成状态推广到全量。
 
 ## 先看哪里
 
@@ -18,12 +18,9 @@
 - 下载完整曲线：[SGSC](data/sgsc.jsonl.gz) · [iFlex](data/iflex.jsonl.gz)。点击文件页的 Download raw file，或直接克隆仓库。Gzip 只压缩文件，历史及答案序列均完整保留。
 - 了解一条当前记录：[SGSC 普通单表家庭](examples/sgsc_single_observation.json) · [SGSC 两表合计家庭](examples/sgsc_two_meter_observation.json) · [iFlex 家庭](examples/iflex_observation.json)。这些样例已同步到扩展画像版本。
 - 查看后续全天格式：[SGSC 全天样例](examples/sgsc_full_day_example.json) · [iFlex 全天样例](examples/iflex_full_day_example.json)。这是另行核验的两个格式示例，不额外计入上表。
-- 查字段：[字段说明](docs/FIELDS.md)。分析前请看 [比较方法与限制](docs/ANALYSIS.md)。
+- 查字段：[字段说明](docs/FIELDS.md) · [来源字段覆盖](docs/PROFILE_COVERAGE.md)。
 - 查是否漏提取：[逐字段复核及修正](docs/EXTRACTION_AUDIT_20260908.md)。家庭表和活动表的 `profile_appliances` 均保留完整设备列表；SGSC 反馈技术的启用时间仍待核实。
-- 看下一版如何组织家庭信息：[字段框架与文献依据](docs/HOUSEHOLD_FRAMEWORK.md)，附 SGSC、iFlex 的真实字段映射片段。这是设计草案，全量数据仍为现有版本。
-- 看这些记录如何用于 SFT：[AI 文献与训练格式](docs/SFT_DATA_DESIGN.md)，附两条消息格式演示；尚未发布全量 SFT 数据。
-
-研究思路和相关论文在 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)；如果没有页面访问权限，仓库内的说明也足够读取这些数据。
+- 查构造格式与示例：[版本、字段映射及消息转换](docs/CONSTRUCTION_FORMAT.md)。这里分别列明全量观测、全天例子和部分画像演示的范围及检查命令。
 
 ## 怎样读取
 
