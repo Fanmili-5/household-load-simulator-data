@@ -5,7 +5,7 @@
 | 文件 | 原始来源与署名 | 数据许可 |
 |---|---|---|
 | `data/sgsc.jsonl.gz`、`tables/sgsc_*.csv`、`examples/sgsc_*.json` | Australian Government, Department of the Environment and Energy，*Smart-Grid Smart-City Customer Trial Data*。项目由澳大利亚政府和 Ausgrid 牵头的行业联合体共同资助。[官方数据目录](https://www.data.gov.au/data/dataset/smart-grid-smart-city-customer-trial-data) | [CC BY 3.0 Australia](https://creativecommons.org/licenses/by/3.0/au/) |
-| `data/iflex.jsonl.gz`、`tables/iflex_*.csv`、`examples/iflex_*.json` | Hofmann, Matthias & Siebenbrunner, Turid. *A rich dataset of hourly residential electricity consumption data and survey answers from the iFlex dynamic pricing experiment*, v2. [Zenodo，10.5281/zenodo.8248802](https://doi.org/10.5281/zenodo.8248802) | [CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) |
+| `data/iflex.jsonl.gz`、`tables/iflex_*.csv`、`examples/iflex_*.json`、`provenance/iflex_profile_*` | Hofmann, Matthias & Siebenbrunner, Turid. *A rich dataset of hourly residential electricity consumption data and survey answers from the iFlex dynamic pricing experiment*, v2. [Zenodo，10.5281/zenodo.8248802](https://doi.org/10.5281/zenodo.8248802) | [CC BY 4.0 International](https://creativecommons.org/licenses/by/4.0/) |
 
 许可依据于 2026-09-07 从官方目录 API 核对，记录见 `provenance/source_licenses.json`。SGSC 使用数据集及资源层的 CC BY 3.0 Australia 标记，不用网站页脚的一般许可替代数据许可。
 

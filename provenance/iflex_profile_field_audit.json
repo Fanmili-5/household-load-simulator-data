@@ -1,0 +1,18 @@
+{
+  "retained_households": 314,
+  "answer_columns_inventoried": 96,
+  "question_columns_without_label": [],
+  "unclassified_fields": [],
+  "source_sha256": {
+    "survey1_answers.csv": "39181e74b65cbbaf77a565f23c7d1bd5b3674f7b7dea630fc2a5e1a3768cf1e8",
+    "survey1_questions.csv": "7c353bdbdcc3fbc570e492476e1a80c36a56c0c43f907cf6153cf3f1ac426f70"
+  },
+  "quality_flags": {
+    "households_with_age_bin_count_exceeding_household_size": 6,
+    "households_with_age_bin_sum_not_equal_to_household_size": 10,
+    "households_with_life_status_bin_count_exceeding_household_size": 1,
+    "income_unknown": 8,
+    "income_declined": 15
+  },
+  "scope": "field inventory and consistency flags only; no guessed corrections or SFT export"
+}
