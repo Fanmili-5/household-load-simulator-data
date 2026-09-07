@@ -1,0 +1,34 @@
+[
+  {
+    "source": "iflex",
+    "checked_on": "2026-09-07",
+    "official_metadata_url": "https://zenodo.org/api/records/8248802",
+    "title": "A rich dataset of hourly residential electricity consumption data and survey answers from the iFlex dynamic pricing experiment",
+    "creators": [
+      {
+        "name": "Hofmann, Matthias",
+        "affiliation": "Statnett, NTNU",
+        "orcid": "0000-0001-9571-0387"
+      },
+      {
+        "name": "Siebenbrunner, Turid",
+        "affiliation": "Statnett"
+      }
+    ],
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "access_right": "open",
+    "doi": "10.5281/zenodo.8248802"
+  },
+  {
+    "source": "sgsc",
+    "checked_on": "2026-09-07",
+    "official_metadata_url": "https://data.gov.au/data/api/3/action/package_show?id=smart-grid-smart-city-customer-trial-data",
+    "title": "Smart-Grid Smart-City Customer Trial Data",
+    "license_id": "cc-by",
+    "license_title": "Creative Commons Attribution 3.0 Australia",
+    "license_url": "http://creativecommons.org/licenses/by/3.0/au/",
+    "author": "Department of the Environment and Energy"
+  }
+]

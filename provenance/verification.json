@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    "file hashes",
+    "candidate membership and household counts",
+    "no duplicate sample ids",
+    "household meter totals for every target and history slot",
+    "history and target lengths",
+    "finite nonnegative values",
+    "CSV equals distributed JSON",
+    "excluded rows absent",
+    "full-day examples separate",
+    "no local paths or recognized credential prefixes in records",
+    "every exported source input, measured target and existing reference compared with original batch"
+  ],
+  "records": {
+    "sgsc": {
+      "records": 16342,
+      "households": 2078,
+      "meter_configurations": {
+        "sgsc_single": 7939,
+        "sgsc_two_meter": 8403
+      }
+    },
+    "iflex": {
+      "records": 2071,
+      "households": 314,
+      "meter_configurations": {
+        "iflex": 2071
+      }
+    }
+  },
+  "source_value_comparison": true
+}

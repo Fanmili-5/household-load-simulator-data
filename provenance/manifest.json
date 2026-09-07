@@ -1,0 +1,74 @@
+{
+  "snapshot_date": "2026-09-07",
+  "schema_version": "energybridge-observation-share/1",
+  "selection_sha256": "13029695b845b1aeda9bc15591cb340b60a7b306378e2bdd9f857be72d4a374e",
+  "branches": {
+    "sgsc_single": {
+      "records": 7939,
+      "households": 1149,
+      "source_batch": "sgsc_all_response_verified_v1",
+      "source_file_sha256": "f8b5f864dc74f4d669314d674c3f40f7cb291feff9c87c8cf3f2e2e4456f4d10",
+      "evidence_groups": {
+        "boundary_resolved_by_recorded_times": 24,
+        "existing_date_product_support": 7114,
+        "profile_event_support_only_offer_product_missing": 801
+      },
+      "window_hours_counts": {
+        "2.0": 703,
+        "4.0": 4095,
+        "3.0": 3141
+      }
+    },
+    "sgsc_two_meter": {
+      "records": 8403,
+      "households": 929,
+      "source_batch": "sgsc_two_meter_sum_v1",
+      "source_file_sha256": "a1288a2471fe3682edbdccbe90287b745444f664cbb921a96e64eb0820724e2d",
+      "evidence_groups": {
+        "profile_event_support_only_offer_product_missing": 725,
+        "existing_date_product_support": 7666,
+        "boundary_resolved_by_recorded_times": 12
+      },
+      "window_hours_counts": {
+        "4.0": 4471,
+        "3.0": 2981,
+        "3.5": 427,
+        "2.0": 524
+      }
+    },
+    "iflex": {
+      "records": 2071,
+      "households": 314,
+      "source_batch": "iflex_all_candidates_v1",
+      "source_file_sha256": "9f2ebe59061d17a6c806cf91bbc4a18aef6d5337785512764f72eaf5769c901a",
+      "file": "data/iflex.jsonl.gz",
+      "sha256": "535ee51c27accec9d9e9cfabb761b38286eb065f350acfd3eb7ecfebd76f7261",
+      "bytes": 1155099,
+      "evidence_groups": {
+        "iflex_existing_candidate": 2071
+      },
+      "window_hours_counts": {
+        "24": 2071
+      }
+    }
+  },
+  "scope": "candidate observations in existing source windows; not a full-day SFT release",
+  "data_files": {
+    "sgsc": {
+      "file": "data/sgsc.jsonl.gz",
+      "sha256": "1296c20ee29b055420c4839a9d7f7716ac8084fe6f7dd986edce32ca3149cb95",
+      "bytes": 29339285,
+      "records": 16342,
+      "households": 2078
+    },
+    "iflex": {
+      "file": "data/iflex.jsonl.gz",
+      "sha256": "535ee51c27accec9d9e9cfabb761b38286eb065f350acfd3eb7ecfebd76f7261",
+      "bytes": 1155099,
+      "records": 2071,
+      "households": 314
+    }
+  },
+  "excluded_sgsc_records": 258,
+  "total_candidate_records": 18413
+}
