@@ -20,6 +20,7 @@
 - 查看后续全天格式：[SGSC 全天样例](examples/sgsc_full_day_example.json) · [iFlex 全天样例](examples/iflex_full_day_example.json)。这是另行核验的两个格式示例，不额外计入上表。
 - 查字段：[字段说明](docs/FIELDS.md)。分析前请看 [比较方法与限制](docs/ANALYSIS.md)。
 - 查是否漏提取：[逐字段复核及修正](docs/EXTRACTION_AUDIT_20260908.md)。家庭表和活动表的 `profile_appliances` 均保留完整设备列表；SGSC 反馈技术的启用时间仍待核实。
+- 看下一版如何组织家庭信息：[字段框架与文献依据](docs/HOUSEHOLD_FRAMEWORK.md)，附 SGSC、iFlex 的真实字段映射片段。这是设计草案，全量数据仍为现有版本。
 
 研究思路和相关论文在 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)；如果没有页面访问权限，仓库内的说明也足够读取这些数据。
 

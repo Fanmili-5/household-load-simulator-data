@@ -1,0 +1,168 @@
+{
+  "schema_version": "household-framework-design/0.1",
+  "example_scope": "selected_profile_fields_only_not_a_complete_household_or_training_sample",
+  "input_fragment": {
+    "household": {
+      "resident_count": null,
+      "age_group_counts": null,
+      "life_status_counts": null
+    },
+    "appliances": [
+      {
+        "type": "refrigerator",
+        "present": true,
+        "count": 1,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "air_conditioner",
+        "present": true,
+        "count": null,
+        "subtype": "split_system",
+        "rated_power_w": null
+      },
+      {
+        "type": "clothes_dryer",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "pool_pump",
+        "present": false,
+        "count": 0,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "heat_pump",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "electric_water_heater",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      }
+    ],
+    "energy_services": [
+      {
+        "service": "space_heating",
+        "energy_carrier": "gas",
+        "technology": null,
+        "appliance_type_ref": null,
+        "role": null
+      },
+      {
+        "service": "hot_water",
+        "energy_carrier": "gas",
+        "technology": null,
+        "appliance_type_ref": null,
+        "role": null
+      },
+      {
+        "service": "cooking",
+        "energy_carrier": "gas",
+        "technology": null,
+        "appliance_type_ref": null,
+        "role": null
+      }
+    ],
+    "usage_habits": [
+      {
+        "subject_type": "household",
+        "subject_id": "self",
+        "behavior": "someone_home",
+        "value": false,
+        "unit": null,
+        "time_scope": "weekday_daytime"
+      },
+      {
+        "subject_type": "appliance_category",
+        "subject_id": "clothes_dryer",
+        "behavior": "reported_use_level",
+        "value": "none",
+        "unit": null,
+        "time_scope": null
+      }
+    ],
+    "preferences": {
+      "living_room_comfort_temperature_c": null
+    }
+  },
+  "metadata": {
+    "source": "sgsc",
+    "household_id": "10041674",
+    "source_example": "examples/sgsc_full_day_example.json",
+    "source_example_sha256": "70e427d044151544ba913060cce3b2270cc13ac13943750d019928aeeffb15df",
+    "field_mapping": [
+      {
+        "target": "energy_services/space_heating",
+        "source_answers": {
+          "HAS_GAS_HEATING": "Y"
+        },
+        "rule": "Reported gas use for the service; equipment type, count and main/auxiliary role not established."
+      },
+      {
+        "target": "energy_services/hot_water",
+        "source_answers": {
+          "HAS_GAS_HOT_WATER": "Y"
+        },
+        "rule": "Reported gas use for the service; equipment type, count and main/auxiliary role not established."
+      },
+      {
+        "target": "energy_services/cooking",
+        "source_answers": {
+          "HAS_GAS_COOKING": "Y"
+        },
+        "rule": "Reported gas use for the service; equipment type, count and main/auxiliary role not established."
+      },
+      {
+        "target": "appliances/refrigerator",
+        "source_answers": {
+          "NUM_REFRIGERATORS": "1"
+        },
+        "rule": "Parse reported count; positive count logically establishes presence."
+      },
+      {
+        "target": "appliances/air_conditioner",
+        "source_answers": {
+          "HAS_AIRCON": "Y",
+          "AIRCON_TYPE_CD": "SplitSystem"
+        },
+        "rule": "Y -> true; SplitSystem -> split_system; no count or rated power reported."
+      },
+      {
+        "target": "appliances/pool_pump",
+        "source_answers": {
+          "HAS_POOLPUMP": "N"
+        },
+        "rule": "N -> absent; absence logically implies count 0, not a separately measured count."
+      },
+      {
+        "target": "usage_habits/clothes_dryer",
+        "source_answers": {
+          "DRYER_USAGE_CD": "NONE"
+        },
+        "rule": "NONE describes non-use; does not establish absence or count."
+      },
+      {
+        "target": "usage_habits/someone_home",
+        "source_answers": {
+          "IS_HOME_DURING_DAYTIME": "N"
+        },
+        "rule": "N -> false; questionnaire scope retained as weekday daytime."
+      }
+    ],
+    "missing_value_policy": "Null means not established by this example source. No typical power, count, schedule or other-household information is imputed. Catalog entries do not assert physical presence.",
+    "catalog_scope": "Six shared categories for illustration; not the complete device taxonomy. Other observed profile information remains in the source example.",
+    "exact_control_schedule": null,
+    "formal_training_release": false
+  }
+}

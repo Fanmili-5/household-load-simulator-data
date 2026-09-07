@@ -1,0 +1,237 @@
+{
+  "schema_version": "household-framework-design/0.1",
+  "example_scope": "selected_profile_fields_only_not_a_complete_household_or_training_sample",
+  "input_fragment": {
+    "household": {
+      "resident_count": 2,
+      "age_group_counts": {
+        "0_1": 0,
+        "2_5": 0,
+        "6_15": 0,
+        "16_22": 0,
+        "23_29": 0,
+        "30_39": 0,
+        "40_49": 0,
+        "50_66": 0,
+        "67_plus": 2
+      },
+      "life_status_counts": {
+        "school_or_kindergarten": 0,
+        "student": 0,
+        "part_time_work": 0,
+        "full_time_work": 0,
+        "unemployed_or_not_in_education": 0,
+        "retired": 2,
+        "other": 0
+      }
+    },
+    "appliances": [
+      {
+        "type": "refrigerator",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "air_conditioner",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "clothes_dryer",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "pool_pump",
+        "present": null,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "heat_pump",
+        "present": true,
+        "count": null,
+        "subtype": null,
+        "rated_power_w": null
+      },
+      {
+        "type": "electric_water_heater",
+        "present": true,
+        "count": null,
+        "subtype": "separate",
+        "rated_power_w": null
+      }
+    ],
+    "energy_services": [
+      {
+        "service": "space_heating",
+        "energy_carrier": null,
+        "technology": "heat_pump",
+        "appliance_type_ref": "heat_pump",
+        "role": "main"
+      },
+      {
+        "service": "hot_water",
+        "energy_carrier": "electricity",
+        "technology": "separate_electric_water_heater",
+        "appliance_type_ref": "electric_water_heater",
+        "role": null
+      }
+    ],
+    "usage_habits": [
+      {
+        "subject_type": "household",
+        "subject_id": "self",
+        "behavior": "someone_home",
+        "value": true,
+        "unit": null,
+        "time_scope": "weekday_daytime"
+      },
+      {
+        "subject_type": "energy_service",
+        "subject_id": "space_heating",
+        "behavior": "control_mode",
+        "value": "time_scheduled",
+        "unit": null,
+        "time_scope": null
+      },
+      {
+        "subject_type": "energy_service",
+        "subject_id": "space_heating",
+        "behavior": "lower_temperature_in_less_used_rooms",
+        "value": true,
+        "unit": null,
+        "time_scope": null
+      },
+      {
+        "subject_type": "energy_service",
+        "subject_id": "space_heating",
+        "behavior": "reduce_temperature_at_night_or_away",
+        "value": false,
+        "unit": null,
+        "time_scope": null
+      },
+      {
+        "subject_type": "energy_service",
+        "subject_id": "hot_water",
+        "behavior": "respondent_reports_adjusting_control",
+        "value": false,
+        "unit": null,
+        "time_scope": null
+      }
+    ],
+    "preferences": {
+      "living_room_comfort_temperature_c": 24.0
+    }
+  },
+  "metadata": {
+    "source": "iflex",
+    "household_id": "Exp_1",
+    "source_example": "examples/iflex_full_day_example.json",
+    "source_example_sha256": "3c2a331a287745ebce923935cea2d2e0c54cf46cfa5e1fd666b48e0749901003",
+    "field_mapping": [
+      {
+        "target": "appliances/heat_pump; energy_services/space_heating",
+        "source_answers": {
+          "q9N3": "Main heat source"
+        },
+        "rule": "Main heat source establishes use and presence; count and individual device identity remain unknown."
+      },
+      {
+        "target": "appliances/electric_water_heater; energy_services/hot_water",
+        "source_answers": {
+          "q14": "Own electric water heater"
+        },
+        "rule": "Own electric water heater establishes presence and separate arrangement; does not specify count."
+      },
+      {
+        "target": "household/resident_count",
+        "source_answers": {
+          "q19": "2 persons"
+        },
+        "rule": "2 persons -> integer 2."
+      },
+      {
+        "target": "household/age_group_counts",
+        "source_answers": {
+          "q20.1": "0",
+          "q20.2": "0",
+          "q20.3": "0",
+          "q20.4": "0",
+          "q20.5": "0",
+          "q20.6": "0",
+          "q20.7": "0",
+          "q20.8": "0",
+          "q20.9": "2"
+        },
+        "rule": "Use existing dictionary-backed age bands and counts; do not invent individual people."
+      },
+      {
+        "target": "household/life_status_counts",
+        "source_answers": {
+          "q24.1": "0",
+          "q24.2": "0",
+          "q24.3": "0",
+          "q24.4": "0",
+          "q24.5": "0",
+          "q24.6": "2",
+          "q24.7": "0"
+        },
+        "rule": "Reuse existing dictionary-backed life status counts; categories do not define individuals."
+      },
+      {
+        "target": "usage_habits/someone_home",
+        "source_answers": {
+          "q23": "Yes"
+        },
+        "rule": "Yes -> true; keep weekday daytime scope."
+      },
+      {
+        "target": "usage_habits/space_heating_control",
+        "source_answers": {
+          "q13": "Yes, automated by time (set schedule in thermostat)"
+        },
+        "rule": "Time scheduled control at heating-system scope; no exact schedule or per-device assignment."
+      },
+      {
+        "target": "usage_habits/less_used_rooms",
+        "source_answers": {
+          "q11": "Yes"
+        },
+        "rule": "Yes -> true; no temperature decrement supplied."
+      },
+      {
+        "target": "usage_habits/night_or_away",
+        "source_answers": {
+          "q12": "No"
+        },
+        "rule": "No -> false; no full schedule inferred."
+      },
+      {
+        "target": "usage_habits/hot_water",
+        "source_answers": {
+          "q14b": "No"
+        },
+        "rule": "No reported adjustment/control; not evidence that no thermostat exists."
+      },
+      {
+        "target": "preferences/living_room_comfort_temperature_c",
+        "source_answers": {
+          "q10": "24"
+        },
+        "rule": "Reported comfort temperature only; not measured room temperature or adjustment tolerance."
+      }
+    ],
+    "missing_value_policy": "Null means not established by this example source. No typical power, count, schedule or other-household information is imputed. Catalog entries do not assert physical presence.",
+    "catalog_scope": "Six shared categories for illustration; not the complete device taxonomy. Other observed profile information remains in the source example.",
+    "exact_control_schedule": null,
+    "formal_training_release": false
+  }
+}
