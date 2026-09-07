@@ -1,0 +1,115 @@
+{
+  "schema_version": "household-baseline/1.0.0",
+  "data_release_status": "constructed_observation_baseline",
+  "formal_training_release": false,
+  "counts": {
+    "sgsc": 16330,
+    "iflex": 2071
+  },
+  "profile_counts": {
+    "sgsc": 2078,
+    "iflex": 314
+  },
+  "households_with_day_samples": {
+    "sgsc": 2078,
+    "iflex": 314
+  },
+  "source_observation_count": 18413,
+  "included_source_observations": 18401,
+  "excluded_source_observations": 12,
+  "excluded_days": 12,
+  "original_observation_files": {
+    "sgsc": "044c69c171aa8b5385dcbbf85550831dffacaa7b9daa748fa4eabaa2d133fed1",
+    "iflex": "0e8bab37917d329661219a181f6614f47893b95bfe7d866efb0509d8646557d1"
+  },
+  "window_cache_sha256": "ba6f5620e3d83be28b3fb153780b6502e94b3b5d7be2032250e53d5bbb2021c7",
+  "artifacts": {
+    "data/iflex.jsonl.gz": {
+      "sha256": "942980c24d4f4276fdb4f8a23aede5ed92afc03726aaaab7976fba951f99ea5c",
+      "bytes": 809301
+    },
+    "data/sgsc.jsonl.gz": {
+      "sha256": "ce354adcfe1b94946f945288889933a85f44a99df29db3361a21aa84551b0a41",
+      "bytes": 12135644
+    },
+    "examples/iflex.json": {
+      "sha256": "d99327ed81970e1e82c5b9be90517093fd8c3ed40caa569a0585273646345f0e",
+      "bytes": 15420
+    },
+    "examples/iflex_messages.json": {
+      "sha256": "4c2330b8b425bbe05558bf4ae285bb7cd729473eea3ae7eeb1019c7fcdb9c18d",
+      "bytes": 9786
+    },
+    "examples/sgsc.json": {
+      "sha256": "3c96ff4a64aeac6bce0c3e5ba0b8762e85d3e337320bd916f436cdce0e89f312",
+      "bytes": 16429
+    },
+    "examples/sgsc_messages.json": {
+      "sha256": "0d712fdcbcd9738d6b79af8932d90854e1a03c5159b692781feae7f5fe02eedb",
+      "bytes": 9943
+    },
+    "profiles/iflex.jsonl.gz": {
+      "sha256": "5bbe458657df0d3dbdfb995eaa6ae656ff0602c04f01789330e83ced7ee1542e",
+      "bytes": 1326246
+    },
+    "profiles/sgsc.jsonl.gz": {
+      "sha256": "20b4be31e1bcc69ccfe94180f6b5483ddea9ff83138b6f29063c87c0c59b3f54",
+      "bytes": 6133974
+    },
+    "provenance/profile_field_coverage.csv": {
+      "sha256": "a7ac455f15d0b50826b43b47fdf3afdda8b9e974a55ff8e34284ecd0be976bd4",
+      "bytes": 31175
+    },
+    "provenance/raw_curve_sources.json": {
+      "sha256": "5646d4ebd542bce718673905d76b7a15fe90cd33fbc5956139eeb44931a2e6d7",
+      "bytes": 464660
+    },
+    "provenance/source_field_mapping.csv": {
+      "sha256": "677e74e7502cf8151d30f46696a0c9166d75dc8c7ab02c4f4aee6f7e77789d87",
+      "bytes": 22179
+    },
+    "provenance/window_exclusions.json": {
+      "sha256": "ed0546f376141e8e6ee646dd5696460dd5e9bcd7e0fbb8408085f6f468ef3daa",
+      "bytes": 2561
+    },
+    "schema/appliance_catalog.json": {
+      "sha256": "649069e10810eafbaa38a04d4f1b6d042aabf68baa1eaedfafb32c6ce5188072",
+      "bytes": 676
+    },
+    "schema/category_values.json": {
+      "sha256": "8e7f62fb3cd1aa88b329d262e03b13279d4a688db9863067c045ffca867e580c",
+      "bytes": 10749
+    },
+    "schema/profile.schema.json": {
+      "sha256": "1a8fb8a06819a7bec23c5f59316866f721f05f89de1b02c7916196ffec7d5aeb",
+      "bytes": 27619
+    },
+    "schema/sample.schema.json": {
+      "sha256": "4dcdaf65585c098aa4fbe4d8b3efe3fafb0e73484c5785d23ed8864de4762ac4",
+      "bytes": 42857
+    },
+    "splits/household_holdout.csv": {
+      "sha256": "1b164ffd82e4984a83761011c69871837c01c254c9eb99eeb66a43969246abb7",
+      "bytes": 925458
+    }
+  },
+  "implementation_files": {
+    "baseline_profile.py": "43d706fd700f6bc64c143cdfdac57ce7ca5b1652c803cc47b3356ef4bc6779b5",
+    "baseline_contract.py": "d16789c3ddb1c67146acbcfab60d1f5127d7c0b63c49aefe34b5ebf8f18a17d3",
+    "baseline_windows.py": "a85aae202a9ab9e760e39ee219bf0c8c668b1ec4e3f3742b350d16231f9b4730",
+    "build_baseline.py": "c438f31f650a04ca239fc6123269caa3f34705138252e96712471ee64b7443c3",
+    "verify_baseline.py": "3fe219d68621bfdfd23eb959c80614e1b3c901ac5bd3c19543b896a5e0614de3",
+    "read_baseline.py": "55a4dd7fc467d470a5725013a2ea4d060ed61a2bc352f8e0c43f1c8a24a33aa7",
+    "export_baseline_sft.py": "2f6b0b5e318311b4652fe82206a7368da63d2d23aa4387086b161821aa4b84d7"
+  },
+  "time_contract": "7 preceding source-clock days to 1 complete source-clock day; no UTC assumption",
+  "split_contract": "70/15/15 by distinct households within source, frozen hash order; measures unseen-household generalization, dates may overlap",
+  "remaining_training_checks": [
+    "individual_profile_acquisition_time",
+    "individual_event_notice_delivery_time",
+    "model_tokenizer_and_context_length",
+    "assistant_loss_mask"
+  ],
+  "training_executed": false,
+  "imputation_performed": false
+}

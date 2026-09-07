@@ -1,0 +1,134 @@
+[
+  {
+    "source": "sgsc",
+    "household_id": "10131364",
+    "date": "2013-03-28",
+    "source_sample_ids": [
+      "SGSC:10131364:1000248"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "10133842",
+    "date": "2013-12-09",
+    "source_sample_ids": [
+      "SGSC:10133842:1000259"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "10133842",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:10133842:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "10183594",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:10183594:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "10492209",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:10492209:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "10492473",
+    "date": "2013-12-10",
+    "source_sample_ids": [
+      "SGSC:10492473:1000260"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "11450017",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:11450017:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "8590756",
+    "date": "2014-01-16",
+    "source_sample_ids": [
+      "SGSC:8590756:1000261"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "9045014",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:9045014:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "9072336",
+    "date": "2014-02-13",
+    "source_sample_ids": [
+      "SGSC:9072336:1000267"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "9723414",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:9723414:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  },
+  {
+    "source": "sgsc",
+    "household_id": "9950154",
+    "date": "2014-01-30",
+    "source_sample_ids": [
+      "SGSC:9950154:1000264"
+    ],
+    "reasons": [
+      "missing_or_duplicate_interval"
+    ]
+  }
+]

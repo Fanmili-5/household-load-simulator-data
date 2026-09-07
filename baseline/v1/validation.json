@@ -1,0 +1,305 @@
+{
+  "passed": true,
+  "schema_version": "household-baseline/1.0.0",
+  "counts": {
+    "sgsc": 16330,
+    "iflex": 2071
+  },
+  "profiles": 2392,
+  "excluded_days": 12,
+  "source_column_accounting": {
+    "sgsc": 46,
+    "iflex": 96
+  },
+  "reference_json_schema_validator": true,
+  "checks": [
+    "artifact hashes",
+    "strict profile/sample schemas",
+    "time boundaries and native intervals",
+    "device presence/count semantics",
+    "household demographic consistency",
+    "profile equality across household days",
+    "complete original source-column accounting",
+    "original household provenance preserved",
+    "candidate inclusion/exclusion accounting",
+    "no household overlap across partitions",
+    "full SFT serialization round trip",
+    "every required raw curve point checked independently; raw files hashed"
+  ],
+  "split_record_counts": {
+    "sgsc/validation": 2428,
+    "sgsc/train": 11483,
+    "sgsc/test": 2419,
+    "iflex/train": 1449,
+    "iflex/test": 318,
+    "iflex/validation": 304
+  },
+  "raw_curve_points_verified": {
+    "sgsc": 5422272,
+    "iflex": 204600
+  },
+  "formal_training_release": false,
+  "training_executed": false,
+  "excluded_window_diagnostics": [
+    {
+      "source": "sgsc",
+      "household_id": "10131364",
+      "date": "2013-03-28",
+      "source_sample_ids": [
+        "SGSC:10131364:1000248"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2013-03-28 00:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "10133842",
+      "date": "2013-12-09",
+      "source_sample_ids": [
+        "SGSC:10133842:1000259"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2013-12-09 18:30:00",
+        "2013-12-09 19:00:00",
+        "2013-12-09 19:30:00",
+        "2013-12-09 20:00:00",
+        "2013-12-09 20:30:00",
+        "2013-12-09 21:00:00",
+        "2013-12-09 21:30:00",
+        "2013-12-09 22:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "10133842",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:10133842:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 18:30:00",
+        "2014-01-30 19:00:00",
+        "2014-01-30 19:30:00",
+        "2014-01-30 20:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "10183594",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:10183594:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 18:30:00",
+        "2014-01-30 19:00:00",
+        "2014-01-30 19:30:00",
+        "2014-01-30 20:00:00",
+        "2014-01-30 20:30:00",
+        "2014-01-30 21:00:00",
+        "2014-01-30 21:30:00",
+        "2014-01-30 22:00:00",
+        "2014-01-30 22:30:00",
+        "2014-01-30 23:00:00",
+        "2014-01-30 23:30:00",
+        "2014-01-31 00:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "10492209",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:10492209:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 18:30:00",
+        "2014-01-30 19:00:00",
+        "2014-01-30 19:30:00",
+        "2014-01-30 20:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "10492473",
+      "date": "2013-12-10",
+      "source_sample_ids": [
+        "SGSC:10492473:1000260"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2013-12-10 18:30:00",
+        "2013-12-10 19:00:00",
+        "2013-12-10 19:30:00",
+        "2013-12-10 20:00:00",
+        "2013-12-10 20:30:00",
+        "2013-12-10 21:00:00",
+        "2013-12-10 21:30:00",
+        "2013-12-10 22:00:00",
+        "2013-12-10 22:30:00",
+        "2013-12-10 23:00:00",
+        "2013-12-10 23:30:00",
+        "2013-12-11 00:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "11450017",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:11450017:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 10:30:00",
+        "2014-01-30 11:00:00",
+        "2014-01-30 11:30:00",
+        "2014-01-30 12:00:00",
+        "2014-01-30 12:30:00",
+        "2014-01-30 13:00:00",
+        "2014-01-30 13:30:00",
+        "2014-01-30 14:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "8590756",
+      "date": "2014-01-16",
+      "source_sample_ids": [
+        "SGSC:8590756:1000261"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-16 18:30:00",
+        "2014-01-16 19:00:00",
+        "2014-01-16 19:30:00",
+        "2014-01-16 20:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "9045014",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:9045014:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 18:30:00",
+        "2014-01-30 19:00:00",
+        "2014-01-30 19:30:00",
+        "2014-01-30 20:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "9072336",
+      "date": "2014-02-13",
+      "source_sample_ids": [
+        "SGSC:9072336:1000267"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-02-13 20:30:00",
+        "2014-02-13 21:00:00",
+        "2014-02-13 21:30:00",
+        "2014-02-13 22:00:00",
+        "2014-02-13 22:30:00",
+        "2014-02-13 23:00:00",
+        "2014-02-13 23:30:00",
+        "2014-02-14 00:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "9723414",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:9723414:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 18:30:00",
+        "2014-01-30 19:00:00",
+        "2014-01-30 19:30:00",
+        "2014-01-30 20:00:00",
+        "2014-01-30 20:30:00",
+        "2014-01-30 21:00:00",
+        "2014-01-30 21:30:00",
+        "2014-01-30 22:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    },
+    {
+      "source": "sgsc",
+      "household_id": "9950154",
+      "date": "2014-01-30",
+      "source_sample_ids": [
+        "SGSC:9950154:1000264"
+      ],
+      "reasons": [
+        "missing_or_duplicate_interval"
+      ],
+      "missing_interval_end_labels": [
+        "2014-01-30 08:30:00",
+        "2014-01-30 09:00:00",
+        "2014-01-30 09:30:00",
+        "2014-01-30 10:00:00"
+      ],
+      "duplicate_interval_end_labels": []
+    }
+  ],
+  "reproducibility": {
+    "passed": true,
+    "artifacts_byte_identical": 17,
+    "manifest_identical": true,
+    "public_repository_inputs_sufficient": true
+  },
+  "regression_tests": {
+    "passed": true,
+    "tests": 10
+  },
+  "sft_export_check": {
+    "train_records": 12932,
+    "round_trip_exact": true,
+    "training_executed": false
+  }
+}

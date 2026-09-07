@@ -1,0 +1,143 @@
+source,source_field,disposition,destinations,reason
+sgsc,CUSTOMER_KEY,household_linkage,[],同户关联标识；不解释为行为特征。
+sgsc,TRIAL_CUSTOMER_TYPE,provenance_only,[],试验招募类型，保留供分组审查；不能解释为住户使用习惯。
+sgsc,CONTROL_GROUP_FLAG,provenance_only,[],试验分组标记；保留样本来源说明，不作为家庭特征。
+sgsc,TARIFF_PRODUCT_CD,event_context_reviewed_separately,[],输入的活动产品代码沿用已核对的活动构造；主表记录保留追溯，不用来覆盖活动时点条件。
+sgsc,FEEDBACK_TECH1_PRODUCT_CD,provenance_only,[],反馈技术产品代码；可能与用电有关，但尚未确认各活动日前是否已启用，暂不送入预测输入。
+sgsc,FEEDBACK_TECH2_PRODUCT_CD,provenance_only,[],第二项反馈技术代码；保留原值，活动日前启用时间及产品含义尚未逐户核实。
+sgsc,LIFESTYLE_AUDIT_PRODUCT_CD,provenance_only,[],生活方式审计产品代码，当前保留家庭均无回答；不是具体生活习惯。
+sgsc,INFERRED_CELL,provenance_only,[],字典标明为内部项目编号；不作为家庭特征。
+sgsc,VERIFIED_CELL,provenance_only,[],字典标明为内部项目编号；不作为家庭特征。
+sgsc,SERVICE_TYPE,provenance_only,[],家庭供电服务分类；保留来源口径。
+sgsc,GENERAL_SUPPLY_CNT,meter_context_and_provenance,"[""input.context.measurement_scope"", ""profile.metadata.source_profile_provenance.raw_answers.GENERAL_SUPPLY_CNT""]",Meter coverage in context; original registry counts retained outside model input.
+sgsc,CONTROLLED_LOAD_CNT,meter_context_and_provenance,"[""input.context.measurement_scope"", ""profile.metadata.source_profile_provenance.raw_answers.CONTROLLED_LOAD_CNT""]",Meter coverage in context; original registry counts retained outside model input.
+sgsc,NET_SOLAR_CNT,meter_context_and_provenance,"[""input.context.measurement_scope"", ""profile.metadata.source_profile_provenance.raw_answers.NET_SOLAR_CNT""]",Meter coverage in context; original registry counts retained outside model input.
+sgsc,GROSS_SOLAR_CNT,meter_context_and_provenance,"[""input.context.measurement_scope"", ""profile.metadata.source_profile_provenance.raw_answers.GROSS_SOLAR_CNT""]",Meter coverage in context; original registry counts retained outside model input.
+sgsc,OTHER_LOAD_CNT,meter_context_and_provenance,"[""input.context.measurement_scope"", ""profile.metadata.source_profile_provenance.raw_answers.OTHER_LOAD_CNT""]",Meter coverage in context; original registry counts retained outside model input.
+sgsc,SERVICE_LOC_STATUS_NAME,provenance_only,[],试验服务状态可能含事后退出或产品变更；不放入预测前输入。
+sgsc,ASSRTD_CLIMATE_ZONE_CD,equivalent_description_in_input,[],输入已保留假定气候区文字描述；数值代码保留追溯。
+sgsc,ASSRTD_CLIMATE_ZONE_DESC,semantic_profile,"[""dwelling.climate_zone""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,ASSRTD_DWELLING_TYPE_CD,semantic_profile,"[""dwelling.source_classified_type""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,ASSRTD_GAS_USAGE_GROUP_CD,provenance_only,[],假定用气等级，推断过程及时点未确认，不当作已观测习惯。
+sgsc,ASSRTD_ELECTRICITY_USE_GRP_CD,provenance_only,[],假定用电等级，可能带入目标用电信息，不当作已观测习惯。
+sgsc,DWELLING_TYPE_CD,semantic_profile,"[""dwelling.type""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,DRYER_USAGE_CD,semantic_profile,"[""appliances.clothes_dryer"", ""usage_habits.clothes_dryer.reported_use_level""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,REDUCING_CONSUMPTION_CD,semantic_profile,"[""preferences.reported_electricity_reduction_effort""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,AIRCON_TYPE_CD,semantic_profile,"[""appliances.air_conditioner""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,NUM_REFRIGERATORS,semantic_profile,"[""appliances.refrigerator""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,NUM_ROOMS_HEATED,semantic_profile,"[""dwelling.heated_room_count""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_GENERATION,meter_context_and_provenance,"[""input.context.measurement_scope"", ""profile.metadata.source_profile_provenance.raw_answers.HAS_GENERATION""]",Meter coverage in context; original registry counts retained outside model input.
+sgsc,HAS_INTERNET_ACCESS,semantic_profile,"[""household.internet_access""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_GAS,semantic_profile,"[""energy_services.supply.gas_available""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_GAS_HEATING,semantic_profile,"[""energy_services.space_heating.gas_used""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_GAS_HOT_WATER,semantic_profile,"[""energy_services.hot_water.gas_used""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_GAS_COOKING,semantic_profile,"[""energy_services.cooking.gas_used""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_POOLPUMP,semantic_profile,"[""appliances.pool_pump""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_AIRCON,semantic_profile,"[""appliances.air_conditioner""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_GAS_OTHER_APPLIANCE,semantic_profile,"[""energy_services.other_gas_use.gas_used""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,IS_HOME_DURING_DAYTIME,semantic_profile,"[""usage_habits.self.someone_home""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+sgsc,HAS_AGREED_TO_SMS,administrative_only,"[""metadata.administrative.agreed_to_sms_contact""]",Contact permission is not a household behavior or event consent.
+sgsc,SMART_METER_INSTALLATION_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,LIFESTYLE_AUDIT_PERFORMED_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,PROVISIONING_COMPLETE_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,OFFER_WITHDRAWN_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,ACCEPTANCE_WITHDRAWN_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,OPERATION_START_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,OPERATION_FINISH_DATE,provenance_only,[],安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,AGREEMENT_EXIT_REASON,provenance_only,[],退出试验的原因可能在活动后产生；只保留追溯。
+iflex,ID,household_linkage,[],同户关联标识；不解释为行为特征。
+iflex,q1,semantic_profile,"[""energy_services.supply.respondent_receives_bill""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q2,semantic_profile,"[""energy_services.supply.electricity_contract""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q3,semantic_profile,"[""energy_services.supply.renewable_electricity_contract""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q4,semantic_profile,"[""dwelling.type""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q5,semantic_profile,"[""dwelling.floor_area_m2""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q6,semantic_profile,"[""dwelling.owner_occupied""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q6b1,semantic_profile,"[""dwelling.rental_unit_present""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q6b2,semantic_profile,"[""dwelling.rental_unit_separate_meter""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q6c,semantic_profile,"[""dwelling.shared_flat""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q7,semantic_profile,"[""dwelling.construction_year""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q8,semantic_profile,"[""dwelling.energy_renovation_reported""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N1,semantic_profile,"[""appliances.panel_heater"", ""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N2,semantic_profile,"[""appliances.electric_underfloor_heating"", ""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N3,semantic_profile,"[""appliances.heat_pump"", ""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N4,semantic_profile,"[""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N5,semantic_profile,"[""appliances.fireplace_or_wood_stove"", ""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N6,semantic_profile,"[""appliances.fuel_heater"", ""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N7,semantic_profile,"[""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9N8,semantic_profile,"[""energy_services.space_heating.options""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9d1,semantic_profile,"[""usage_habits.fireplace_or_wood_stove.reported_use_conditions""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9d2,semantic_profile,"[""usage_habits.fireplace_or_wood_stove.reported_use_conditions""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9d3,semantic_profile,"[""usage_habits.fireplace_or_wood_stove.reported_use_conditions""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q9d4,semantic_profile,"[""usage_habits.fireplace_or_wood_stove.reported_use_conditions""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q10,semantic_profile,"[""preferences.living_room_comfort_temperature_c""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q11,semantic_profile,"[""usage_habits.space_heating.lower_temperature_in_less_used_rooms""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q12,semantic_profile,"[""usage_habits.space_heating.reduce_temperature_at_night_or_away""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q13,semantic_profile,"[""usage_habits.space_heating.control_mode""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q14,semantic_profile,"[""appliances.electric_water_heater"", ""appliances.heat_pump"", ""energy_services.hot_water.technology""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q14b,semantic_profile,"[""usage_habits.hot_water.control_mode""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q15_1,semantic_profile,"[""appliances.mechanical_ventilation"", ""energy_services.ventilation.technologies""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q15_2,semantic_profile,"[""appliances.mechanical_ventilation"", ""energy_services.ventilation.technologies""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q15_3,semantic_profile,"[""appliances.mechanical_ventilation"", ""energy_services.ventilation.technologies""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q15_4,semantic_profile,"[""appliances.mechanical_ventilation"", ""energy_services.ventilation.technologies""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_a,semantic_profile,"[""preferences.follows_electricity_use""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_b_1,semantic_profile,"[""preferences.use_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_b_2,semantic_profile,"[""preferences.use_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_b_3,semantic_profile,"[""preferences.use_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_b_4,semantic_profile,"[""preferences.use_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_c,semantic_profile,"[""preferences.follows_electricity_prices""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_d_1,semantic_profile,"[""preferences.price_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_d_2,semantic_profile,"[""preferences.price_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_d_3,semantic_profile,"[""preferences.price_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_d_4,semantic_profile,"[""preferences.price_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_ekstra_d_5,semantic_profile,"[""preferences.price_information_channels""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16_bil,semantic_profile,"[""household.car_present""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16_bil_a.1,semantic_profile,"[""household.car_count""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16_bil_b,semantic_profile,"[""appliances.electric_or_plugin_hybrid_vehicle""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16.1,semantic_profile,"[""appliances.electric_or_plugin_hybrid_vehicle""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b6.1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b6.2,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b6.3,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16bN1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16bN2,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16bN3,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b1_1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b2_1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b3_1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b4_1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b5_1.1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b1_2,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b2_2,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b3_2,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b4_2,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b5_2.1,semantic_profile,"[""vehicle_details""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q16b1_3,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b2_3,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b3_3,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b4_3,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b5_3.1,no_answer_in_retained_cohort,[],第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q17,semantic_profile,"[""appliances.solar_pv""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q17b.1,semantic_profile,"[""appliances.solar_pv.capacity_kw""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q17c,semantic_profile,"[""appliances.battery_storage"", ""energy_services.supply.battery_connected_to_pv""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q18,semantic_profile,"[""energy_services.supply.farm_or_business_shares_meter""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q_kjonn,semantic_profile,"[""household.respondent_sex""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q19,semantic_profile,"[""household.resident_count""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.1,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.2,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.3,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.4,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.5,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.6,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.7,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.8,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q20.9,semantic_profile,"[""household.age_group_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q21,semantic_profile,"[""household.highest_household_education""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q22,semantic_profile,"[""household.gross_income_band""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q23,semantic_profile,"[""usage_habits.self.someone_home""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.1,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.2,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.3,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.4,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.5,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.6,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,q24.7,semantic_profile,"[""household.life_status_counts""]",Typed semantic mapping; original answer and unknown/invalid states retained.
+iflex,husstand,semantic_profile,"[""household.composition""]",Typed semantic mapping; original answer and unknown/invalid states retained.

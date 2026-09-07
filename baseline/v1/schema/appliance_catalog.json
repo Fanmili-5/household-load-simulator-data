@@ -1,0 +1,26 @@
+{
+  "schema_version": "household-baseline/1.0.0",
+  "categories": [
+    "refrigerator",
+    "freezer",
+    "washing_machine",
+    "dishwasher",
+    "clothes_dryer",
+    "air_conditioner",
+    "panel_heater",
+    "electric_underfloor_heating",
+    "heat_pump",
+    "electric_water_heater",
+    "fireplace_or_wood_stove",
+    "fuel_heater",
+    "pool_pump",
+    "electric_or_plugin_hybrid_vehicle",
+    "solar_pv",
+    "battery_storage",
+    "mechanical_ventilation",
+    "electric_cooking_appliance",
+    "television",
+    "lighting"
+  ],
+  "overlap_policy": "No total device count; geothermal/shared heating stay in services; heat pumps across services are not duplicated."
+}
