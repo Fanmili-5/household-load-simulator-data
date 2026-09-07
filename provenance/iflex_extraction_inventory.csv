@@ -1,0 +1,97 @@
+﻿source,field,households,non_missing_answers,disposition,input_destination,raw_destination,reason
+iflex,ID,314,314,household_linkage,household_id,metadata.profile_provenance.raw_answers.ID,同户关联标识；不解释为行为特征。
+iflex,q1,314,314,structured_input,input.profile.energy_systems.respondent_receives_bill,metadata.profile_provenance.raw_answers.q1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q2,314,314,structured_input,input.profile.energy_systems.electricity_contract,metadata.profile_provenance.raw_answers.q2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q3,314,314,structured_input,input.profile.energy_systems.renewable_electricity_contract,metadata.profile_provenance.raw_answers.q3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q4,314,314,structured_input,input.profile.dwelling.type; input.profile.household.q4,metadata.profile_provenance.raw_answers.q4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q5,314,314,structured_input,input.profile.dwelling.floor_area_band_m2; input.profile.household.q5,metadata.profile_provenance.raw_answers.q5,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q6,314,314,structured_input,input.profile.dwelling.owner_occupied; input.profile.household.q6,metadata.profile_provenance.raw_answers.q6,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q6b1,314,314,structured_input,input.profile.dwelling.rental_unit_present,metadata.profile_provenance.raw_answers.q6b1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q6b2,314,25,structured_input,input.profile.dwelling.rental_unit_separate_meter,metadata.profile_provenance.raw_answers.q6b2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q6c,314,0,structured_input,input.profile.dwelling.shared_flat,metadata.profile_provenance.raw_answers.q6c,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q7,314,314,structured_input,input.profile.dwelling.construction_year_band; input.profile.household.q7,metadata.profile_provenance.raw_answers.q7,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q8,314,314,structured_input,input.profile.dwelling.energy_renovation_reported,metadata.profile_provenance.raw_answers.q8,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N1,314,314,structured_input,input.profile.appliances[panel_heater],metadata.profile_provenance.raw_answers.q9N1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N2,314,314,structured_input,input.profile.appliances[electric_underfloor_heating],metadata.profile_provenance.raw_answers.q9N2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N3,314,314,structured_input,input.profile.appliances[heat_pump],metadata.profile_provenance.raw_answers.q9N3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N4,314,314,structured_input,input.profile.appliances[geothermal_heating],metadata.profile_provenance.raw_answers.q9N4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N5,314,314,structured_input,input.profile.appliances[fireplace_or_wood_stove],metadata.profile_provenance.raw_answers.q9N5,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N6,314,314,structured_input,input.profile.appliances[oil_paraffin_gas_bio_heater],metadata.profile_provenance.raw_answers.q9N6,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N7,314,314,structured_input,input.profile.appliances[district_or_shared_heating],metadata.profile_provenance.raw_answers.q9N7,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9N8,314,314,structured_input,input.profile.appliances[other_heating],metadata.profile_provenance.raw_answers.q9N8,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9d1,314,216,structured_input,input.profile.usage_habits.wood_stove_use_answers,metadata.profile_provenance.raw_answers.q9d1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9d2,314,216,structured_input,input.profile.usage_habits.wood_stove_use_answers,metadata.profile_provenance.raw_answers.q9d2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9d3,314,216,structured_input,input.profile.usage_habits.wood_stove_use_answers,metadata.profile_provenance.raw_answers.q9d3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q9d4,314,216,structured_input,input.profile.usage_habits.wood_stove_use_answers,metadata.profile_provenance.raw_answers.q9d4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q10,314,314,structured_input,input.profile.preferences.living_room_comfort_temperature_celsius,metadata.profile_provenance.raw_answers.q10,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q11,314,314,structured_input,input.profile.usage_habits.lower_temperature_in_less_used_rooms,metadata.profile_provenance.raw_answers.q11,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q12,314,314,structured_input,input.profile.usage_habits.reduce_temperature_at_night_or_away,metadata.profile_provenance.raw_answers.q12,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q13,314,314,structured_input,input.profile.usage_habits.heating_control,metadata.profile_provenance.raw_answers.q13,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q14,314,314,structured_input,input.profile.appliances[separate_electric_water_heater]; input.profile.energy_systems.hot_water_arrangement,metadata.profile_provenance.raw_answers.q14,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q14b,314,271,structured_input,input.profile.usage_habits.water_heater_control,metadata.profile_provenance.raw_answers.q14b,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q15_1,314,314,structured_input,input.profile.energy_systems.ventilation_answers,metadata.profile_provenance.raw_answers.q15_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q15_2,314,314,structured_input,input.profile.energy_systems.ventilation_answers,metadata.profile_provenance.raw_answers.q15_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q15_3,314,314,structured_input,input.profile.energy_systems.ventilation_answers,metadata.profile_provenance.raw_answers.q15_3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q15_4,314,314,structured_input,input.profile.energy_systems.ventilation_answers,metadata.profile_provenance.raw_answers.q15_4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_a,314,314,structured_input,input.profile.energy_attitudes.follows_electricity_use,metadata.profile_provenance.raw_answers.q_ekstra_a,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_b_1,314,139,structured_input,input.profile.energy_attitudes.use_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_b_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_b_2,314,139,structured_input,input.profile.energy_attitudes.use_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_b_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_b_3,314,139,structured_input,input.profile.energy_attitudes.use_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_b_3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_b_4,314,139,structured_input,input.profile.energy_attitudes.use_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_b_4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_c,314,314,structured_input,input.profile.energy_attitudes.follows_electricity_prices,metadata.profile_provenance.raw_answers.q_ekstra_c,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_d_1,314,98,structured_input,input.profile.energy_attitudes.price_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_d_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_d_2,314,98,structured_input,input.profile.energy_attitudes.price_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_d_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_d_3,314,98,structured_input,input.profile.energy_attitudes.price_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_d_3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_d_4,314,98,structured_input,input.profile.energy_attitudes.price_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_d_4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_ekstra_d_5,314,98,structured_input,input.profile.energy_attitudes.price_information_channels,metadata.profile_provenance.raw_answers.q_ekstra_d_5,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16_bil,314,314,structured_input,input.profile.vehicles.car_present,metadata.profile_provenance.raw_answers.q16_bil,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16_bil_a.1,314,292,structured_input,input.profile.vehicles.car_count,metadata.profile_provenance.raw_answers.q16_bil_a.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16_bil_b,314,292,structured_input,input.profile.appliances[electric_or_plugin_hybrid_car]; input.profile.vehicles.electric_or_plugin_hybrid_present,metadata.profile_provenance.raw_answers.q16_bil_b,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16.1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_count,metadata.profile_provenance.raw_answers.q16.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b6.1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].electric_range_km,metadata.profile_provenance.raw_answers.q16b6.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b6.2,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].electric_range_km,metadata.profile_provenance.raw_answers.q16b6.2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b6.3,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16b6.3,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16bN1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].usual_charging_location,metadata.profile_provenance.raw_answers.q16bN1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16bN2,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].usual_charging_location,metadata.profile_provenance.raw_answers.q16bN2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16bN3,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16bN3,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b1_1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].home_charging_method,metadata.profile_provenance.raw_answers.q16b1_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b2_1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].home_charging_frequency,metadata.profile_provenance.raw_answers.q16b2_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b3_1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].usual_charging_time,metadata.profile_provenance.raw_answers.q16b3_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b4_1,314,115,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].charging_control,metadata.profile_provenance.raw_answers.q16b4_1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b5_1.1,314,114,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[0].distance_before_charging_km,metadata.profile_provenance.raw_answers.q16b5_1.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b1_2,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].home_charging_method,metadata.profile_provenance.raw_answers.q16b1_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b2_2,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].home_charging_frequency,metadata.profile_provenance.raw_answers.q16b2_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b3_2,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].usual_charging_time,metadata.profile_provenance.raw_answers.q16b3_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b4_2,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].charging_control,metadata.profile_provenance.raw_answers.q16b4_2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b5_2.1,314,16,structured_input,input.profile.vehicles.electric_or_plugin_hybrid_details[1].distance_before_charging_km,metadata.profile_provenance.raw_answers.q16b5_2.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q16b1_3,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16b1_3,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b2_3,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16b2_3,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b3_3,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16b3_3,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b4_3,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16b4_3,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q16b5_3.1,314,0,no_answer_in_retained_cohort,,metadata.profile_provenance.raw_answers.q16b5_3.1,第三辆电动车的后续问题；保留家庭最多报告两辆，当前无回答，不虚构第三辆车。
+iflex,q17,314,314,structured_input,input.profile.energy_systems.solar_pv_present,metadata.profile_provenance.raw_answers.q17,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q17b.1,314,0,structured_input,input.profile.energy_systems.solar_pv_capacity_kw,metadata.profile_provenance.raw_answers.q17b.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q17c,314,0,structured_input,input.profile.energy_systems.battery_connected_to_pv,metadata.profile_provenance.raw_answers.q17c,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q18,314,314,structured_input,input.profile.energy_systems.farm_or_business_shares_meter,metadata.profile_provenance.raw_answers.q18,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q_kjonn,314,314,structured_input,input.profile.people.survey_sex_answer,metadata.profile_provenance.raw_answers.q_kjonn,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q19,314,314,structured_input,input.profile.household.q19; input.profile.people.household_size,metadata.profile_provenance.raw_answers.q19,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.1,314,314,structured_input,input.profile.people.age_group_counts.0_1,metadata.profile_provenance.raw_answers.q20.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.2,314,314,structured_input,input.profile.people.age_group_counts.2_5,metadata.profile_provenance.raw_answers.q20.2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.3,314,314,structured_input,input.profile.people.age_group_counts.6_15,metadata.profile_provenance.raw_answers.q20.3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.4,314,314,structured_input,input.profile.people.age_group_counts.16_22,metadata.profile_provenance.raw_answers.q20.4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.5,314,314,structured_input,input.profile.people.age_group_counts.23_29,metadata.profile_provenance.raw_answers.q20.5,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.6,314,314,structured_input,input.profile.people.age_group_counts.30_39,metadata.profile_provenance.raw_answers.q20.6,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.7,314,314,structured_input,input.profile.people.age_group_counts.40_49,metadata.profile_provenance.raw_answers.q20.7,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.8,314,314,structured_input,input.profile.people.age_group_counts.50_66,metadata.profile_provenance.raw_answers.q20.8,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q20.9,314,314,structured_input,input.profile.people.age_group_counts.67_plus,metadata.profile_provenance.raw_answers.q20.9,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q21,314,314,structured_input,input.profile.people.highest_household_education,metadata.profile_provenance.raw_answers.q21,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q22,314,314,structured_input,input.profile.people.gross_household_income_band,metadata.profile_provenance.raw_answers.q22,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q23,314,314,structured_input,input.profile.household.q23; input.profile.usage_habits.daytime_home,metadata.profile_provenance.raw_answers.q23,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.1,314,314,structured_input,input.profile.people.life_status_counts.school_or_kindergarten,metadata.profile_provenance.raw_answers.q24.1,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.2,314,314,structured_input,input.profile.people.life_status_counts.student,metadata.profile_provenance.raw_answers.q24.2,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.3,314,314,structured_input,input.profile.people.life_status_counts.part_time_work,metadata.profile_provenance.raw_answers.q24.3,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.4,314,314,structured_input,input.profile.people.life_status_counts.full_time_work,metadata.profile_provenance.raw_answers.q24.4,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.5,314,314,structured_input,input.profile.people.life_status_counts.unemployed_or_not_in_education,metadata.profile_provenance.raw_answers.q24.5,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.6,314,314,structured_input,input.profile.people.life_status_counts.retired,metadata.profile_provenance.raw_answers.q24.6,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,q24.7,314,314,structured_input,input.profile.people.life_status_counts.other,metadata.profile_provenance.raw_answers.q24.7,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+iflex,husstand,314,314,structured_input,input.profile.people.household_type,metadata.profile_provenance.raw_answers.husstand,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。

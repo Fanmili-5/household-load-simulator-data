@@ -46,4 +46,8 @@ SGSC 活动类型 DPR 对应节电奖励、DPP 对应高峰价格惩罚安排。
 
 CSV 空白统一表示未知或不适用，完整 JSON 保留更细的区别。SGSC 的原房型与归纳房型各有一列，没有自动相互补值；iFlex 的人数等字段也未跨源补给 SGSC。
 
-新增的 `profile_*` 列对应扩展画像；字典和列表用 JSON 单元格保存。`*_households.csv` 每户一行，不重复活动；`*_events.csv` 每条活动一行。`profile_quality_flags` 用于筛查异常。旧字段清单及新增处理详见 [画像更新](PROFILE_UPDATE_20260908.md)。
+新增的 `profile_*` 列对应扩展画像；字典和列表用 JSON 单元格保存。`profile_appliances` 保存该户完整设备列表，包括供暖用途和原始回答；不能只看前面的部分设备展开列。`profile_household`、`profile_meter_configuration` 和 `profile_region` 保留原问卷简表、表计配置和区域。`*_households.csv` 每户一行，不重复活动；`*_events.csv` 每条活动一行，两类表都带这些信息。`profile_quality_flags` 用于筛查异常。
+
+`preferences.agreed_to_sms_contact` 只表示同意短信联系，不表示同意任何调度或节电方案。iFlex 的 `energy_systems.solar_pv_present` 和 `farm_or_business_shares_meter` 是光伏持有、农场或经营用电共表回答，当前保留的 314 户均为 `false`。光伏容量和光伏配套电池问题没有回答，仍为 `null`；这不能扩写成已确认全屋无储能。两份来源的白天在家字段均按工作日白天理解。
+
+字段覆盖及尚未进入输入的资料见 [提取复核](EXTRACTION_AUDIT_20260908.md)，新增处理详见 [画像更新](PROFILE_UPDATE_20260908.md)。

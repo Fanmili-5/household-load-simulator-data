@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "retained SGSC household master (46 columns) and iFlex Survey 1 (96 columns); not all source tables or SFT readiness",
+  "sources": {
+    "sgsc": {
+      "households": 2078,
+      "source_columns": 46,
+      "field_disposition_counts": {
+        "household_linkage": 1,
+        "provenance_only": 19,
+        "event_context_reviewed_separately": 1,
+        "structured_input": 24,
+        "equivalent_description_in_input": 1
+      },
+      "unaccounted_columns": [],
+      "complete_appliance_list_in_household_and_event_tables": true,
+      "provenance_only_with_answers": [
+        "TRIAL_CUSTOMER_TYPE",
+        "CONTROL_GROUP_FLAG",
+        "FEEDBACK_TECH1_PRODUCT_CD",
+        "FEEDBACK_TECH2_PRODUCT_CD",
+        "INFERRED_CELL",
+        "VERIFIED_CELL",
+        "SERVICE_TYPE",
+        "SERVICE_LOC_STATUS_NAME",
+        "ASSRTD_GAS_USAGE_GROUP_CD",
+        "ASSRTD_ELECTRICITY_USE_GRP_CD",
+        "SMART_METER_INSTALLATION_DATE",
+        "PROVISIONING_COMPLETE_DATE",
+        "OPERATION_START_DATE",
+        "OPERATION_FINISH_DATE",
+        "AGREEMENT_EXIT_REASON"
+      ]
+    },
+    "iflex": {
+      "households": 314,
+      "source_columns": 96,
+      "field_disposition_counts": {
+        "household_linkage": 1,
+        "structured_input": 88,
+        "no_answer_in_retained_cohort": 7
+      },
+      "unaccounted_columns": [],
+      "complete_appliance_list_in_household_and_event_tables": true,
+      "provenance_only_with_answers": []
+    }
+  }
+}

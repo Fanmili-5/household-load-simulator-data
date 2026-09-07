@@ -1,0 +1,47 @@
+﻿source,field,households,non_missing_answers,disposition,input_destination,raw_destination,reason
+sgsc,CUSTOMER_KEY,2078,2078,household_linkage,household_id,metadata.profile_provenance.raw_answers.CUSTOMER_KEY,同户关联标识；不解释为行为特征。
+sgsc,TRIAL_CUSTOMER_TYPE,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.TRIAL_CUSTOMER_TYPE,试验招募类型，保留供分组审查；不能解释为住户使用习惯。
+sgsc,CONTROL_GROUP_FLAG,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.CONTROL_GROUP_FLAG,试验分组标记；保留样本来源说明，不作为家庭特征。
+sgsc,TARIFF_PRODUCT_CD,2078,2078,event_context_reviewed_separately,input.context.tariff_product_code,metadata.profile_provenance.raw_answers.TARIFF_PRODUCT_CD,输入的活动产品代码沿用已核对的活动构造；主表记录保留追溯，不用来覆盖活动时点条件。
+sgsc,FEEDBACK_TECH1_PRODUCT_CD,2078,1272,provenance_only,,metadata.profile_provenance.raw_answers.FEEDBACK_TECH1_PRODUCT_CD,反馈技术产品代码；可能与用电有关，但尚未确认各活动日前是否已启用，暂不送入预测输入。
+sgsc,FEEDBACK_TECH2_PRODUCT_CD,2078,80,provenance_only,,metadata.profile_provenance.raw_answers.FEEDBACK_TECH2_PRODUCT_CD,第二项反馈技术代码；保留原值，活动日前启用时间及产品含义尚未逐户核实。
+sgsc,LIFESTYLE_AUDIT_PRODUCT_CD,2078,0,provenance_only,,metadata.profile_provenance.raw_answers.LIFESTYLE_AUDIT_PRODUCT_CD,生活方式审计产品代码，当前保留家庭均无回答；不是具体生活习惯。
+sgsc,INFERRED_CELL,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.INFERRED_CELL,字典标明为内部项目编号；不作为家庭特征。
+sgsc,VERIFIED_CELL,2078,985,provenance_only,,metadata.profile_provenance.raw_answers.VERIFIED_CELL,字典标明为内部项目编号；不作为家庭特征。
+sgsc,SERVICE_TYPE,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.SERVICE_TYPE,家庭供电服务分类；保留来源口径。
+sgsc,GENERAL_SUPPLY_CNT,2078,2078,structured_input,input.profile.meter_configuration.GENERAL_SUPPLY_CNT,metadata.profile_provenance.raw_answers.GENERAL_SUPPLY_CNT,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,CONTROLLED_LOAD_CNT,2078,2078,structured_input,input.profile.meter_configuration.CONTROLLED_LOAD_CNT,metadata.profile_provenance.raw_answers.CONTROLLED_LOAD_CNT,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,NET_SOLAR_CNT,2078,2078,structured_input,input.profile.meter_configuration.NET_SOLAR_CNT,metadata.profile_provenance.raw_answers.NET_SOLAR_CNT,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,GROSS_SOLAR_CNT,2078,2078,structured_input,input.profile.meter_configuration.GROSS_SOLAR_CNT,metadata.profile_provenance.raw_answers.GROSS_SOLAR_CNT,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,OTHER_LOAD_CNT,2078,2078,structured_input,input.profile.meter_configuration.OTHER_LOAD_CNT,metadata.profile_provenance.raw_answers.OTHER_LOAD_CNT,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,SERVICE_LOC_STATUS_NAME,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.SERVICE_LOC_STATUS_NAME,试验服务状态可能含事后退出或产品变更；不放入预测前输入。
+sgsc,ASSRTD_CLIMATE_ZONE_CD,2078,2078,equivalent_description_in_input,input.profile.household.ASSRTD_CLIMATE_ZONE_DESC,metadata.profile_provenance.raw_answers.ASSRTD_CLIMATE_ZONE_CD,输入已保留假定气候区文字描述；数值代码保留追溯。
+sgsc,ASSRTD_CLIMATE_ZONE_DESC,2078,2078,structured_input,input.profile.household.ASSRTD_CLIMATE_ZONE_DESC,metadata.profile_provenance.raw_answers.ASSRTD_CLIMATE_ZONE_DESC,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,ASSRTD_DWELLING_TYPE_CD,2078,2078,structured_input,input.profile.household.ASSRTD_DWELLING_TYPE_CD,metadata.profile_provenance.raw_answers.ASSRTD_DWELLING_TYPE_CD,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,ASSRTD_GAS_USAGE_GROUP_CD,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.ASSRTD_GAS_USAGE_GROUP_CD,假定用气等级，推断过程及时点未确认，不当作已观测习惯。
+sgsc,ASSRTD_ELECTRICITY_USE_GRP_CD,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.ASSRTD_ELECTRICITY_USE_GRP_CD,假定用电等级，可能带入目标用电信息，不当作已观测习惯。
+sgsc,DWELLING_TYPE_CD,2078,985,structured_input,input.profile.dwelling.type; input.profile.household.DWELLING_TYPE_CD,metadata.profile_provenance.raw_answers.DWELLING_TYPE_CD,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,DRYER_USAGE_CD,2078,2078,structured_input,input.profile.appliances[clothes_dryer].usage_level_raw; input.profile.usage_habits.dryer_usage_level,metadata.profile_provenance.raw_answers.DRYER_USAGE_CD,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,REDUCING_CONSUMPTION_CD,2078,2078,structured_input,input.profile.energy_attitudes.reported_electricity_reduction_effort,metadata.profile_provenance.raw_answers.REDUCING_CONSUMPTION_CD,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,AIRCON_TYPE_CD,2078,1648,structured_input,input.profile.appliances[air_conditioner].type_raw,metadata.profile_provenance.raw_answers.AIRCON_TYPE_CD,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,NUM_REFRIGERATORS,2078,2078,structured_input,input.profile.appliances[refrigerator].count,metadata.profile_provenance.raw_answers.NUM_REFRIGERATORS,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,NUM_ROOMS_HEATED,2078,2078,structured_input,input.profile.dwelling.heated_room_count; input.profile.household.NUM_ROOMS_HEATED,metadata.profile_provenance.raw_answers.NUM_ROOMS_HEATED,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_GENERATION,2078,2078,structured_input,input.profile.meter_configuration.HAS_GENERATION,metadata.profile_provenance.raw_answers.HAS_GENERATION,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_INTERNET_ACCESS,2078,2078,structured_input,input.profile.energy_attitudes.internet_access,metadata.profile_provenance.raw_answers.HAS_INTERNET_ACCESS,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_GAS,2078,985,structured_input,input.profile.energy_systems.gas_available; input.profile.household.HAS_GAS,metadata.profile_provenance.raw_answers.HAS_GAS,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_GAS_HEATING,2078,985,structured_input,input.profile.energy_systems.gas_heating; input.profile.household.HAS_GAS_HEATING,metadata.profile_provenance.raw_answers.HAS_GAS_HEATING,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_GAS_HOT_WATER,2078,985,structured_input,input.profile.energy_systems.gas_hot_water; input.profile.household.HAS_GAS_HOT_WATER,metadata.profile_provenance.raw_answers.HAS_GAS_HOT_WATER,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_GAS_COOKING,2078,985,structured_input,input.profile.energy_systems.gas_cooking; input.profile.household.HAS_GAS_COOKING,metadata.profile_provenance.raw_answers.HAS_GAS_COOKING,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_POOLPUMP,2078,2078,structured_input,input.profile.appliances[pool_pump].present,metadata.profile_provenance.raw_answers.HAS_POOLPUMP,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_AIRCON,2078,2078,structured_input,input.profile.appliances[air_conditioner].present,metadata.profile_provenance.raw_answers.HAS_AIRCON,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_GAS_OTHER_APPLIANCE,2078,985,structured_input,input.profile.energy_systems.gas_other_appliance; input.profile.household.HAS_GAS_OTHER_APPLIANCE,metadata.profile_provenance.raw_answers.HAS_GAS_OTHER_APPLIANCE,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,IS_HOME_DURING_DAYTIME,2078,2078,structured_input,input.profile.household.IS_HOME_DURING_DAYTIME; input.profile.usage_habits.daytime_home,metadata.profile_provenance.raw_answers.IS_HOME_DURING_DAYTIME,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,HAS_AGREED_TO_SMS,2078,2078,structured_input,input.profile.preferences.agreed_to_sms_contact,metadata.profile_provenance.raw_answers.HAS_AGREED_TO_SMS,整理字段保留原含义；异常、未知、拒答按字段状态处理，原回答留作追溯。
+sgsc,SMART_METER_INSTALLATION_DATE,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.SMART_METER_INSTALLATION_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,LIFESTYLE_AUDIT_PERFORMED_DATE,2078,0,provenance_only,,metadata.profile_provenance.raw_answers.LIFESTYLE_AUDIT_PERFORMED_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,PROVISIONING_COMPLETE_DATE,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.PROVISIONING_COMPLETE_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,OFFER_WITHDRAWN_DATE,2078,0,provenance_only,,metadata.profile_provenance.raw_answers.OFFER_WITHDRAWN_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,ACCEPTANCE_WITHDRAWN_DATE,2078,0,provenance_only,,metadata.profile_provenance.raw_answers.ACCEPTANCE_WITHDRAWN_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,OPERATION_START_DATE,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.OPERATION_START_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,OPERATION_FINISH_DATE,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.OPERATION_FINISH_DATE,安装、调查、办理或退出日期用于时点审查；不直接作为住户使用习惯或预测特征。
+sgsc,AGREEMENT_EXIT_REASON,2078,2078,provenance_only,,metadata.profile_provenance.raw_answers.AGREEMENT_EXIT_REASON,退出试验的原因可能在活动后产生；只保留追溯。

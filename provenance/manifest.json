@@ -42,8 +42,8 @@
       "source_batch": "iflex_all_candidates_v1",
       "source_file_sha256": "9f2ebe59061d17a6c806cf91bbc4a18aef6d5337785512764f72eaf5769c901a",
       "file": "data/iflex.jsonl.gz",
-      "sha256": "a78f5011957559dec56d037a10673bcac6c3c86659fa5521da93b71f93c45746",
-      "bytes": 1623835,
+      "sha256": "0e8bab37917d329661219a181f6614f47893b95bfe7d866efb0509d8646557d1",
+      "bytes": 1633090,
       "evidence_groups": {
         "iflex_existing_candidate": 2071
       },
@@ -66,15 +66,15 @@
   "data_files": {
     "sgsc": {
       "file": "data/sgsc.jsonl.gz",
-      "sha256": "6c652d6dc770de802a1872347f2e5a00391c348afdaad65188a9b4bdd53e7e95",
-      "bytes": 30980540,
+      "sha256": "044c69c171aa8b5385dcbbf85550831dffacaa7b9daa748fa4eabaa2d133fed1",
+      "bytes": 31109438,
       "records": 16342,
       "households": 2078
     },
     "iflex": {
       "file": "data/iflex.jsonl.gz",
-      "sha256": "a78f5011957559dec56d037a10673bcac6c3c86659fa5521da93b71f93c45746",
-      "bytes": 1623835,
+      "sha256": "0e8bab37917d329661219a181f6614f47893b95bfe7d866efb0509d8646557d1",
+      "bytes": 1633090,
       "records": 2071,
       "households": 314
     }

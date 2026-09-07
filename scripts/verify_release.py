@@ -67,6 +67,10 @@ def main():
             assert prov['not_model_input'] is True
             assert len(answers)==(46 if source=='sgsc' else 96)
             if source=='iflex':
+                assert p['energy_systems']['solar_pv_present'] is False and answers['q17']=='No'
+                assert p['energy_systems']['farm_or_business_shares_meter'] is False and answers['q18']=='No'
+                assert p['energy_systems']['solar_pv_capacity_kw'] is None and answers['q17b.1']=='NA'
+                assert p['energy_systems']['battery_connected_to_pv'] is None and answers['q17c']=='NA'
                 assert p['people']['household_size']==int(answers['q19'].split()[0])
                 expected_ev=int(answers['q16.1']) if answers['q16.1'].isdigit() else None
                 assert p['vehicles']['electric_or_plugin_hybrid_count']==expected_ev
@@ -83,6 +87,7 @@ def main():
                     status_count=int(answers[f'q24.{i}'])
                     assert p['people']['life_status_counts'][name]==(None if status_count>p['people']['household_size'] else status_count)
             else:
+                assert p['preferences']['agreed_to_sms_contact']=={'Y':True,'N':False}.get(answers['HAS_AGREED_TO_SMS'])
                 assert p['people']['household_size'] is None
                 assert p['people']['gross_household_income_band'] is None
                 assert p['energy_attitudes']['reported_electricity_reduction_effort']==(answers['REDUCING_CONSUMPTION_CD'] or None)
@@ -107,6 +112,23 @@ def main():
                 assert len(target)==24
                 assert len(r['input']['context']['experimental_price_NOK_per_kwh'])==24
             row=summary_row(r)
+            assert p['usage_habits']['daytime_home_scope']=='weekday_daytime'
+            # Independently reconstruct the whole profile from the actual CSV;
+            # checking only CSV == summary_row would miss serializer omissions.
+            reconstructed={}
+            for group,value in p.items():
+                if group in ('people','dwelling','preferences','usage_habits','energy_attitudes','energy_systems','vehicles'):
+                    reconstructed[group]={}
+                    for k,v in value.items():
+                        cell=table[count]['profile_'+group+'_'+k]
+                        reconstructed[group][k]=json.loads(cell) if isinstance(v,(dict,list)) else (None if v is None and cell=='' else cell)
+                        if not isinstance(v,(dict,list)):
+                            assert cell==('' if v is None else str(v))
+                            reconstructed[group][k]=v
+                else:
+                    cell=table[count]['profile_'+group]
+                    reconstructed[group]=json.loads(cell) if isinstance(value,(dict,list)) else cell
+            assert reconstructed==p
             assert table[count]=={k:('' if v is None else str(v)) for k,v in row.items()}
             count+=1
             if args.pipeline_root:compare[r['sample_id']]=r

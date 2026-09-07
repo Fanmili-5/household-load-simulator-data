@@ -19,6 +19,7 @@
 - 了解一条当前记录：[SGSC 普通单表家庭](examples/sgsc_single_observation.json) · [SGSC 两表合计家庭](examples/sgsc_two_meter_observation.json) · [iFlex 家庭](examples/iflex_observation.json)。这些样例已同步到扩展画像版本。
 - 查看后续全天格式：[SGSC 全天样例](examples/sgsc_full_day_example.json) · [iFlex 全天样例](examples/iflex_full_day_example.json)。这是另行核验的两个格式示例，不额外计入上表。
 - 查字段：[字段说明](docs/FIELDS.md)。分析前请看 [比较方法与限制](docs/ANALYSIS.md)。
+- 查是否漏提取：[逐字段复核及修正](docs/EXTRACTION_AUDIT_20260908.md)。家庭表和活动表的 `profile_appliances` 均保留完整设备列表；SGSC 反馈技术的启用时间仍待核实。
 
 研究思路和相关论文在 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)；如果没有页面访问权限，仓库内的说明也足够读取这些数据。
 

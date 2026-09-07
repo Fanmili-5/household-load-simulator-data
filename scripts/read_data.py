@@ -63,7 +63,9 @@ def summary_row(r):
     }
     for category in ('refrigerator', 'air_conditioner', 'clothes_dryer', 'pool_pump',
                      'panel_heater', 'electric_underfloor_heating', 'heat_pump',
-                     'separate_electric_water_heater', 'electric_or_plugin_hybrid_car'):
+                     'separate_electric_water_heater', 'electric_or_plugin_hybrid_car',
+                     'geothermal_heating', 'fireplace_or_wood_stove',
+                     'oil_paraffin_gas_bio_heater', 'district_or_shared_heating', 'other_heating'):
         a = next((x for x in p['appliances'] if x['appliance'] == category), {})
         present = a.get('present')
         if a.get('count') is not None:
@@ -74,6 +76,11 @@ def summary_row(r):
     for group in ('people','dwelling','preferences','usage_habits','energy_attitudes','energy_systems','vehicles'):
         for key,value in p.get(group,{}).items():
             row['profile_'+group+'_'+key]=json.dumps(value,ensure_ascii=False,sort_keys=True) if isinstance(value,(dict,list)) else value
+    # Keep every remaining profile component, including the complete device list,
+    # in both event summaries and the profile_* household-table projection.
+    for key in ('appliances','household','meter_configuration','region','profile_schema_version'):
+        value=p.get(key)
+        row['profile_'+key]=json.dumps(value,ensure_ascii=False,sort_keys=True) if isinstance(value,(dict,list)) else value
     row['profile_quality_flags']=json.dumps(r['metadata'].get('profile_provenance',{}).get('quality_flags',[]))
     return row
 

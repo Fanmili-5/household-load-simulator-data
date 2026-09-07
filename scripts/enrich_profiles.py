@@ -99,10 +99,13 @@ def enrich(old_profile, raw, source):
         'shared_flat':g('dwelling.shared_flat','q6c',mode='bool'),
         'heated_room_count':g('dwelling.heated_room_count',sgsc='NUM_ROOMS_HEATED',mode='int'),
     }
-    p['preferences']={'living_room_comfort_temperature_celsius':g('preferences.living_room_comfort_temperature_celsius','q10',mode='float')}
+    p['preferences']={
+        'living_room_comfort_temperature_celsius':g('preferences.living_room_comfort_temperature_celsius','q10',mode='float'),
+        'agreed_to_sms_contact':g('preferences.agreed_to_sms_contact',sgsc='HAS_AGREED_TO_SMS',mode='bool'),
+    }
     p['usage_habits']={
         'daytime_home':g('usage_habits.daytime_home','q23','IS_HOME_DURING_DAYTIME',mode='bool'),
-        'daytime_home_scope':'weekday_daytime' if is_iflex else 'daytime_days_unspecified',
+        'daytime_home_scope':'weekday_daytime',
         'lower_temperature_in_less_used_rooms':g('usage_habits.lower_temperature_in_less_used_rooms','q11',mode='bool'),
         'reduce_temperature_at_night_or_away':g('usage_habits.reduce_temperature_at_night_or_away','q12',mode='bool'),
         'heating_control':g('usage_habits.heating_control','q13'),
@@ -124,6 +127,10 @@ def enrich(old_profile, raw, source):
         'renewable_electricity_contract':g('energy_systems.renewable_electricity_contract','q3',mode='bool'),
         'hot_water_arrangement':g('energy_systems.hot_water_arrangement','q14'),
         'ventilation_answers':a.multi([f'q15_{i}' for i in range(1,5)],'energy_systems.ventilation_answers') if is_iflex else None,
+        'solar_pv_present':g('energy_systems.solar_pv_present','q17',mode='bool'),
+        'solar_pv_capacity_kw':g('energy_systems.solar_pv_capacity_kw','q17b.1',mode='float'),
+        'battery_connected_to_pv':g('energy_systems.battery_connected_to_pv','q17c',mode='bool'),
+        'farm_or_business_shares_meter':g('energy_systems.farm_or_business_shares_meter','q18',mode='bool'),
     }
     for name,field in [('gas_available','HAS_GAS'),('gas_heating','HAS_GAS_HEATING'),('gas_hot_water','HAS_GAS_HOT_WATER'),('gas_cooking','HAS_GAS_COOKING'),('gas_other_appliance','HAS_GAS_OTHER_APPLIANCE')]:
         p['energy_systems'][name]=g('energy_systems.'+name,sgsc=field,mode='bool')

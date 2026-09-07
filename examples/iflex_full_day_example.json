@@ -131,7 +131,8 @@
         "heated_room_count": null
       },
       "preferences": {
-        "living_room_comfort_temperature_celsius": 24.0
+        "living_room_comfort_temperature_celsius": 24.0,
+        "agreed_to_sms_contact": null
       },
       "usage_habits": {
         "daytime_home": true,
@@ -159,6 +160,10 @@
         "ventilation_answers": [
           "What air ventilation system do you have in your home? Natural ventilation (ventilation via windows and air vents)"
         ],
+        "solar_pv_present": false,
+        "solar_pv_capacity_kw": null,
+        "battery_connected_to_pv": null,
+        "farm_or_business_shares_meter": false,
         "gas_available": null,
         "gas_heating": null,
         "gas_hot_water": null,
@@ -612,6 +617,7 @@
         "dwelling.shared_flat": "q6c",
         "dwelling.heated_room_count": null,
         "preferences.living_room_comfort_temperature_celsius": "q10",
+        "preferences.agreed_to_sms_contact": null,
         "usage_habits.daytime_home": "q23",
         "usage_habits.lower_temperature_in_less_used_rooms": "q11",
         "usage_habits.reduce_temperature_at_night_or_away": "q12",
@@ -643,6 +649,10 @@
         "energy_systems.ventilation_answers.q15_2": "q15_2",
         "energy_systems.ventilation_answers.q15_3": "q15_3",
         "energy_systems.ventilation_answers.q15_4": "q15_4",
+        "energy_systems.solar_pv_present": "q17",
+        "energy_systems.solar_pv_capacity_kw": "q17b.1",
+        "energy_systems.battery_connected_to_pv": "q17c",
+        "energy_systems.farm_or_business_shares_meter": "q18",
         "energy_systems.gas_available": null,
         "energy_systems.gas_heating": null,
         "energy_systems.gas_hot_water": null,
@@ -685,6 +695,7 @@
         "dwelling.shared_flat": "source_missing_or_not_applicable",
         "dwelling.heated_room_count": "not_collected_in_this_source",
         "preferences.living_room_comfort_temperature_celsius": "source_answer",
+        "preferences.agreed_to_sms_contact": "not_collected_in_this_source",
         "usage_habits.daytime_home": "source_answer",
         "usage_habits.lower_temperature_in_less_used_rooms": "source_answer",
         "usage_habits.reduce_temperature_at_night_or_away": "source_answer",
@@ -716,6 +727,10 @@
         "energy_systems.ventilation_answers.q15_2": "source_placeholder",
         "energy_systems.ventilation_answers.q15_3": "source_placeholder",
         "energy_systems.ventilation_answers.q15_4": "source_placeholder",
+        "energy_systems.solar_pv_present": "source_answer",
+        "energy_systems.solar_pv_capacity_kw": "source_missing_or_not_applicable",
+        "energy_systems.battery_connected_to_pv": "source_missing_or_not_applicable",
+        "energy_systems.farm_or_business_shares_meter": "source_answer",
         "energy_systems.gas_available": "not_collected_in_this_source",
         "energy_systems.gas_heating": "not_collected_in_this_source",
         "energy_systems.gas_hot_water": "not_collected_in_this_source",
