@@ -1,5 +1,7 @@
 # 家庭负荷模拟模型数据：SGSC / iFlex
 
+当前文件是用于审阅的候选观测。按“以真实家庭为基础构造多电器模拟器训练样本”的用途复查后，发现设备画像尚不充分：iFlex 原问卷中部分数量、偏好和控制习惯没有导出，SGSC 也只覆盖部分设备。详见 [设备画像审查](docs/PROFILE_AUDIT.md)。文件传输和数值核验通过，不代表完整家庭 baseline 已构造完成。
+
 这里整理了用于家庭负荷模拟模型研究的家庭用电观测，供分析家庭特征、设备、活动安排与负荷之间的关系，并为后续 SFT 样本构造做准备。模型的目标是根据家庭资料、历史用电和活动条件预测负荷；数据的使用不限定于某个调度系统。每条记录都包含同一户的家庭资料、此前七天的用电、活动条件和实测电量。
 
 | 数据 | 家庭数 | 记录数 | 当前答案覆盖范围 | 时间粒度 |
@@ -13,7 +15,7 @@
 
 - 直接看表：[SGSC 汇总表](tables/sgsc_events.csv) · [iFlex 汇总表](tables/iflex_events.csv)。每行对应一户的一次活动，包含家庭特征、设备信息、活动日期、时长及实测电量统计。空白表示未知或不适用。
 - 下载完整曲线：[SGSC](data/sgsc.jsonl.gz) · [iFlex](data/iflex.jsonl.gz)。点击文件页的 Download raw file，或直接克隆仓库。Gzip 只压缩文件，历史及答案序列均完整保留。
-- 了解一条记录：[SGSC 普通单表家庭](examples/sgsc_single_observation.json) · [SGSC 两表合计家庭](examples/sgsc_two_meter_observation.json) · [iFlex 家庭](examples/iflex_observation.json)。
+- 了解一条当前记录：[SGSC 普通单表家庭](examples/sgsc_single_observation.json) · [SGSC 两表合计家庭](examples/sgsc_two_meter_observation.json) · [iFlex 家庭](examples/iflex_observation.json)。这些样例尚未补入本次画像审查发现的遗漏字段。
 - 查看后续全天格式：[SGSC 全天样例](examples/sgsc_full_day_example.json) · [iFlex 全天样例](examples/iflex_full_day_example.json)。这是另行核验的两个格式示例，不额外计入上表。
 - 查字段：[字段说明](docs/FIELDS.md)。分析前请看 [比较方法与限制](docs/ANALYSIS.md)。
 
