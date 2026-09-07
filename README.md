@@ -1,6 +1,6 @@
-# 家庭用电与活动条件：SGSC / iFlex 数据
+# 家庭负荷模拟模型数据：SGSC / iFlex
 
-这里整理了 EnergyBridge 研究中保留的家庭用电观测，供讨论家庭特征、设备、活动安排与负荷之间的关系。每条记录都包含同一户的家庭资料、此前七天的用电、活动条件和实测电量。
+这里整理了用于家庭负荷模拟模型研究的家庭用电观测，供分析家庭特征、设备、活动安排与负荷之间的关系，并为后续 SFT 样本构造做准备。模型的目标是根据家庭资料、历史用电和活动条件预测负荷；数据的使用不限定于某个调度系统。每条记录都包含同一户的家庭资料、此前七天的用电、活动条件和实测电量。
 
 | 数据 | 家庭数 | 记录数 | 当前答案覆盖范围 | 时间粒度 |
 |---|---:|---:|---|---|
@@ -24,8 +24,8 @@
 Python 3.10 及以上即可运行，不需要安装额外依赖：
 
 ```bash
-git clone https://github.com/Fanmili-5/energybridge-load-data.git
-cd energybridge-load-data
+git clone https://github.com/Fanmili-5/household-load-simulator-data.git
+cd household-load-simulator-data
 python3 scripts/verify_release.py
 python3 scripts/read_data.py
 ```
