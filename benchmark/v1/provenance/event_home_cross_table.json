@@ -1,0 +1,26 @@
+[
+  {
+    "source": "iflex",
+    "event_type": "experimental_price_for_reward_calculation",
+    "daytime_home": "False",
+    "samples": 1088
+  },
+  {
+    "source": "iflex",
+    "event_type": "experimental_price_for_reward_calculation",
+    "daytime_home": "True",
+    "samples": 983
+  },
+  {
+    "source": "sgsc",
+    "event_type": "peak_price_penalty",
+    "daytime_home": "True",
+    "samples": 7350
+  },
+  {
+    "source": "sgsc",
+    "event_type": "reduction_reward",
+    "daytime_home": "False",
+    "samples": 8896
+  }
+]

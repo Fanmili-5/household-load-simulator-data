@@ -1,0 +1,200 @@
+[
+  {
+    "profile_id": "iflex:Exp_5",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_240",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_29",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_53",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_285",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_286",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_315",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_94",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_102",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_123",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_125",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_365",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_133",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_374",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_388",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_391",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_397",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_161",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_194",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_202",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_207",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  },
+  {
+    "profile_id": "iflex:Exp_217",
+    "fields": [
+      "household.car_count",
+      "appliances.electric_or_plugin_hybrid_vehicle",
+      "vehicle_details"
+    ],
+    "basis": "q16_bil=No and no conflicting vehicle-branch answers"
+  }
+]

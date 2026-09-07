@@ -1,0 +1,172 @@
+{
+  "schema_version": "household-benchmark/1.0.0",
+  "status": "retrospective_benchmark_data_and_evaluator",
+  "counts": {
+    "sgsc": 16246,
+    "iflex": 2071
+  },
+  "quarantined_counts": {
+    "sgsc": 84,
+    "iflex": 0
+  },
+  "households_with_retained_days": {
+    "sgsc": 2076,
+    "iflex": 314
+  },
+  "profile_counts": {
+    "sgsc": 2078,
+    "iflex": 314
+  },
+  "target_dates": {
+    "sgsc": [
+      "2013-01-17",
+      "2013-01-25",
+      "2013-02-08",
+      "2013-02-26",
+      "2013-03-07",
+      "2013-03-13",
+      "2013-03-22",
+      "2013-03-28",
+      "2013-07-24",
+      "2013-08-02",
+      "2013-08-08",
+      "2013-08-22",
+      "2013-11-28",
+      "2013-12-04",
+      "2013-12-09",
+      "2013-12-10",
+      "2014-01-16",
+      "2014-01-29",
+      "2014-01-30",
+      "2014-01-31",
+      "2014-02-13"
+    ],
+    "iflex": [
+      "2020-02-11",
+      "2020-02-12",
+      "2020-02-13",
+      "2020-02-14",
+      "2020-02-19",
+      "2020-02-27",
+      "2020-03-02",
+      "2020-03-03",
+      "2020-03-04",
+      "2020-03-05",
+      "2020-03-09"
+    ]
+  },
+  "quality_flag_counts": {
+    "zero_target_day": 41,
+    "zero_entire_eight_day_window": 21,
+    "continuous_zero_at_least_24_hours": 84,
+    "near_zero_day_up_to_0_01_kwh_review_flag": 21
+  },
+  "corrected_profiles": 22,
+  "strict_prospective_eligible_rows": 0,
+  "parent_manifest_sha256": "f645abae4bed2a4eec8b305864032ee6d34059464a9ef5d176b5a5a9ee2fde8e",
+  "source_evidence_sha256": {
+    "input_evidence.json": "a110faa694e743cae81bb1d95dcb131a010b0e7c210e8191f0afe2e5b56539a8",
+    "zero_review.json": "e57d806bf992b74f84c203153e0465e19ab1a8ed63497b7f3f37d108bc707d73"
+  },
+  "training_executed": false,
+  "imputation_performed": false,
+  "implementation_files": {
+    "audit_benchmark_zeros.py": "cf3911319ad6b6971be89fc65304742c3b5e8692293708e664e3cc4d45711c9b",
+    "benchmark_io.py": "b8f13a7a51d894c7f7475de191dba44fd29c9b61711f5d721212a31d282b41de",
+    "benchmark_profile.py": "cf85eb85bb42701c227c68b7aa1a2894b08de0dc215c1a6baeacaf8e4137c2e2",
+    "benchmark_quality.py": "b4a461c98d5522eb997a60b70aa6b478ec622a73ac8c41317e185a3f83700a3d",
+    "build_benchmark.py": "632b1b4f8e083344d83bd53e88a736976b063a5bf8479ff7c02aee69f1cb6d48",
+    "evaluate_benchmark.py": "b95e5bfcc35e712526e63b58b7015601ff53256e70dc83521c743016b07721ee",
+    "verify_benchmark.py": "2db5806b3e1aee1eba65e7dd000863ca7ed2198948c1a1ab5f7f05069e95046e"
+  },
+  "artifacts": {
+    "data/iflex.jsonl.gz": {
+      "sha256": "1ea1c01a8fd3ce471b282ce7c1317ed26d2dc05cc85e982777975be2b2acdab5",
+      "bytes": 872813
+    },
+    "data/sgsc.jsonl.gz": {
+      "sha256": "dc09a822f90a8e79f0688063d0a864a30045756f8f5173200f97f6f3c708723b",
+      "bytes": 12831697
+    },
+    "evaluation/protocol.json": {
+      "sha256": "866d5bdcb3fe8b39509709f793494ec45cdd9301c11347e42d8bb8bb49989d71",
+      "bytes": 2307
+    },
+    "examples/iflex.json": {
+      "sha256": "eb2454a470de90aeecde8a4750f12bd112ddb80fb27fcec2d25e1dd126368cf7",
+      "bytes": 16097
+    },
+    "examples/sgsc.json": {
+      "sha256": "e17e0921471bad622cb8fcef7544285f5ca6d008a4bad0c0a6d4ff7efc5bb9b9",
+      "bytes": 17192
+    },
+    "profiles/iflex.jsonl.gz": {
+      "sha256": "08b03c6bcf1581ee3a5cd6d49f79044e858bec6086e2d6751a16a733197a7d44",
+      "bytes": 1332413
+    },
+    "profiles/sgsc.jsonl.gz": {
+      "sha256": "998ebb20530c59263f9a4440e9569bdfa03b6ab95d5d348337df292ec425e11f",
+      "bytes": 6174656
+    },
+    "provenance/event_home_cross_table.json": {
+      "sha256": "c918abf1a0909e79bca7421ad164050618e9ea467fd27f3daa2fa2812029d3f2",
+      "bytes": 526
+    },
+    "provenance/input_evidence.json": {
+      "sha256": "a110faa694e743cae81bb1d95dcb131a010b0e7c210e8191f0afe2e5b56539a8",
+      "bytes": 7483
+    },
+    "provenance/profile_corrections.json": {
+      "sha256": "d5da27edf1ab4f093ee09c7250b9f5e57984573b882e693c40fa1666363c2ef6",
+      "bytes": 5322
+    },
+    "provenance/profile_field_coverage.csv": {
+      "sha256": "d9b08820e22c73ef88db15a415a39c2079ea191902c7ae308a68c3c2949cddf2",
+      "bytes": 31171
+    },
+    "provenance/quality_flags.json": {
+      "sha256": "a057aed5dba3467074d8b04017259013dc5381bbfb056b34521c79024fcf461d",
+      "bytes": 36022
+    },
+    "provenance/source_field_mapping.csv": {
+      "sha256": "cc56703dddc4142005a0ab60f5df4fb00db5545f9f9ef4aeb7af3911bfcc9a05",
+      "bytes": 22370
+    },
+    "provenance/zero_review.json": {
+      "sha256": "e57d806bf992b74f84c203153e0465e19ab1a8ed63497b7f3f37d108bc707d73",
+      "bytes": 132123
+    },
+    "quarantine/iflex.jsonl.gz": {
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20
+    },
+    "quarantine/index.csv": {
+      "sha256": "425f5121c3493aa671fc88604754fb27d8c2d93f02ee3c95cf122ec6e04a8939",
+      "bytes": 7149
+    },
+    "quarantine/sgsc.jsonl.gz": {
+      "sha256": "4819d5cb9789beddfc6be8df23d5f92249478a2423cbabd577b36f54bd462f25",
+      "bytes": 26653
+    },
+    "schema/appliance_catalog.json": {
+      "sha256": "8e1a7af83d321d0b2c9404b92770b31281f884a7ef847cf5c11f75457bf1f803",
+      "bytes": 677
+    },
+    "schema/category_values.json": {
+      "sha256": "8e7f62fb3cd1aa88b329d262e03b13279d4a688db9863067c045ffca867e580c",
+      "bytes": 10749
+    },
+    "schema/profile.schema.json": {
+      "sha256": "1ccb1b709450a0ffda8360fe5a2728204a077aed41429ac9be5bd7deb06460e5",
+      "bytes": 27620
+    },
+    "schema/sample.schema.json": {
+      "sha256": "c9663d332b66f571bb628187224d7ad0e76ad6e7eddd04392c070c84ff230506",
+      "bytes": 42859
+    },
+    "splits/household_holdout.csv": {
+      "sha256": "be28b8764ea4f7e14d4e7ad2f1f3cad85f0a22f1b69bbb99c663a3edf26c519c",
+      "bytes": 921207
+    }
+  }
+}

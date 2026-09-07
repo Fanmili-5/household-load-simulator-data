@@ -1,0 +1,193 @@
+{
+  "iflex": {
+    "profile_timing": {
+      "level": "protocol_supported",
+      "rule": "Survey 1 completed in recruitment before participation; individual completion timestamps unavailable",
+      "source": "https://doi.org/10.1016/j.dib.2023.109571",
+      "sections": [
+        "3.4",
+        "4.1",
+        "4.9"
+      ]
+    },
+    "event_notice": {
+      "level": "protocol_supported",
+      "rule": "Phase 1 dispatch at 15:00 the previous day; individual receipt and reading unavailable",
+      "section": "4.5"
+    },
+    "rate": {
+      "level": "source_household_day_signal",
+      "meaning": "experimental reward calculation signal, not retail tariff"
+    },
+    "source_receipts": [
+      {
+        "file": "Hofmann_Siebenbrunner_2023_iFlex.pdf",
+        "sha256": "b875cfc96a67a850c1756b3931f461a2f4f735d5fdd572c1e074603e9dd1d528"
+      },
+      {
+        "file": "survey1_questions.csv",
+        "sha256": "7c353bdbdcc3fbc570e492476e1a80c36a56c0c43f907cf6153cf3f1ac426f70"
+      }
+    ]
+  },
+  "sgsc": {
+    "profile_timing": {
+      "level": "unverified",
+      "rule": "Installation, provisioning and product dates do not establish when each questionnaire field was acquired"
+    },
+    "event_notice": {
+      "level": "protocol_supported",
+      "rule": "Trial report describes dispatch 24 hours before event; individual receipt unavailable",
+      "source": "https://opus.lib.uts.edu.au/handle/10453/32531"
+    },
+    "rate": {
+      "level": "unverified_household_contract",
+      "rule": "No numeric contract rate or revision schedule in the checked household, offer and event tables. Do not reverse engineer rates from post-event rebates. Reported program rates are not filled into individual samples."
+    },
+    "checked_table_headers": {
+      "sgsc-ct-customer-household-data-revised.csv": [
+        "CUSTOMER_KEY",
+        "TRIAL_CUSTOMER_TYPE",
+        "CONTROL_GROUP_FLAG",
+        "TARIFF_PRODUCT_CD",
+        "FEEDBACK_TECH1_PRODUCT_CD",
+        "FEEDBACK_TECH2_PRODUCT_CD",
+        "LIFESTYLE_AUDIT_PRODUCT_CD",
+        "INFERRED_CELL",
+        "VERIFIED_CELL",
+        "SERVICE_TYPE",
+        "GENERAL_SUPPLY_CNT",
+        "CONTROLLED_LOAD_CNT",
+        "NET_SOLAR_CNT",
+        "GROSS_SOLAR_CNT",
+        "OTHER_LOAD_CNT",
+        "SERVICE_LOC_STATUS_NAME",
+        "ASSRTD_CLIMATE_ZONE_CD",
+        "ASSRTD_CLIMATE_ZONE_DESC",
+        "ASSRTD_DWELLING_TYPE_CD",
+        "ASSRTD_GAS_USAGE_GROUP_CD",
+        "ASSRTD_ELECTRICITY_USE_GRP_CD",
+        "DWELLING_TYPE_CD",
+        "DRYER_USAGE_CD",
+        "REDUCING_CONSUMPTION_CD",
+        "AIRCON_TYPE_CD",
+        "NUM_REFRIGERATORS",
+        "NUM_ROOMS_HEATED",
+        "HAS_GENERATION",
+        "HAS_INTERNET_ACCESS",
+        "HAS_GAS",
+        "HAS_GAS_HEATING",
+        "HAS_GAS_HOT_WATER",
+        "HAS_GAS_COOKING",
+        "HAS_POOLPUMP",
+        "HAS_AIRCON",
+        "HAS_GAS_OTHER_APPLIANCE",
+        "IS_HOME_DURING_DAYTIME",
+        "HAS_AGREED_TO_SMS",
+        "SMART_METER_INSTALLATION_DATE",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE",
+        "PROVISIONING_COMPLETE_DATE",
+        "OFFER_WITHDRAWN_DATE",
+        "ACCEPTANCE_WITHDRAWN_DATE",
+        "OPERATION_START_DATE",
+        "OPERATION_FINISH_DATE",
+        "AGREEMENT_EXIT_REASON"
+      ],
+      "sgsc-ct-offers-and-acceptances.csv": [
+        "CUSTOMER_KEY",
+        "CAMPAIGN_CODE",
+        "STRATEGY_DESC",
+        "CAMPAIGN_CHANNEL",
+        "CUSTOMER_CONTACTED_CNT",
+        "CONTACT_DATE",
+        "OFFER_SEQ_NO",
+        "PRODUCT_CODE",
+        "FEEDBACK_TECHNOLOGY_CODE",
+        "FEEDBACK_TECHNOLOGY2_CODE",
+        "LIFESTYLE_AUDIT_PRODUCT_CODE",
+        "CUSTOMER_ACCEPTED_CNT",
+        "CUST_WITHDREW_ACCEPTANCE_CNT",
+        "OFFER_WITHDRAWN_CNT",
+        "REJECT_REASON",
+        "PRIMARY_OFFER_REJECT_REASON",
+        "OFFER_STATUS",
+        "PROVISIONING_COMPLETE_DATE",
+        "OFFER_WITHDRAWN_DATE",
+        "ACCEPTANCE_WITHDRAWN_DATE",
+        "OPERATION_START_DATE",
+        "OPERATION_FINISH_DATE",
+        "AGREEMENT_EXIT_REASON"
+      ],
+      "sgsc-ct-peak-events.csv": [
+        "EVENT_KEY",
+        "PEAK_EVENT_TYPE",
+        "EVENT_DATE",
+        "START_TIMESTAMP",
+        "END_TIMESTAMP",
+        "HALF_HOUR_START_CD",
+        "HALF_HOUR_END_CD"
+      ]
+    },
+    "source_receipts": [
+      {
+        "file": "sgsc-ct-customer-household-data-revised.csv",
+        "sha256": "21c1fd83d25ce78bd244d2cb55b95796f78a0e02ed9a5fb2d13c57d640cf321f"
+      },
+      {
+        "file": "sgsc-ct-offers-and-acceptances.csv",
+        "sha256": "d4b71d827b9ab3fdedb56074e5b4e8dc22fd22c07138d88adcaeb604a1658ea4"
+      },
+      {
+        "file": "sgsc-ct-peak-events.csv",
+        "sha256": "20a3e738004695c5cba605e72d5ccb9f45dc1b0f63f58f88d33520e95141b148"
+      },
+      {
+        "file": "_data_dictionary_full.tsv",
+        "sha256": "4608681fdc3ca0618cf7b68030162d93d4870d307c2cf95e97bf6e1a160c8390"
+      },
+      {
+        "file": "customer_report.txt",
+        "sha256": "f44cf97a6929115d6dac800611fbf7f02f99f7d8525812cf3e201b6dfdc1815c"
+      }
+    ]
+  },
+  "reported_program_rates": [
+    {
+      "id": "antonopoulos_2021_section_3_2",
+      "title": "Data-driven modelling of energy demand response behaviour based on a large-scale residential trial",
+      "doi": "10.1016/j.egyai.2021.100071",
+      "url": "https://researchportal.hw.ac.uk/files/45179808/1_s2.0_S2666546821000252_main.pdf",
+      "pdf_page": 7,
+      "section": "3.2",
+      "reported_fact": "DPR offers a constant AUD 4.5 per kWh reduction relative to a baseline.",
+      "status": "local_full_text_read_research_paper_reported_rule",
+      "limit": "Not a household contract audit; do not treat the baseline or the reported rate as independently verified event-level truth. Tax basis unknown."
+    },
+    {
+      "id": "energeia_2014_section_4_1_5",
+      "title": "Assessment of Future Tariff Scenarios for South Australia, July 2014",
+      "url": "https://www.aer.gov.au/system/files/SAPN%20-%205.3%20PUBLIC%20-%20Energeia%20Assessment%20of%20Future%20Tariff%20Scenarios%20for%20South%20Australia%20July%202014.pdf",
+      "pdf_page": 19,
+      "printed_page": 18,
+      "section": "4.1.5",
+      "reported_fact": "Cites SGSC PriceSmart dynamic peak price AUD 3.30/kWh including GST and 24-hour advance notification.",
+      "status": "web_pdf_text_read_local_download_failed_http2_then_timeout",
+      "limit": "External tariff modelling report cites SGSC. Its subsequent South Australia scenario tariffs are NOT the SGSC household tariff schedule. Original PriceSmart contract and revisions not obtained."
+    },
+    {
+      "id": "uts_2014_notice_protocol",
+      "title": "Smart Grid Smart City Customer Research Report, June 2014",
+      "url": "https://opus.lib.uts.edu.au/handle/10453/32531",
+      "printed_page": 63,
+      "section": "4.1.3",
+      "reported_fact": "The trial operator notified peak-event customers 24 hours in advance.",
+      "status": "local_full_text_read",
+      "limit": "Protocol, not per-household SMS receipt log. No exact notification timestamp is filled."
+    }
+  ],
+  "track_rules": {
+    "retrospective": "Observed household-day conditional reconstruction; acquisition time unresolved is disclosed, not certified forecast-time availability",
+    "strict_prospective": "Requires individual input acquisition and notice-time evidence; currently zero eligible rows",
+    "numeric_incentive": "Only source-grounded numeric signals qualify; SGSC remains in type/time conditional track"
+  }
+}

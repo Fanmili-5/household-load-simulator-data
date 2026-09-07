@@ -1,0 +1,41 @@
+{
+  "version": "household-benchmark/1.0.0",
+  "task": "retrospective_conditional_household_day_prediction",
+  "horizon": "seven preceding source-clock days to one full source-clock day",
+  "split": "preserve baseline-v1 household assignments; remove quarantined rows without rerandomization",
+  "generalization": "unseen households; dates overlap; not unseen-event or cross-country transfer",
+  "eligible_track": "retrospective_conditional",
+  "strict_prospective_eligible_rows": 0,
+  "quality_rule": "quarantine continuous exact-zero runs >=24h anywhere in 8-day window; near-zero daily sum in (0,0.01] kWh is flagged only",
+  "selection_limit": "Target-dependent screening conditions evaluation on screened windows; not a deployment-time filter or population estimate. Quarantine is retained for future adjudication.",
+  "input_variants": [
+    "history_only",
+    "history_profile",
+    "history_context",
+    "full",
+    "full_without_daytime_home"
+  ],
+  "variant_rule": "Use identical membership, splits, tokenizer and training budget across variants; history_only retains target clock and measurement scope for interpretation",
+  "primary_metric": "hourly_mae_kw",
+  "secondary_metrics": [
+    "hourly_rmse_kw",
+    "daily_energy_absolute_error_kwh",
+    "hourly_peak_absolute_error_kw",
+    "event_energy_absolute_error_kwh"
+  ],
+  "resolution": "SGSC adjacent half-hour kWh values are summed for scoring at 1h; iFlex unchanged. Raw training targets retain native resolution.",
+  "aggregation": "within-household mean of sample metrics, then equal-household mean within each source; pooled summary is equal-source mean",
+  "stratification": [
+    "source",
+    "source_and_event_type"
+  ],
+  "invalid_predictions": "reject run on duplicate/missing/extra IDs, wrong lengths, booleans, nonnumeric, nonfinite or negative values; never drop failed rows",
+  "tuning": "fit preprocessing and model on train only; choose settings on validation; freeze before test; report model/version/input variant/seeds",
+  "claim_limits": [
+    "no causal effect from observed load alone",
+    "no observed consent labels",
+    "SGSC daytime-home effect is not identifiable separately from event type",
+    "numeric incentive analysis limited to source-grounded iFlex signals"
+  ],
+  "model_training_executed": false
+}

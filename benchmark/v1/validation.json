@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "schema_version": "household-benchmark/1.0.0",
+  "counts": {
+    "sgsc/data": 16246,
+    "sgsc/quarantine": 84,
+    "iflex/data": 2071
+  },
+  "corrected_profiles": 22,
+  "corrected_retained_samples": 149,
+  "reference_json_schema": true,
+  "checks": [
+    "artifact integrity",
+    "all observed histories, contexts and targets unchanged",
+    "only explicit no-car branches corrected",
+    "independent continuous-zero screening",
+    "retained plus quarantine equals parent membership",
+    "household split preserved",
+    "coverage recomputed",
+    "all five input variants round-trip",
+    "prospective gate closed; protocol does not imply receipt"
+  ],
+  "training_executed": false,
+  "reproducibility": {
+    "passed": true,
+    "byte_identical_artifacts": 22,
+    "manifest_identical": true,
+    "public_inputs_sufficient": true
+  },
+  "regression_tests": {
+    "passed": true,
+    "tests": 19
+  },
+  "evaluator_checks": {
+    "test_rows": 2727,
+    "identity_all_errors_zero": true,
+    "uniform_plus_1_kw_expected_errors": true,
+    "incomplete_submission_rejected": true,
+    "model_training": false
+  },
+  "sft_export_check": {
+    "train_records": 12881,
+    "variant": "full",
+    "track": "retrospective_conditional",
+    "training_executed": false
+  }
+}

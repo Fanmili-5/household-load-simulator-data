@@ -1,0 +1,396 @@
+{
+  "appliances.air_conditioner.subtype": [
+    "ducted",
+    "other",
+    "split_system"
+  ],
+  "appliances.air_conditioner.type": [
+    "air_conditioner"
+  ],
+  "appliances.battery_storage.type": [
+    "battery_storage"
+  ],
+  "appliances.clothes_dryer.type": [
+    "clothes_dryer"
+  ],
+  "appliances.dishwasher.type": [
+    "dishwasher"
+  ],
+  "appliances.electric_cooking_appliance.type": [
+    "electric_cooking_appliance"
+  ],
+  "appliances.electric_or_plugin_hybrid_vehicle.type": [
+    "electric_or_plugin_hybrid_vehicle"
+  ],
+  "appliances.electric_underfloor_heating.type": [
+    "electric_underfloor_heating"
+  ],
+  "appliances.electric_water_heater.subtype": [
+    "separate"
+  ],
+  "appliances.electric_water_heater.type": [
+    "electric_water_heater"
+  ],
+  "appliances.fireplace_or_wood_stove.type": [
+    "fireplace_or_wood_stove"
+  ],
+  "appliances.freezer.type": [
+    "freezer"
+  ],
+  "appliances.fuel_heater.type": [
+    "fuel_heater"
+  ],
+  "appliances.heat_pump.type": [
+    "heat_pump"
+  ],
+  "appliances.lighting.type": [
+    "lighting"
+  ],
+  "appliances.mechanical_ventilation.type": [
+    "mechanical_ventilation"
+  ],
+  "appliances.panel_heater.type": [
+    "panel_heater"
+  ],
+  "appliances.pool_pump.type": [
+    "pool_pump"
+  ],
+  "appliances.refrigerator.type": [
+    "refrigerator"
+  ],
+  "appliances.solar_pv.type": [
+    "solar_pv"
+  ],
+  "appliances.television.type": [
+    "television"
+  ],
+  "appliances.washing_machine.type": [
+    "washing_machine"
+  ],
+  "dwelling.climate_zone": [
+    "mild_temperate",
+    "warm_temperate"
+  ],
+  "dwelling.source_classified_type": [
+    "apartment",
+    "not_apartment"
+  ],
+  "dwelling.type": [
+    "apartment",
+    "detached_house",
+    "other",
+    "semi_detached_house",
+    "terraced_or_linked_housing"
+  ],
+  "energy_services.hot_water.technology": [
+    "heat_pump",
+    "other",
+    "separate_electric_water_heater",
+    "shared_water_heater_or_district_heating"
+  ],
+  "energy_services.space_heating.options.1.device_type_ref": [
+    "panel_heater"
+  ],
+  "energy_services.space_heating.options.1.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.1.technology": [
+    "electric_panel"
+  ],
+  "energy_services.space_heating.options.2.device_type_ref": [
+    "electric_underfloor_heating"
+  ],
+  "energy_services.space_heating.options.2.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.2.technology": [
+    "electric_underfloor"
+  ],
+  "energy_services.space_heating.options.3.device_type_ref": [
+    "heat_pump"
+  ],
+  "energy_services.space_heating.options.3.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.3.technology": [
+    "heat_pump"
+  ],
+  "energy_services.space_heating.options.4.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.4.technology": [
+    "geothermal"
+  ],
+  "energy_services.space_heating.options.5.device_type_ref": [
+    "fireplace_or_wood_stove"
+  ],
+  "energy_services.space_heating.options.5.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.5.technology": [
+    "wood_fire"
+  ],
+  "energy_services.space_heating.options.6.device_type_ref": [
+    "fuel_heater"
+  ],
+  "energy_services.space_heating.options.6.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.6.technology": [
+    "oil_paraffin_gas_or_bio"
+  ],
+  "energy_services.space_heating.options.7.role": [
+    "additional",
+    "main",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.7.technology": [
+    "district_or_shared"
+  ],
+  "energy_services.space_heating.options.8.role": [
+    "additional",
+    "not_used"
+  ],
+  "energy_services.space_heating.options.8.technology": [
+    "other"
+  ],
+  "energy_services.supply.electricity_contract": [
+    "fixed_price",
+    "hourly_spot",
+    "other",
+    "variable_price"
+  ],
+  "energy_services.ventilation.technologies": [
+    "balanced_heat_recovery_ventilation",
+    "manual_mechanical_ventilation",
+    "natural_ventilation"
+  ],
+  "household.composition": [
+    "couple_with_large_children_youngest_child_6_17_years",
+    "couple_with_small_child_youngest_child_0_5_years",
+    "couple_without_children_living_at_home",
+    "living_alone",
+    "mother_father_with_large_children_youngest_child_6_17_years",
+    "mother_father_with_small_children_youngest_child_0_5_years",
+    "multi_family_household_with_large_children_youngest_child_6_17_years",
+    "multi_family_household_with_small_children_youngest_child_0_5_years",
+    "multi_family_household_without_children_0_17_years",
+    "other",
+    "single_family_households_with_adult_children_youngest_child_18_years_or_older"
+  ],
+  "household.gross_income_band.currency": [
+    "NOK"
+  ],
+  "household.highest_household_education": [
+    "primary",
+    "secondary",
+    "university_higher_degree",
+    "university_undergraduate"
+  ],
+  "household.respondent_sex": [
+    "man",
+    "woman"
+  ],
+  "preferences.price_information_channels": [
+    "app_e_g_electricity_supplier_or_others",
+    "electricity_bill",
+    "media_news",
+    "other",
+    "website_e_g_electricity_supplier_or_others"
+  ],
+  "preferences.reported_electricity_reduction_effort": [
+    "high",
+    "low",
+    "medium",
+    "none"
+  ],
+  "preferences.use_information_channels": [
+    "app_e_g_electricity_supplier_or_others",
+    "electricity_bill",
+    "other",
+    "website_e_g_electricity_supplier_or_others"
+  ],
+  "usage_habits.clothes_dryer:reported_use_level.behavior": [
+    "reported_use_level"
+  ],
+  "usage_habits.clothes_dryer:reported_use_level.subject_id": [
+    "clothes_dryer"
+  ],
+  "usage_habits.clothes_dryer:reported_use_level.subject_type": [
+    "appliance_category"
+  ],
+  "usage_habits.clothes_dryer:reported_use_level.time_scope": [
+    "usual"
+  ],
+  "usage_habits.clothes_dryer:reported_use_level.value": [
+    "high",
+    "low",
+    "medium",
+    "none"
+  ],
+  "usage_habits.fireplace_or_wood_stove:reported_use_conditions.behavior": [
+    "reported_use_conditions"
+  ],
+  "usage_habits.fireplace_or_wood_stove:reported_use_conditions.subject_id": [
+    "fireplace_or_wood_stove"
+  ],
+  "usage_habits.fireplace_or_wood_stove:reported_use_conditions.subject_type": [
+    "appliance_category"
+  ],
+  "usage_habits.fireplace_or_wood_stove:reported_use_conditions.time_scope": [
+    "usual"
+  ],
+  "usage_habits.fireplace_or_wood_stove:reported_use_conditions.value": [
+    "almost_every_day_in_winter",
+    "only_on_the_coldest_days",
+    "sometimes_mostly_for_having_it_cosy",
+    "weekly_in_winter"
+  ],
+  "usage_habits.hot_water:control_mode.behavior": [
+    "control_mode"
+  ],
+  "usage_habits.hot_water:control_mode.subject_id": [
+    "hot_water"
+  ],
+  "usage_habits.hot_water:control_mode.subject_type": [
+    "energy_service"
+  ],
+  "usage_habits.hot_water:control_mode.time_scope": [
+    "usual"
+  ],
+  "usage_habits.hot_water:control_mode.value": [
+    "manual",
+    "none",
+    "time_scheduled"
+  ],
+  "usage_habits.self:someone_home.behavior": [
+    "someone_home"
+  ],
+  "usage_habits.self:someone_home.subject_id": [
+    "self"
+  ],
+  "usage_habits.self:someone_home.subject_type": [
+    "household"
+  ],
+  "usage_habits.self:someone_home.time_scope": [
+    "weekday_daytime"
+  ],
+  "usage_habits.space_heating:control_mode.behavior": [
+    "control_mode"
+  ],
+  "usage_habits.space_heating:control_mode.subject_id": [
+    "space_heating"
+  ],
+  "usage_habits.space_heating:control_mode.subject_type": [
+    "energy_service"
+  ],
+  "usage_habits.space_heating:control_mode.time_scope": [
+    "usual"
+  ],
+  "usage_habits.space_heating:control_mode.value": [
+    "manual",
+    "none",
+    "price_based",
+    "time_scheduled"
+  ],
+  "usage_habits.space_heating:lower_temperature_in_less_used_rooms.behavior": [
+    "lower_temperature_in_less_used_rooms"
+  ],
+  "usage_habits.space_heating:lower_temperature_in_less_used_rooms.subject_id": [
+    "space_heating"
+  ],
+  "usage_habits.space_heating:lower_temperature_in_less_used_rooms.subject_type": [
+    "energy_service"
+  ],
+  "usage_habits.space_heating:lower_temperature_in_less_used_rooms.time_scope": [
+    "usual"
+  ],
+  "usage_habits.space_heating:reduce_temperature_at_night_or_away.behavior": [
+    "reduce_temperature_at_night_or_away"
+  ],
+  "usage_habits.space_heating:reduce_temperature_at_night_or_away.subject_id": [
+    "space_heating"
+  ],
+  "usage_habits.space_heating:reduce_temperature_at_night_or_away.subject_type": [
+    "energy_service"
+  ],
+  "usage_habits.space_heating:reduce_temperature_at_night_or_away.time_scope": [
+    "usual"
+  ],
+  "vehicle_details": [],
+  "vehicle_details.1.charging_control": [
+    "manual",
+    "none",
+    "price_based",
+    "time_scheduled"
+  ],
+  "vehicle_details.1.device_type_ref": [
+    "electric_or_plugin_hybrid_vehicle"
+  ],
+  "vehicle_details.1.home_charging_frequency": [
+    "about_once_a_month_or_less_frequently",
+    "about_once_a_week",
+    "daily",
+    "several_times_a_week"
+  ],
+  "vehicle_details.1.home_charging_method": [
+    "charging_station_32a_3_phase_22kw_or_higher",
+    "home_charging_station_16a_3_phase_12kw",
+    "standard_outlet_10_16a_1_phase_2_3_3_5_kw"
+  ],
+  "vehicle_details.1.usual_charging_location": [
+    "at_home_on_a_shared_electricity_meter_with_other_homes",
+    "at_home_on_an_additional_electricity_meter",
+    "at_home_on_the_same_electricity_meter_as_the_rest_of_the_home",
+    "not_at_home_at_work_street_charging_public_stations_other_places"
+  ],
+  "vehicle_details.1.usual_charging_time": [
+    "afternoon_1_pm_5_pm",
+    "evening_5_pm_10_pm",
+    "morning_7_am_1_pm",
+    "night_10_pm_7_am"
+  ],
+  "vehicle_details.2.charging_control": [
+    "manual",
+    "none",
+    "price_based"
+  ],
+  "vehicle_details.2.device_type_ref": [
+    "electric_or_plugin_hybrid_vehicle"
+  ],
+  "vehicle_details.2.home_charging_frequency": [
+    "about_once_a_month_or_less_frequently",
+    "about_once_a_week",
+    "daily",
+    "several_times_a_week"
+  ],
+  "vehicle_details.2.home_charging_method": [
+    "charging_station_32a_3_phase_22kw_or_higher",
+    "home_charging_station_16a_3_phase_12kw",
+    "standard_outlet_10_16a_1_phase_2_3_3_5_kw"
+  ],
+  "vehicle_details.2.usual_charging_location": [
+    "at_home_on_a_shared_electricity_meter_with_other_homes",
+    "at_home_on_an_additional_electricity_meter",
+    "at_home_on_the_same_electricity_meter_as_the_rest_of_the_home",
+    "not_at_home_at_work_street_charging_public_stations_other_places"
+  ],
+  "vehicle_details.2.usual_charging_time": [
+    "afternoon_1_pm_5_pm",
+    "evening_5_pm_10_pm",
+    "morning_7_am_1_pm",
+    "night_10_pm_7_am"
+  ]
+}

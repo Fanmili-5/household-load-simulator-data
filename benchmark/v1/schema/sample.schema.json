@@ -1,0 +1,1248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Fanmili-5/household-load-simulator-data/baseline/v1/schema/sample.schema.json",
+  "title": "household-benchmark/1.0.0 sample.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Frozen baseline version",
+      "const": "household-benchmark/1.0.0"
+    },
+    "sample_id": {
+      "type": "string",
+      "description": "Household-day key; not model input"
+    },
+    "input": {
+      "type": "object",
+      "properties": {
+        "profile": {
+          "type": "object",
+          "properties": {
+            "household": {
+              "type": "object",
+              "properties": {
+                "resident_count": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "Number of household residents",
+                  "minimum": 0
+                },
+                "composition": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Household composition category"
+                },
+                "respondent_sex": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Questionnaire respondent sex; not all household members"
+                },
+                "highest_household_education": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Highest completed education in the household"
+                },
+                "gross_income_band": {
+                  "type": "object",
+                  "properties": {
+                    "lower": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Lower boundary printed in source category; null if unknown/unbounded",
+                      "minimum": 0
+                    },
+                    "upper": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Upper boundary printed in source category; null if unknown/unbounded",
+                      "minimum": 0
+                    },
+                    "lower_inclusive": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Inclusion of recorded lower boundary"
+                    },
+                    "upper_inclusive": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Inclusion of upper boundary; below a threshold is exclusive"
+                    },
+                    "currency": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Source currency"
+                    },
+                    "period": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Income period; source question does not establish it here"
+                    }
+                  },
+                  "required": [
+                    "lower",
+                    "upper",
+                    "lower_inclusive",
+                    "upper_inclusive",
+                    "currency",
+                    "period"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Gross pretax household income band"
+                },
+                "age_group_counts": {
+                  "type": "object",
+                  "properties": {
+                    "0_1": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 0_1",
+                      "minimum": 0
+                    },
+                    "2_5": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 2_5",
+                      "minimum": 0
+                    },
+                    "6_15": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 6_15",
+                      "minimum": 0
+                    },
+                    "16_22": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 16_22",
+                      "minimum": 0
+                    },
+                    "23_29": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 23_29",
+                      "minimum": 0
+                    },
+                    "30_39": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 30_39",
+                      "minimum": 0
+                    },
+                    "40_49": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 40_49",
+                      "minimum": 0
+                    },
+                    "50_66": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 50_66",
+                      "minimum": 0
+                    },
+                    "67_plus": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents in source age band 67_plus",
+                      "minimum": 0
+                    }
+                  },
+                  "required": [
+                    "0_1",
+                    "2_5",
+                    "6_15",
+                    "16_22",
+                    "23_29",
+                    "30_39",
+                    "40_49",
+                    "50_66",
+                    "67_plus"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Invalid age distribution is all null"
+                },
+                "life_status_counts": {
+                  "type": "object",
+                  "properties": {
+                    "school_or_kindergarten": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status school_or_kindergarten",
+                      "minimum": 0
+                    },
+                    "student": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status student",
+                      "minimum": 0
+                    },
+                    "part_time_work": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status part_time_work",
+                      "minimum": 0
+                    },
+                    "full_time_work": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status full_time_work",
+                      "minimum": 0
+                    },
+                    "unemployed_or_not_in_education": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status unemployed_or_not_in_education",
+                      "minimum": 0
+                    },
+                    "retired": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status retired",
+                      "minimum": 0
+                    },
+                    "other": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Residents reporting status other",
+                      "minimum": 0
+                    }
+                  },
+                  "required": [
+                    "school_or_kindergarten",
+                    "student",
+                    "part_time_work",
+                    "full_time_work",
+                    "unemployed_or_not_in_education",
+                    "retired",
+                    "other"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Statuses can overlap; do not sum as resident count"
+                },
+                "car_present": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Any car, not only electric"
+                },
+                "car_count": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "All cars",
+                  "minimum": 0
+                },
+                "internet_access": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Household internet access"
+                }
+              },
+              "required": [
+                "resident_count",
+                "composition",
+                "respondent_sex",
+                "highest_household_education",
+                "gross_income_band",
+                "age_group_counts",
+                "life_status_counts",
+                "car_present",
+                "car_count",
+                "internet_access"
+              ],
+              "additionalProperties": false,
+              "description": ""
+            },
+            "dwelling": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Self-reported dwelling type"
+                },
+                "owner_occupied": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Owner-occupied dwelling"
+                },
+                "energy_renovation_reported": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Energy renovation reported"
+                },
+                "rental_unit_present": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Rental unit in dwelling"
+                },
+                "rental_unit_separate_meter": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Rental unit has separate meter"
+                },
+                "shared_flat": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Shared flat reported"
+                },
+                "heated_room_count": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "Heated rooms; never an appliance count",
+                  "minimum": 0
+                },
+                "floor_area_m2": {
+                  "type": "object",
+                  "properties": {
+                    "lower": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Lower boundary printed in source category; null if unknown/unbounded",
+                      "minimum": 0
+                    },
+                    "upper": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Upper boundary printed in source category; null if unknown/unbounded",
+                      "minimum": 0
+                    },
+                    "lower_inclusive": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Inclusion of recorded lower boundary"
+                    },
+                    "upper_inclusive": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Inclusion of upper boundary; below a threshold is exclusive"
+                    }
+                  },
+                  "required": [
+                    "lower",
+                    "upper",
+                    "lower_inclusive",
+                    "upper_inclusive"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Source floor-area band, square metres"
+                },
+                "construction_year": {
+                  "type": "object",
+                  "properties": {
+                    "lower": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Lower boundary printed in source category; null if unknown/unbounded",
+                      "minimum": 0
+                    },
+                    "upper": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "Upper boundary printed in source category; null if unknown/unbounded",
+                      "minimum": 0
+                    },
+                    "lower_inclusive": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Inclusion of recorded lower boundary"
+                    },
+                    "upper_inclusive": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Inclusion of upper boundary; below a threshold is exclusive"
+                    }
+                  },
+                  "required": [
+                    "lower",
+                    "upper",
+                    "lower_inclusive",
+                    "upper_inclusive"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Source construction-year band"
+                },
+                "source_classified_type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Source-assigned broad type; distinct from respondent answer"
+                },
+                "climate_zone": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Source climate classification"
+                }
+              },
+              "required": [
+                "type",
+                "owner_occupied",
+                "energy_renovation_reported",
+                "rental_unit_present",
+                "rental_unit_separate_meter",
+                "shared_flat",
+                "heated_room_count",
+                "floor_area_m2",
+                "construction_year",
+                "source_classified_type",
+                "climate_zone"
+              ],
+              "additionalProperties": false,
+              "description": ""
+            },
+            "appliances": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "description": "Device category; categories may overlap, never sum to a household total",
+                    "enum": [
+                      "refrigerator",
+                      "freezer",
+                      "washing_machine",
+                      "dishwasher",
+                      "clothes_dryer",
+                      "air_conditioner",
+                      "panel_heater",
+                      "electric_underfloor_heating",
+                      "heat_pump",
+                      "electric_water_heater",
+                      "fireplace_or_wood_stove",
+                      "fuel_heater",
+                      "pool_pump",
+                      "electric_or_plugin_hybrid_vehicle",
+                      "solar_pv",
+                      "battery_storage",
+                      "mechanical_ventilation",
+                      "electric_cooking_appliance",
+                      "television",
+                      "lighting"
+                    ]
+                  },
+                  "present": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Reported ownership or presence logically implied by use; nonuse is not absence"
+                  },
+                  "count": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "description": "Physical count within category; 0 may be derived from explicit absence",
+                    "minimum": 0
+                  },
+                  "subtype": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Recorded subtype"
+                  },
+                  "rated_power_w": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Recorded rated power, watts",
+                    "minimum": 0
+                  },
+                  "capacity_kw": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Recorded generation capacity, kW",
+                    "minimum": 0
+                  },
+                  "capacity_kwh": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Recorded storage capacity, kWh",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "type",
+                  "present",
+                  "count",
+                  "subtype",
+                  "rated_power_w",
+                  "capacity_kw",
+                  "capacity_kwh"
+                ],
+                "additionalProperties": false,
+                "description": ""
+              },
+              "description": "One entry per fixed category in catalog order",
+              "minItems": 20,
+              "maxItems": 20
+            },
+            "energy_services": {
+              "type": "object",
+              "properties": {
+                "space_heating": {
+                  "type": "object",
+                  "properties": {
+                    "gas_used": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Gas used for space heating"
+                    },
+                    "options": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "technology": {
+                            "type": "string",
+                            "description": "Heating technology"
+                          },
+                          "device_type_ref": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "description": "Associated category when known; geothermal/shared systems do not add device counts"
+                          },
+                          "role": {
+                            "type": [
+                              "string",
+                              "null"
+                            ],
+                            "description": "main, additional or not_used; not_used does not mean not_owned"
+                          }
+                        },
+                        "required": [
+                          "technology",
+                          "device_type_ref",
+                          "role"
+                        ],
+                        "additionalProperties": false,
+                        "description": ""
+                      },
+                      "description": ""
+                    }
+                  },
+                  "required": [
+                    "gas_used",
+                    "options"
+                  ],
+                  "additionalProperties": false,
+                  "description": ""
+                },
+                "hot_water": {
+                  "type": "object",
+                  "properties": {
+                    "gas_used": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Gas used for water heating"
+                    },
+                    "technology": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Reported hot-water arrangement"
+                    }
+                  },
+                  "required": [
+                    "gas_used",
+                    "technology"
+                  ],
+                  "additionalProperties": false,
+                  "description": ""
+                },
+                "cooking": {
+                  "type": "object",
+                  "properties": {
+                    "gas_used": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Gas used for cooking"
+                    }
+                  },
+                  "required": [
+                    "gas_used"
+                  ],
+                  "additionalProperties": false,
+                  "description": ""
+                },
+                "other_gas_use": {
+                  "type": "object",
+                  "properties": {
+                    "gas_used": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Other gas appliance use; no inferred device count"
+                    }
+                  },
+                  "required": [
+                    "gas_used"
+                  ],
+                  "additionalProperties": false,
+                  "description": ""
+                },
+                "ventilation": {
+                  "type": "object",
+                  "properties": {
+                    "technologies": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Reported technologies; null unknown"
+                    }
+                  },
+                  "required": [
+                    "technologies"
+                  ],
+                  "additionalProperties": false,
+                  "description": ""
+                },
+                "supply": {
+                  "type": "object",
+                  "properties": {
+                    "gas_available": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Gas available"
+                    },
+                    "electricity_contract": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Retail contract category"
+                    },
+                    "respondent_receives_bill": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Respondent receives household electricity bill"
+                    },
+                    "renewable_electricity_contract": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Renewable electricity contract"
+                    },
+                    "battery_connected_to_pv": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Battery linked to PV only; not all storage ownership"
+                    },
+                    "farm_or_business_shares_meter": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ],
+                      "description": "Farm/business on same meter"
+                    }
+                  },
+                  "required": [
+                    "gas_available",
+                    "electricity_contract",
+                    "respondent_receives_bill",
+                    "renewable_electricity_contract",
+                    "battery_connected_to_pv",
+                    "farm_or_business_shares_meter"
+                  ],
+                  "additionalProperties": false,
+                  "description": ""
+                }
+              },
+              "required": [
+                "space_heating",
+                "hot_water",
+                "cooking",
+                "other_gas_use",
+                "ventilation",
+                "supply"
+              ],
+              "additionalProperties": false,
+              "description": ""
+            },
+            "usage_habits": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "subject_type": {
+                    "type": "string",
+                    "description": "Type of subject",
+                    "enum": [
+                      "household",
+                      "energy_service",
+                      "appliance_category"
+                    ]
+                  },
+                  "subject_id": {
+                    "type": "string",
+                    "description": "Self, service key or device category"
+                  },
+                  "behavior": {
+                    "type": "string",
+                    "description": "Defined behavior identifier"
+                  },
+                  "value": {
+                    "type": [
+                      "boolean",
+                      "string",
+                      "array",
+                      "null"
+                    ],
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Reported state/category/categories; null unknown"
+                  },
+                  "unit": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Unit if present; categorical and boolean habits use null"
+                  },
+                  "time_scope": {
+                    "type": "string",
+                    "description": "Scope of general habit",
+                    "enum": [
+                      "usual",
+                      "weekday_daytime"
+                    ]
+                  }
+                },
+                "required": [
+                  "subject_type",
+                  "subject_id",
+                  "behavior",
+                  "value",
+                  "unit",
+                  "time_scope"
+                ],
+                "additionalProperties": false,
+                "description": ""
+              },
+              "description": "Fixed seven household/device/service habit definitions",
+              "minItems": 7,
+              "maxItems": 7
+            },
+            "preferences": {
+              "type": "object",
+              "properties": {
+                "living_room_comfort_temperature_c": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "description": "Reported comfortable living-room temperature, not measured temperature or control bound"
+                },
+                "reported_electricity_reduction_effort": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Reported effort category"
+                },
+                "follows_electricity_use": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Reports following electricity consumption"
+                },
+                "follows_electricity_prices": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": "Reports following electricity prices"
+                },
+                "use_information_channels": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Consumption information channels"
+                },
+                "price_information_channels": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Price information channels"
+                }
+              },
+              "required": [
+                "living_room_comfort_temperature_c",
+                "reported_electricity_reduction_effort",
+                "follows_electricity_use",
+                "follows_electricity_prices",
+                "use_information_channels",
+                "price_information_channels"
+              ],
+              "additionalProperties": false,
+              "description": ""
+            },
+            "vehicle_details": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "object",
+                "properties": {
+                  "vehicle_number": {
+                    "type": "integer",
+                    "description": "Within-household source vehicle number",
+                    "minimum": 1,
+                    "maximum": 3
+                  },
+                  "device_type_ref": {
+                    "type": "string",
+                    "description": "Device category reference",
+                    "const": "electric_or_plugin_hybrid_vehicle"
+                  },
+                  "electric_range_km": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Reported range, km",
+                    "minimum": 0
+                  },
+                  "usual_charging_location": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Reported usual location and relationship to household meter"
+                  },
+                  "home_charging_method": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Reported charger category; encoded source specification, not corrected or estimated power"
+                  },
+                  "home_charging_frequency": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Reported frequency category, not a synthesized number of sessions"
+                  },
+                  "usual_charging_time": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Usual time band, not event-day schedule"
+                  },
+                  "charging_control": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Reported control mode"
+                  },
+                  "distance_before_charging_km": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Reported distance driven between charging, km",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "vehicle_number",
+                  "device_type_ref",
+                  "electric_range_km",
+                  "usual_charging_location",
+                  "home_charging_method",
+                  "home_charging_frequency",
+                  "usual_charging_time",
+                  "charging_control",
+                  "distance_before_charging_km"
+                ],
+                "additionalProperties": false,
+                "description": ""
+              },
+              "description": "Reported electric/plugin-hybrid vehicles; null unestablished, [] confirmed no such vehicles"
+            }
+          },
+          "required": [
+            "household",
+            "dwelling",
+            "appliances",
+            "energy_services",
+            "usage_habits",
+            "preferences",
+            "vehicle_details"
+          ],
+          "additionalProperties": false,
+          "description": "Semantic household profile. Every named field is required; source gaps are null, never invented."
+        },
+        "history": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "description": "First interval start on source clock"
+            },
+            "end": {
+              "type": "string",
+              "description": "Last interval end = forecast origin"
+            },
+            "interval_minutes": {
+              "type": "integer",
+              "description": "Native interval duration",
+              "enum": [
+                30,
+                60
+              ]
+            },
+            "unit": {
+              "type": "string",
+              "description": "Interval energy unit",
+              "const": "kWh"
+            },
+            "energy_kwh": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "description": "Interval energy",
+                "minimum": 0
+              },
+              "description": ""
+            }
+          },
+          "required": [
+            "start",
+            "end",
+            "interval_minutes",
+            "unit",
+            "energy_kwh"
+          ],
+          "additionalProperties": false,
+          "description": ""
+        },
+        "context": {
+          "type": "object",
+          "properties": {
+            "forecast_origin": {
+              "type": "string",
+              "description": "Prediction time on source clock"
+            },
+            "target_window": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "string",
+                  "description": "Inclusive first interval start"
+                },
+                "end": {
+                  "type": "string",
+                  "description": "Exclusive end"
+                },
+                "horizon_hours": {
+                  "type": "integer",
+                  "description": "Source-clock day",
+                  "const": 24
+                },
+                "interval_minutes": {
+                  "type": "integer",
+                  "description": "Native interval duration",
+                  "enum": [
+                    30,
+                    60
+                  ]
+                }
+              },
+              "required": [
+                "start",
+                "end",
+                "horizon_hours",
+                "interval_minutes"
+              ],
+              "additionalProperties": false,
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "description": "Source country",
+              "enum": [
+                "AU",
+                "NO"
+              ]
+            },
+            "region": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Source region, if available"
+            },
+            "time_basis": {
+              "type": "string",
+              "description": "Clock semantics; no unverified timezone conversion",
+              "const": "source_clock_intervals_no_utc_conversion"
+            },
+            "measurement_scope": {
+              "type": "string",
+              "description": "Meter coverage of both history and answer"
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "type": "string",
+                    "description": "Event start"
+                  },
+                  "end": {
+                    "type": "string",
+                    "description": "Event end"
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "Meaning of source event",
+                    "enum": [
+                      "peak_price_penalty",
+                      "reduction_reward",
+                      "experimental_price_for_reward_calculation"
+                    ]
+                  },
+                  "currency": {
+                    "type": "string",
+                    "description": "Signal currency",
+                    "enum": [
+                      "AUD",
+                      "NOK"
+                    ]
+                  },
+                  "price_per_kwh": {
+                    "type": [
+                      "array",
+                      "null"
+                    ],
+                    "items": {
+                      "type": "number",
+                      "description": "Source price, may be negative"
+                    },
+                    "description": ""
+                  },
+                  "price_interval_minutes": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "description": "Price signal interval minutes",
+                    "minimum": 0
+                  },
+                  "rate_per_reduced_kwh": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Verified reduction reward, unknown if not verified",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "start",
+                  "end",
+                  "type",
+                  "currency",
+                  "price_per_kwh",
+                  "price_interval_minutes",
+                  "rate_per_reduced_kwh"
+                ],
+                "additionalProperties": false,
+                "description": ""
+              },
+              "description": "All retained same-household events on target day",
+              "minItems": 1
+            }
+          },
+          "required": [
+            "forecast_origin",
+            "target_window",
+            "country",
+            "region",
+            "time_basis",
+            "measurement_scope",
+            "events"
+          ],
+          "additionalProperties": false,
+          "description": ""
+        }
+      },
+      "required": [
+        "profile",
+        "history",
+        "context"
+      ],
+      "additionalProperties": false,
+      "description": ""
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "energy_kwh": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "description": "Interval energy",
+            "minimum": 0
+          },
+          "description": ""
+        }
+      },
+      "required": [
+        "energy_kwh"
+      ],
+      "additionalProperties": false,
+      "description": ""
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Traceability and readiness outside model input"
+    }
+  },
+  "required": [
+    "schema_version",
+    "sample_id",
+    "input",
+    "output",
+    "metadata"
+  ],
+  "additionalProperties": false,
+  "description": ""
+}

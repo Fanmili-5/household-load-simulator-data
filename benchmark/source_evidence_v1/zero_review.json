@@ -1,0 +1,3517 @@
+{
+  "audit": "raw_zero_window_review_v1",
+  "records": [
+    {
+      "sample_id": "sgsc:10111896:2013-11-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10111896_interval.csv",
+      "raw_sha256": "d2d7dc92c5df92db3a7df9960398a8695e438514ed77d00c588df3ba336bf67e",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-20T11:30:00",
+      "first_positive_after_window": "2013-11-29T16:30:00",
+      "available_raw_start": "2013-05-29T10:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-May-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "12-Jun-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "12-Jun-13",
+        "OPERATION_FINISH_DATE": "9-Dec-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10131368:2013-11-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10131368_interval.csv",
+      "raw_sha256": "097095664c762286c4e7aaf2380e01a54f387fc8e024ccf57adbd80899b95964",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-15T12:00:00",
+      "first_positive_after_window": "2013-12-01T13:00:00",
+      "available_raw_start": "2013-02-13T17:00:00",
+      "available_raw_end": "2014-03-03T14:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "14-Feb-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "28-Feb-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "28-Feb-13",
+        "OPERATION_FINISH_DATE": "9-Dec-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10218392:2013-11-28",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1740,
+        "daily_totals_kwh": [
+          0.0,
+          1.1300000000000003,
+          0.4250000000000001,
+          0.7090000000000002,
+          0.4340000000000001,
+          0.026000000000000002,
+          0.8699999999999999,
+          1.014
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10218392_interval.csv",
+      "raw_sha256": "8978aea6746fa9279356dd71fb2b493670f3b33b311a86980a3186304b9f7618",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-20T07:30:00",
+      "first_positive_after_window": "2013-11-29T05:00:00",
+      "available_raw_start": "2013-05-13T15:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-May-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "29-May-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "29-May-13",
+        "OPERATION_FINISH_DATE": "29-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10218392:2013-12-09",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 4260,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.004,
+          0.0,
+          0.0,
+          0.576,
+          0.3690000000000001,
+          0.026000000000000016
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10218392_interval.csv",
+      "raw_sha256": "8978aea6746fa9279356dd71fb2b493670f3b33b311a86980a3186304b9f7618",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-01T15:30:00",
+      "first_positive_after_window": "2013-12-10T01:00:00",
+      "available_raw_start": "2013-05-13T15:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-May-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "29-May-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "29-May-13",
+        "OPERATION_FINISH_DATE": "29-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10218392:2013-12-10",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 4110,
+        "daily_totals_kwh": [
+          0.0,
+          0.004,
+          0.0,
+          0.0,
+          0.576,
+          0.3690000000000001,
+          0.026000000000000016,
+          0.017000000000000008
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10218392_interval.csv",
+      "raw_sha256": "8978aea6746fa9279356dd71fb2b493670f3b33b311a86980a3186304b9f7618",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-01T15:30:00",
+      "first_positive_after_window": "2013-12-11T01:30:00",
+      "available_raw_start": "2013-05-13T15:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-May-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "29-May-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "29-May-13",
+        "OPERATION_FINISH_DATE": "29-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10390039:2013-03-07",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 9210,
+        "daily_totals_kwh": [
+          0.0,
+          0.007,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10390039_interval.csv",
+      "raw_sha256": "afd87494c28bfc18d0a8b240d946a213201b79ee638c0cb87973f90d5a9329bb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-25T09:30:00",
+      "first_positive_after_window": "2013-03-11T14:00:00",
+      "available_raw_start": "2012-01-16T13:00:00",
+      "available_raw_end": "2014-02-24T06:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "7-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "7-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10390039:2013-03-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 8010,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.004,
+          0.0,
+          0.002
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10390039_interval.csv",
+      "raw_sha256": "afd87494c28bfc18d0a8b240d946a213201b79ee638c0cb87973f90d5a9329bb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-01T14:30:00",
+      "first_positive_after_window": "2013-03-14T07:00:00",
+      "available_raw_start": "2012-01-16T13:00:00",
+      "available_raw_end": "2014-02-24T06:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "7-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "7-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10390039:2013-03-22",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 5010,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          12.119,
+          1.0310000000000001,
+          1.071,
+          1.387,
+          1.06
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10390039_interval.csv",
+      "raw_sha256": "afd87494c28bfc18d0a8b240d946a213201b79ee638c0cb87973f90d5a9329bb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-14T07:00:00",
+      "first_positive_after_window": "2013-03-23T06:00:00",
+      "available_raw_start": "2012-01-16T13:00:00",
+      "available_raw_end": "2014-02-24T06:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "7-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "7-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10420903:2013-07-24",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 1680,
+        "daily_totals_kwh": [
+          0.019,
+          0.002,
+          2.1830000000000003,
+          7.987000000000001,
+          4.745999999999999,
+          0.004,
+          0.001,
+          0.4880000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10420903_interval.csv",
+      "raw_sha256": "3cc592ddc641f4de297b918000e0f0c9fa542d1b7b328258a0bfafff8ce78cec",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-16T17:00:00",
+      "first_positive_after_window": "2013-07-27T12:30:00",
+      "available_raw_start": "2012-01-31T09:00:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-Jan-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "30-Nov-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "30-Nov-12",
+        "OPERATION_FINISH_DATE": "12-Sep-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:10420903:2013-08-02",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 2160,
+        "daily_totals_kwh": [
+          0.0,
+          0.002,
+          0.002,
+          0.002,
+          0.001,
+          14.484,
+          25.436000000000003,
+          47.69299999999999
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_10420903_interval.csv",
+      "raw_sha256": "3cc592ddc641f4de297b918000e0f0c9fa542d1b7b328258a0bfafff8ce78cec",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-24T18:00:00",
+      "first_positive_after_window": "2013-08-03T00:30:00",
+      "available_raw_start": "2012-01-31T09:00:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-Jan-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "30-Nov-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "30-Nov-12",
+        "OPERATION_FINISH_DATE": "12-Sep-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:11094878:2013-02-08",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_11094878_interval.csv",
+      "raw_sha256": "987d1a1a8c1858cb53b9b0706d2ab2316874acf8c612533c388fe1b7b0b2221e",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2012-12-31T06:00:00",
+      "first_positive_after_window": "2013-02-21T10:30:00",
+      "available_raw_start": "2012-05-30T10:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "30-May-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "10-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "10-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:11139813:2013-08-02",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 8520,
+        "daily_totals_kwh": [
+          0.123,
+          0.077,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          8.04
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_11139813_interval.csv",
+      "raw_sha256": "a7f1eadea957db8943d21be8c19bfa1a4a27e7c67b550657dc3646b1ccb8d0be",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-22T17:00:00",
+      "first_positive_after_window": "2013-08-03T02:00:00",
+      "available_raw_start": "2012-10-25T19:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "22-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:11139945:2013-02-08",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_11139945_interval.csv",
+      "raw_sha256": "01d2e2dcc44e16151beca596a67d8054ddf983b1aa883a9886e29f871d025d60",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-01-14T06:30:00",
+      "first_positive_after_window": "2013-02-12T22:00:00",
+      "available_raw_start": "2012-03-22T09:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "22-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "4-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "4-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:11162775:2013-03-07",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 5670,
+        "daily_totals_kwh": [
+          0.004,
+          0.0,
+          0.0,
+          0.0,
+          0.8859999999999999,
+          0.0,
+          0.006,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_11162775_interval.csv",
+      "raw_sha256": "e8dc1e636e5fa41e6fc2b85bd6753a0d9c58a0411371c8d014e0b782dc2b820f",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-27T12:30:00",
+      "first_positive_after_window": "2013-03-08T12:00:00",
+      "available_raw_start": "2012-05-25T10:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "25-May-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "7-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "7-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:11162775:2013-03-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 2670,
+        "daily_totals_kwh": [
+          0.006,
+          0.0,
+          0.136,
+          2.116,
+          0.657,
+          1.634,
+          1.7689999999999988,
+          0.6290000000000003
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_11162775_interval.csv",
+      "raw_sha256": "e8dc1e636e5fa41e6fc2b85bd6753a0d9c58a0411371c8d014e0b782dc2b820f",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-04T14:30:00",
+      "first_positive_after_window": "2013-03-14T00:30:00",
+      "available_raw_start": "2012-05-25T10:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "25-May-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "7-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "7-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8149943:2013-11-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 8010,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.18100000000000002,
+          0.463,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8149943_interval.csv",
+      "raw_sha256": "ba12a39281d297a4c21d59f5947d9ee14174d0c0d37b76b6a03334a42a89dcae",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-19T13:30:00",
+      "first_positive_after_window": "2013-12-12T14:00:00",
+      "available_raw_start": "2013-03-13T09:00:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "13-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "4-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "4-Apr-13",
+        "OPERATION_FINISH_DATE": "10-Dec-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8149943:2013-12-09",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8149943_interval.csv",
+      "raw_sha256": "ba12a39281d297a4c21d59f5947d9ee14174d0c0d37b76b6a03334a42a89dcae",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-27T11:00:00",
+      "first_positive_after_window": "2013-12-12T14:00:00",
+      "available_raw_start": "2013-03-13T09:00:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "13-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "4-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "4-Apr-13",
+        "OPERATION_FINISH_DATE": "10-Dec-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8165799:2014-01-16",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 10950,
+        "daily_totals_kwh": [
+          1.758,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8165799_interval.csv",
+      "raw_sha256": "7da1d53401c5dbb48e3c6b413bca7c4328d502122083b980b93416da36471a2a",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-28T21:00:00",
+      "first_positive_after_window": "2014-01-22T10:00:00",
+      "available_raw_start": "2012-08-03T08:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "3-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8165799:2014-01-31",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 10950,
+        "daily_totals_kwh": [
+          9.184,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8165799_interval.csv",
+      "raw_sha256": "7da1d53401c5dbb48e3c6b413bca7c4328d502122083b980b93416da36471a2a",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-22T11:30:00",
+      "first_positive_after_window": "2014-02-06T21:30:00",
+      "available_raw_start": "2012-08-03T08:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "3-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8165799:2014-02-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 9630,
+        "daily_totals_kwh": [
+          6.993,
+          3.895,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8165799_interval.csv",
+      "raw_sha256": "7da1d53401c5dbb48e3c6b413bca7c4328d502122083b980b93416da36471a2a",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-24T09:30:00",
+      "first_positive_after_window": "2014-02-14T07:00:00",
+      "available_raw_start": "2012-08-03T08:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "3-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8169009:2013-07-24",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1470,
+        "daily_totals_kwh": [
+          1.455,
+          1.0470000000000004,
+          1.0270000000000004,
+          1.0250000000000004,
+          3.1049999999999995,
+          0.5690000000000001,
+          1.3059999999999998,
+          1.0260000000000005
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8169009_interval.csv",
+      "raw_sha256": "d1b3b938f9a8705dbeb85a20f72ce0d60411baa871c7bdf308da665ee32bff8b",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-17T00:00:00",
+      "first_positive_after_window": "2013-07-25T00:30:00",
+      "available_raw_start": "2012-06-15T07:00:00",
+      "available_raw_end": "2013-12-08T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "15-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "17-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "17-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8169317:2013-12-09",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 5190,
+        "daily_totals_kwh": [
+          6.764999999999999,
+          0.8620000000000004,
+          0.3220000000000001,
+          0.0,
+          0.011,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8169317_interval.csv",
+      "raw_sha256": "cdbc79361aa831acd88a5debd0c51b18d3227a89d79fb6fe22c2271b962157c4",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-02T00:00:00",
+      "first_positive_after_window": "2013-12-10T15:30:00",
+      "available_raw_start": "2013-03-06T13:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "30-Apr-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "10-May-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "10-May-13",
+        "OPERATION_FINISH_DATE": "29-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8169317:2013-12-10",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 6090,
+        "daily_totals_kwh": [
+          0.8620000000000004,
+          0.3220000000000001,
+          0.0,
+          0.011,
+          0.0,
+          0.0,
+          0.0,
+          0.026999999999999996
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8169317_interval.csv",
+      "raw_sha256": "cdbc79361aa831acd88a5debd0c51b18d3227a89d79fb6fe22c2271b962157c4",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-03T00:00:00",
+      "first_positive_after_window": "2013-12-12T14:30:00",
+      "available_raw_start": "2013-03-06T13:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "30-Apr-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "10-May-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "10-May-13",
+        "OPERATION_FINISH_DATE": "29-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8181617:2013-11-28",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 3840,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.451,
+          0.301,
+          0.41200000000000003,
+          0.0,
+          0.0,
+          0.131
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8181617_interval.csv",
+      "raw_sha256": "bddfa00254b09fb06e5b287aabfb0801d07bb51225b697a58884f87f30fadf09",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-19T14:00:00",
+      "first_positive_after_window": "2013-11-29T10:00:00",
+      "available_raw_start": "2013-05-21T10:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "21-May-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "14-Jun-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "14-Jun-13",
+        "OPERATION_FINISH_DATE": "29-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8193493:2014-02-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2340,
+        "daily_totals_kwh": [
+          4.839,
+          4.187,
+          5.319,
+          2.102,
+          2.133,
+          0.0,
+          2.878,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8193493_interval.csv",
+      "raw_sha256": "cbca1c4ad6da5c84c849d4d83884c271f3b1ab4604bb92d4fab12bfc3790a7e0",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-02-06T00:00:00",
+      "first_positive_after_window": "2014-02-14T05:30:00",
+      "available_raw_start": "2013-02-28T12:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "28-Feb-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "23-Mar-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "23-Mar-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8202481:2013-03-22",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1440,
+        "daily_totals_kwh": [
+          19.636999999999997,
+          6.502000000000001,
+          3.984,
+          1.676,
+          2.949,
+          2.3449999999999998,
+          1.5379999999999998,
+          1.543
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8202481_interval.csv",
+      "raw_sha256": "ddab8e725ec4cc74eeaeecc48afc1fcd857e73cc69e4db08747777ed3c49bed1",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-15T00:00:00",
+      "first_positive_after_window": "2013-03-23T09:00:00",
+      "available_raw_start": "2012-03-16T07:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "17-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "17-Oct-12",
+        "OPERATION_FINISH_DATE": "2-Apr-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8202481:2013-03-28",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1440,
+        "daily_totals_kwh": [
+          1.5379999999999998,
+          1.543,
+          3.2079999999999993,
+          8.36,
+          1.446,
+          1.558,
+          2.09,
+          1.393
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8202481_interval.csv",
+      "raw_sha256": "ddab8e725ec4cc74eeaeecc48afc1fcd857e73cc69e4db08747777ed3c49bed1",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-20T23:00:00",
+      "first_positive_after_window": "2013-03-29T07:00:00",
+      "available_raw_start": "2012-03-16T07:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "17-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "17-Oct-12",
+        "OPERATION_FINISH_DATE": "2-Apr-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8213205:2014-01-16",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 9870,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.194,
+          0.042
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8213205_interval.csv",
+      "raw_sha256": "bb058db09732049d2d86a57b57c44f0ea3bdf48c0b63b4e19fa9db3d5cd2ad60",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-07T19:00:00",
+      "first_positive_after_window": "2014-01-19T10:30:00",
+      "available_raw_start": "2013-03-14T10:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "14-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "12-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "12-Apr-13",
+        "OPERATION_FINISH_DATE": "23-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8241802:2013-12-09",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2160,
+        "daily_totals_kwh": [
+          0.0,
+          7.633999999999999,
+          19.668000000000003,
+          11.108000000000002,
+          10.448999999999998,
+          14.488999999999997,
+          30.205000000000002,
+          25.483
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8241802_interval.csv",
+      "raw_sha256": "2885715a595a0e6ebe0bc43bcd9744629394a47098729c10e38ebfb6e46e1495",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-28T18:00:00",
+      "first_positive_after_window": "2013-12-10T00:30:00",
+      "available_raw_start": "2013-04-05T08:00:00",
+      "available_raw_end": "2014-03-02T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "5-Apr-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "11-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "11-Apr-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8304798:2014-01-29",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1950,
+        "daily_totals_kwh": [
+          8.212,
+          9.454,
+          6.357000000000001,
+          4.329000000000001,
+          1.823,
+          1.027,
+          0.099,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8304798_interval.csv",
+      "raw_sha256": "c7a06c0b0f431ab6d2b872c46aa565e45316f694154b2b6ff26599fe2ec887c1",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-22T00:00:00",
+      "first_positive_after_window": "2014-01-30T09:00:00",
+      "available_raw_start": "2013-03-19T10:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Apr-13",
+        "OPERATION_FINISH_DATE": "20-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8304798:2014-01-30",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2460,
+        "daily_totals_kwh": [
+          9.454,
+          6.357000000000001,
+          4.329000000000001,
+          1.823,
+          1.027,
+          0.099,
+          0.0,
+          2.832
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8304798_interval.csv",
+      "raw_sha256": "c7a06c0b0f431ab6d2b872c46aa565e45316f694154b2b6ff26599fe2ec887c1",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-23T00:00:00",
+      "first_positive_after_window": "2014-02-11T08:30:00",
+      "available_raw_start": "2013-03-19T10:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Apr-13",
+        "OPERATION_FINISH_DATE": "20-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8304798:2014-02-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 7680,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5210000000000004,
+          0.7860000000000006,
+          1.0270000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8304798_interval.csv",
+      "raw_sha256": "c7a06c0b0f431ab6d2b872c46aa565e45316f694154b2b6ff26599fe2ec887c1",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-30T16:00:00",
+      "first_positive_after_window": "2014-02-16T13:30:00",
+      "available_raw_start": "2013-03-19T10:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Apr-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Apr-13",
+        "OPERATION_FINISH_DATE": "20-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8316472:2013-03-07",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 5070,
+        "daily_totals_kwh": [
+          0.20100000000000012,
+          0.21000000000000013,
+          0.24400000000000013,
+          0.3420000000000001,
+          0.09400000000000004,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8316472_interval.csv",
+      "raw_sha256": "dcdf58f6e7593486c3005990b1aa2acb435a64b56dd60e2071540fc40ab2e159",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-28T00:00:00",
+      "first_positive_after_window": "2013-03-08T08:00:00",
+      "available_raw_start": "2012-07-06T10:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "6-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "8-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "8-Jan-13",
+        "OPERATION_FINISH_DATE": "10-Sep-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8316472:2013-03-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 4140,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.12300000000000001,
+          0.0,
+          0.0,
+          0.09899999999999999,
+          1.636,
+          1.1629999999999998
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8316472_interval.csv",
+      "raw_sha256": "dcdf58f6e7593486c3005990b1aa2acb435a64b56dd60e2071540fc40ab2e159",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-04T11:30:00",
+      "first_positive_after_window": "2013-03-14T00:30:00",
+      "available_raw_start": "2012-07-06T10:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "6-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "8-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "8-Jan-13",
+        "OPERATION_FINISH_DATE": "10-Sep-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-03-07",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-24T10:30:00",
+      "first_positive_after_window": "2013-04-29T09:30:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-03-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-24T10:30:00",
+      "first_positive_after_window": "2013-04-29T09:30:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-03-22",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-24T10:30:00",
+      "first_positive_after_window": "2013-04-29T09:30:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-03-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-24T10:30:00",
+      "first_positive_after_window": "2013-04-29T09:30:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-07-24",
+      "quality": {
+        "flags": [
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 960,
+        "daily_totals_kwh": [
+          0.003,
+          0.003,
+          0.002,
+          1.5859999999999999,
+          0.003,
+          0.001,
+          0.002,
+          0.003
+        ],
+        "disposition": "retain",
+        "cause": null
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-16T09:30:00",
+      "first_positive_after_window": "2013-07-25T01:30:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-08-02",
+      "quality": {
+        "flags": [
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 750,
+        "daily_totals_kwh": [
+          0.003,
+          2.104999999999998,
+          0.11100000000000006,
+          0.10000000000000006,
+          0.08700000000000005,
+          0.11100000000000006,
+          0.11500000000000006,
+          0.10400000000000005
+        ],
+        "disposition": "retain",
+        "cause": null
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-25T20:30:00",
+      "first_positive_after_window": "2013-08-03T00:30:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2013-12-04",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 2520,
+        "daily_totals_kwh": [
+          20.188999999999997,
+          19.671,
+          19.933999999999997,
+          17.037000000000006,
+          3.991000000000001,
+          1.6819999999999995,
+          0.002,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-27T00:00:00",
+      "first_positive_after_window": "2013-12-05T23:00:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8332870:2014-01-16",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 3210,
+        "daily_totals_kwh": [
+          0.0,
+          0.002,
+          0.0,
+          8.658,
+          0.0,
+          4.272000000000001,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8332870_interval.csv",
+      "raw_sha256": "f733e49fcde393ce6acc1c6a5ff15ac3121d3e2f6e8633c107954d21541c2566",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-08T15:30:00",
+      "first_positive_after_window": "2014-01-19T13:00:00",
+      "available_raw_start": "2012-04-12T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "29-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Dec-12",
+        "OPERATION_FINISH_DATE": "18-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8377884:2014-01-16",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8377884_interval.csv",
+      "raw_sha256": "d44a5e9be68bc560520771e30480bc4bef024712f8f7d4ddc5830a5984762e88",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-18T23:00:00",
+      "first_positive_after_window": "2014-01-18T06:30:00",
+      "available_raw_start": "2013-05-31T09:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-May-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "19-Jun-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "19-Jun-13",
+        "OPERATION_FINISH_DATE": "23-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8402996:2014-01-16",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 10830,
+        "daily_totals_kwh": [
+          6.8839999999999995,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8402996_interval.csv",
+      "raw_sha256": "9e3d38a8ac8bbd447713a99d5dc645829bb5345193f8d50c24e9ca78b06e08d3",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-09T00:00:00",
+      "first_positive_after_window": "2014-01-20T10:00:00",
+      "available_raw_start": "2012-04-13T11:00:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "13-Apr-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8473721:2013-08-02",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 8070,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0210000000000001,
+          0.0,
+          8.213000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8473721_interval.csv",
+      "raw_sha256": "4ddfcf07beff215cf41ee97148b24c9e1259f07c8ce13a836ea913bc523f37fe",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-24T13:30:00",
+      "first_positive_after_window": "2013-08-03T00:30:00",
+      "available_raw_start": "2012-02-13T06:30:00",
+      "available_raw_end": "2013-09-16T20:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "14-Feb-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8473721:2013-08-08",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1920,
+        "daily_totals_kwh": [
+          0.0,
+          8.213000000000001,
+          20.824,
+          26.759999999999998,
+          17.840000000000003,
+          17.465999999999998,
+          16.716,
+          14.967999999999998
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8473721_interval.csv",
+      "raw_sha256": "4ddfcf07beff215cf41ee97148b24c9e1259f07c8ce13a836ea913bc523f37fe",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-31T18:00:00",
+      "first_positive_after_window": "2013-08-09T00:30:00",
+      "available_raw_start": "2012-02-13T06:30:00",
+      "available_raw_end": "2013-09-16T20:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "14-Feb-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8573089:2014-01-31",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8573089_interval.csv",
+      "raw_sha256": "11f7c42564a79204d31dc73fe08f27f97a879a3bf1b0d3da3155ee93272926ca",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-10-10T06:00:00",
+      "first_positive_after_window": null,
+      "available_raw_start": "2012-03-30T13:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "30-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8573089:2014-02-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8573089_interval.csv",
+      "raw_sha256": "11f7c42564a79204d31dc73fe08f27f97a879a3bf1b0d3da3155ee93272926ca",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-10-10T06:00:00",
+      "first_positive_after_window": null,
+      "available_raw_start": "2012-03-30T13:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "30-Mar-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8579359:2013-03-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 4290,
+        "daily_totals_kwh": [
+          5.675,
+          5.463000000000001,
+          6.138,
+          2.343,
+          0.0,
+          0.0,
+          0.15100000000000008,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8579359_interval.csv",
+      "raw_sha256": "3abe9a06c0fd8f175b25cbb13fb079f3e807a70a18d106d944bf0fcf8c4332cf",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-05T23:30:00",
+      "first_positive_after_window": "2013-03-19T15:30:00",
+      "available_raw_start": "2012-06-07T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8579359:2013-03-22",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 6660,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.003,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8579359_interval.csv",
+      "raw_sha256": "3abe9a06c0fd8f175b25cbb13fb079f3e807a70a18d106d944bf0fcf8c4332cf",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-12T19:00:00",
+      "first_positive_after_window": "2013-03-26T12:00:00",
+      "available_raw_start": "2012-06-07T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8579359:2013-03-28",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 7890,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.6420000000000003,
+          0.5570000000000003,
+          13.684
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8579359_interval.csv",
+      "raw_sha256": "3abe9a06c0fd8f175b25cbb13fb079f3e807a70a18d106d944bf0fcf8c4332cf",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-19T16:00:00",
+      "first_positive_after_window": "2013-03-29T00:30:00",
+      "available_raw_start": "2012-06-07T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "5-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "5-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8603962:2014-01-29",
+      "quality": {
+        "flags": [
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 630,
+        "daily_totals_kwh": [
+          0.023000000000000013,
+          0.013000000000000005,
+          0.019000000000000003,
+          0.014000000000000005,
+          0.006,
+          0.010000000000000002,
+          0.026000000000000006,
+          6.4879999999999995
+        ],
+        "disposition": "retain",
+        "cause": null
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8603962_interval.csv",
+      "raw_sha256": "6d647e61fe891b4457cc69f319323d3eed7244db770d4efc789d2e132d8ef5ba",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-22T00:00:00",
+      "first_positive_after_window": "2014-01-30T00:30:00",
+      "available_raw_start": "2013-03-25T10:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "25-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "3-Jul-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "3-Jul-13",
+        "OPERATION_FINISH_DATE": "20-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8603962:2014-01-30",
+      "quality": {
+        "flags": [
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 630,
+        "daily_totals_kwh": [
+          0.013000000000000005,
+          0.019000000000000003,
+          0.014000000000000005,
+          0.006,
+          0.010000000000000002,
+          0.026000000000000006,
+          6.4879999999999995,
+          10.281
+        ],
+        "disposition": "retain",
+        "cause": null
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8603962_interval.csv",
+      "raw_sha256": "6d647e61fe891b4457cc69f319323d3eed7244db770d4efc789d2e132d8ef5ba",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-22T23:00:00",
+      "first_positive_after_window": "2014-01-31T00:30:00",
+      "available_raw_start": "2013-03-25T10:30:00",
+      "available_raw_end": "2014-03-03T10:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "25-Mar-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "3-Jul-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "3-Jul-13",
+        "OPERATION_FINISH_DATE": "20-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8614453:2013-07-24",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 4050,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          23.908999999999995,
+          59.567999999999984,
+          51.467000000000006,
+          54.288999999999994,
+          54.478,
+          35.215999999999994
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8614453_interval.csv",
+      "raw_sha256": "c7e3ef928a05126fc49f094bb646d1da26eb458a0d37cdf7cb35b6c6c2156153",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-16T11:30:00",
+      "first_positive_after_window": "2013-07-25T00:30:00",
+      "available_raw_start": "2012-08-07T14:00:00",
+      "available_raw_end": "2014-02-27T12:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "22-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "22-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8633067:2014-01-16",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 4110,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          9.981,
+          23.0,
+          8.342,
+          4.627000000000001,
+          4.760000000000002,
+          34.053999999999995
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8633067_interval.csv",
+      "raw_sha256": "09325226e6a5a998c9b77a5a0a318480fcd5742ef8e614f429a907f9d71921d7",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-23T12:00:00",
+      "first_positive_after_window": "2014-01-17T00:30:00",
+      "available_raw_start": "2012-10-08T14:00:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "10-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "10-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8636517:2014-02-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 6300,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.21200000000000002,
+          0.0,
+          0.0,
+          0.028999999999999998
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8636517_interval.csv",
+      "raw_sha256": "b0a483b04c0310d956565052276a54e5f825c935d0258f9352150e101fd49daa",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-02-04T11:00:00",
+      "first_positive_after_window": "2014-02-15T14:00:00",
+      "available_raw_start": "2012-08-08T10:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "8-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "10-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "10-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8638543:2013-12-04",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8638543_interval.csv",
+      "raw_sha256": "fd758a179ef81d703b1bbc060f4c5c350f8de32f9213d83d3a375cafbc738d24",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-19T18:00:00",
+      "first_positive_after_window": "2013-12-06T08:30:00",
+      "available_raw_start": "2012-09-06T08:00:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "14-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "14-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8638543:2014-01-16",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 5160,
+        "daily_totals_kwh": [
+          0.184,
+          0.552,
+          0.0,
+          0.0,
+          0.0,
+          1.1480000000000001,
+          1.4859999999999998,
+          1.331
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8638543_interval.csv",
+      "raw_sha256": "fd758a179ef81d703b1bbc060f4c5c350f8de32f9213d83d3a375cafbc738d24",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-08T12:00:00",
+      "first_positive_after_window": "2014-01-17T08:00:00",
+      "available_raw_start": "2012-09-06T08:00:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "14-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "14-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8638543:2014-01-31",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 5910,
+        "daily_totals_kwh": [
+          0.189,
+          0.0,
+          0.0,
+          0.0,
+          0.068,
+          0.0,
+          0.10400000000000001,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8638543_interval.csv",
+      "raw_sha256": "fd758a179ef81d703b1bbc060f4c5c350f8de32f9213d83d3a375cafbc738d24",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-23T15:00:00",
+      "first_positive_after_window": "2014-02-01T06:00:00",
+      "available_raw_start": "2012-09-06T08:00:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "7-Aug-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "14-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "14-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8639653:2013-03-07",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2940,
+        "daily_totals_kwh": [
+          1.2130000000000003,
+          1.2160000000000002,
+          1.2090000000000003,
+          0.5970000000000003,
+          0.0,
+          0.038,
+          0.9230000000000006,
+          1.28
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8639653_interval.csv",
+      "raw_sha256": "3365a81344b923dc34f7fa011c4cb20c739c55c463158721e7bd3326d27aad3c",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-28T00:00:00",
+      "first_positive_after_window": "2013-03-08T00:30:00",
+      "available_raw_start": "2012-12-18T12:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "21-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "21-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8639653:2013-03-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 6030,
+        "daily_totals_kwh": [
+          0.9230000000000006,
+          1.28,
+          1.1860000000000004,
+          0.9860000000000004,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8639653_interval.csv",
+      "raw_sha256": "3365a81344b923dc34f7fa011c4cb20c739c55c463158721e7bd3326d27aad3c",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-05T14:00:00",
+      "first_positive_after_window": "2013-03-14T14:00:00",
+      "available_raw_start": "2012-12-18T12:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "21-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "21-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8639653:2013-03-22",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 7290,
+        "daily_totals_kwh": [
+          2.471000000000001,
+          2.769,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.41800000000000015,
+          1.0150000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8639653_interval.csv",
+      "raw_sha256": "3365a81344b923dc34f7fa011c4cb20c739c55c463158721e7bd3326d27aad3c",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-15T00:00:00",
+      "first_positive_after_window": "2013-03-23T16:30:00",
+      "available_raw_start": "2012-12-18T12:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "21-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "21-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8639653:2013-03-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 7620,
+        "daily_totals_kwh": [
+          0.41800000000000015,
+          1.0150000000000001,
+          0.27699999999999997,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8639653_interval.csv",
+      "raw_sha256": "3365a81344b923dc34f7fa011c4cb20c739c55c463158721e7bd3326d27aad3c",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-16T16:30:00",
+      "first_positive_after_window": "2013-04-01T19:30:00",
+      "available_raw_start": "2012-12-18T12:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "31-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "21-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "21-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8654003:2013-03-07",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 3360,
+        "daily_totals_kwh": [
+          14.823999999999998,
+          10.607999999999999,
+          2.4679999999999995,
+          0.30200000000000005,
+          1.069,
+          0.009000000000000001,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8654003_interval.csv",
+      "raw_sha256": "3892b57880d9217ff79da66420d54aef6fa0df65a6c242e964abd39e5d23a832",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-28T00:00:00",
+      "first_positive_after_window": "2013-03-08T15:00:00",
+      "available_raw_start": "2012-09-11T20:00:00",
+      "available_raw_end": "2013-04-23T17:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "2-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "2-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8654003:2013-03-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 3750,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.065,
+          0.37,
+          0.28,
+          0.23700000000000004,
+          0.0,
+          1.023
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8654003_interval.csv",
+      "raw_sha256": "3892b57880d9217ff79da66420d54aef6fa0df65a6c242e964abd39e5d23a832",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-05T16:00:00",
+      "first_positive_after_window": "2013-03-16T14:00:00",
+      "available_raw_start": "2012-09-11T20:00:00",
+      "available_raw_end": "2013-04-23T17:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "2-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "2-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8654003:2013-03-22",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2250,
+        "daily_totals_kwh": [
+          0.0,
+          0.137,
+          2.087,
+          4.444000000000001,
+          5.495000000000002,
+          6.245000000000002,
+          6.303000000000001,
+          7.333
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8654003_interval.csv",
+      "raw_sha256": "3892b57880d9217ff79da66420d54aef6fa0df65a6c242e964abd39e5d23a832",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-13T20:00:00",
+      "first_positive_after_window": "2013-03-23T00:30:00",
+      "available_raw_start": "2012-09-11T20:00:00",
+      "available_raw_end": "2013-04-23T17:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "20-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "2-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "2-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:8686270:2013-03-07",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 1800,
+        "daily_totals_kwh": [
+          16.169000000000004,
+          21.266999999999996,
+          27.681,
+          21.220000000000002,
+          17.648000000000007,
+          7.106000000000001,
+          16.753,
+          16.131
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_8686270_interval.csv",
+      "raw_sha256": "d5a277c2e2aa377ab4d53effdf6b03accc61baaa3ac9fe78aed13569e6a82cb5",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-28T00:00:00",
+      "first_positive_after_window": "2013-03-08T00:30:00",
+      "available_raw_start": "2012-07-16T16:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Opted Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "21-Nov-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "21-Nov-12",
+        "OPERATION_FINISH_DATE": "11-Sep-13"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9615206:2013-07-24",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 7890,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          8.460999999999999,
+          10.556000000000003,
+          17.424000000000003
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9615206_interval.csv",
+      "raw_sha256": "9350a0b30b70cc4fc8f66cd23b9262ae90a9f123b0c8f23274163fcda39da8ac",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-16T08:00:00",
+      "first_positive_after_window": "2013-07-25T00:30:00",
+      "available_raw_start": "2012-06-16T10:30:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "18-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "18-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9615210:2013-08-02",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 4260,
+        "daily_totals_kwh": [
+          4.004,
+          0.4600000000000001,
+          0.0,
+          0.0,
+          0.19400000000000012,
+          2.3250000000000006,
+          0.3150000000000002,
+          1.0310000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9615210_interval.csv",
+      "raw_sha256": "cfc6781aeaf5071c180ee4ec66685043bc87bdcc91266c4f91fe54250477af4d",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-26T00:00:00",
+      "first_positive_after_window": "2013-08-03T00:30:00",
+      "available_raw_start": "2012-10-10T20:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "18-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "18-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9615264:2013-03-07",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9615264_interval.csv",
+      "raw_sha256": "5e69bd8e62df824f81c315389706881f3bb48f6806c7178ef76639fe747d58fb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-20T07:00:00",
+      "first_positive_after_window": "2013-06-23T11:30:00",
+      "available_raw_start": "2012-10-10T20:00:00",
+      "available_raw_end": "2014-03-03T04:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "18-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "18-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9615264:2013-03-13",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9615264_interval.csv",
+      "raw_sha256": "5e69bd8e62df824f81c315389706881f3bb48f6806c7178ef76639fe747d58fb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-20T07:00:00",
+      "first_positive_after_window": "2013-06-23T11:30:00",
+      "available_raw_start": "2012-10-10T20:00:00",
+      "available_raw_end": "2014-03-03T04:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "18-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "18-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9615264:2013-03-22",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9615264_interval.csv",
+      "raw_sha256": "5e69bd8e62df824f81c315389706881f3bb48f6806c7178ef76639fe747d58fb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-20T07:00:00",
+      "first_positive_after_window": "2013-06-23T11:30:00",
+      "available_raw_start": "2012-10-10T20:00:00",
+      "available_raw_end": "2014-03-03T04:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "18-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "18-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9615264:2013-03-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9615264_interval.csv",
+      "raw_sha256": "5e69bd8e62df824f81c315389706881f3bb48f6806c7178ef76639fe747d58fb",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-02-20T07:00:00",
+      "first_positive_after_window": "2013-06-23T11:30:00",
+      "available_raw_start": "2012-10-10T20:00:00",
+      "available_raw_end": "2014-03-03T04:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "16-Jun-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "18-Oct-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "18-Oct-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9754414:2013-03-22",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 6720,
+        "daily_totals_kwh": [
+          0.002,
+          0.0,
+          0.0,
+          0.003,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9754414_interval.csv",
+      "raw_sha256": "c835971e3e57de4d509826041663e024befffa74311a11f92bfa3533f52c47d0",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-14T08:30:00",
+      "first_positive_after_window": "2013-03-23T16:00:00",
+      "available_raw_start": "2012-07-26T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "26-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "8-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "8-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9754414:2013-03-28",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 6600,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.8069999999999999,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.24800000000000003
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9754414_interval.csv",
+      "raw_sha256": "c835971e3e57de4d509826041663e024befffa74311a11f92bfa3533f52c47d0",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-03-18T08:00:00",
+      "first_positive_after_window": "2013-04-02T17:00:00",
+      "available_raw_start": "2012-07-26T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "26-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "8-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "8-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9754414:2013-07-24",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 4140,
+        "daily_totals_kwh": [
+          2.426,
+          6.4959999999999996,
+          0.002,
+          0.0,
+          0.0,
+          0.20600000000000002,
+          0.6439999999999999,
+          0.8640000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9754414_interval.csv",
+      "raw_sha256": "c835971e3e57de4d509826041663e024befffa74311a11f92bfa3533f52c47d0",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-16T16:00:00",
+      "first_positive_after_window": "2013-07-31T08:30:00",
+      "available_raw_start": "2012-07-26T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "26-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "8-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "8-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9754414:2013-08-02",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 7680,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.24500000000000002,
+          0.22800000000000004,
+          0.6930000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9754414_interval.csv",
+      "raw_sha256": "c835971e3e57de4d509826041663e024befffa74311a11f92bfa3533f52c47d0",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-07-24T17:00:00",
+      "first_positive_after_window": "2013-08-03T13:00:00",
+      "available_raw_start": "2012-07-26T11:30:00",
+      "available_raw_end": "2014-03-03T07:30:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "26-Jul-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "8-Jan-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "8-Jan-13",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2013-11-28",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 3960,
+        "daily_totals_kwh": [
+          0.19400000000000003,
+          0.025000000000000012,
+          0.0,
+          0.0,
+          0.001,
+          0.09100000000000004,
+          0.082,
+          0.10000000000000005
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-21T00:00:00",
+      "first_positive_after_window": "2013-11-29T00:30:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2013-12-09",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 2340,
+        "daily_totals_kwh": [
+          1.065,
+          0.004,
+          0.735,
+          2.0669999999999997,
+          4.208,
+          4.954000000000001,
+          0.0,
+          5.809
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-30T07:30:00",
+      "first_positive_after_window": "2013-12-10T06:30:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2013-12-10",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours",
+          "near_zero_day_up_to_0_01_kwh_review_flag"
+        ],
+        "longest_zero_minutes": 2340,
+        "daily_totals_kwh": [
+          0.004,
+          0.735,
+          2.0669999999999997,
+          4.208,
+          4.954000000000001,
+          0.0,
+          5.809,
+          5.614000000000001
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-02T14:00:00",
+      "first_positive_after_window": "2013-12-11T16:00:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2014-01-16",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2430,
+        "daily_totals_kwh": [
+          0.301,
+          0.08500000000000002,
+          0.248,
+          0.0,
+          1.1349999999999998,
+          1.6079999999999999,
+          0.22800000000000004,
+          2.879
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-04T10:00:00",
+      "first_positive_after_window": "2014-01-17T06:30:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2014-01-29",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 3750,
+        "daily_totals_kwh": [
+          6.014,
+          7.145999999999999,
+          5.566,
+          1.0859999999999999,
+          0.0,
+          0.0,
+          4.292000000000001,
+          3.9039999999999995
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-21T17:00:00",
+      "first_positive_after_window": "2014-01-30T06:00:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2014-01-30",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 3750,
+        "daily_totals_kwh": [
+          7.145999999999999,
+          5.566,
+          1.0859999999999999,
+          0.0,
+          0.0,
+          4.292000000000001,
+          3.9039999999999995,
+          0.122
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-01-22T16:00:00",
+      "first_positive_after_window": "2014-01-31T06:30:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9822290:2014-02-13",
+      "quality": {
+        "flags": [
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 2340,
+        "daily_totals_kwh": [
+          5.507999999999999,
+          4.9639999999999995,
+          4.7749999999999995,
+          0.0,
+          1.194,
+          2.4899999999999998,
+          0.0,
+          5.33
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9822290_interval.csv",
+      "raw_sha256": "c0499f170a790fae95a8a8351dbfc9b509572739770d5f4e2fd006578d25e267",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2014-02-05T17:00:00",
+      "first_positive_after_window": "2014-02-14T10:00:00",
+      "available_raw_start": "2012-12-10T09:00:00",
+      "available_raw_end": "2014-03-03T08:00:00",
+      "recorded_service_status": "Trial Closed",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "10-Dec-12",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "13-Dec-12",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "13-Dec-12",
+        "OPERATION_FINISH_DATE": "28-Feb-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9997650:2013-11-28",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9997650_interval.csv",
+      "raw_sha256": "19a2f82fcfca8c27b02e973a931a27b4a86715596e53048848aa734f39f2ca58",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-12T15:00:00",
+      "first_positive_after_window": "2013-12-18T13:00:00",
+      "available_raw_start": "2013-02-18T18:30:00",
+      "available_raw_end": "2014-01-31T12:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Feb-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Mar-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Mar-13",
+        "OPERATION_FINISH_DATE": "22-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9997650:2013-12-09",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9997650_interval.csv",
+      "raw_sha256": "19a2f82fcfca8c27b02e973a931a27b4a86715596e53048848aa734f39f2ca58",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-12T15:00:00",
+      "first_positive_after_window": "2013-12-18T13:00:00",
+      "available_raw_start": "2013-02-18T18:30:00",
+      "available_raw_end": "2014-01-31T12:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Feb-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Mar-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Mar-13",
+        "OPERATION_FINISH_DATE": "22-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9997650:2013-12-10",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9997650_interval.csv",
+      "raw_sha256": "19a2f82fcfca8c27b02e973a931a27b4a86715596e53048848aa734f39f2ca58",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-11-12T15:00:00",
+      "first_positive_after_window": "2013-12-18T13:00:00",
+      "available_raw_start": "2013-02-18T18:30:00",
+      "available_raw_end": "2014-01-31T12:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Feb-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Mar-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Mar-13",
+        "OPERATION_FINISH_DATE": "22-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    },
+    {
+      "sample_id": "sgsc:9997650:2014-01-16",
+      "quality": {
+        "flags": [
+          "zero_target_day",
+          "zero_entire_eight_day_window",
+          "continuous_zero_at_least_24_hours"
+        ],
+        "longest_zero_minutes": 11520,
+        "daily_totals_kwh": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "disposition": "quarantine",
+        "cause": "unresolved_zero_readings"
+      },
+      "raw_file": "runs/sgsc_all_response_branches_v2/raw/SGSC_9997650_interval.csv",
+      "raw_sha256": "19a2f82fcfca8c27b02e973a931a27b4a86715596e53048848aa734f39f2ca58",
+      "raw_window_exactly_matches": true,
+      "last_positive_before_window": "2013-12-18T13:30:00",
+      "first_positive_after_window": null,
+      "available_raw_start": "2013-02-18T18:30:00",
+      "available_raw_end": "2014-01-31T12:00:00",
+      "recorded_service_status": "Moved Out",
+      "recorded_dates": {
+        "SMART_METER_INSTALLATION_DATE": "19-Feb-13",
+        "LIFESTYLE_AUDIT_PERFORMED_DATE": "",
+        "PROVISIONING_COMPLETE_DATE": "6-Mar-13",
+        "OFFER_WITHDRAWN_DATE": "",
+        "ACCEPTANCE_WITHDRAWN_DATE": "",
+        "OPERATION_START_DATE": "6-Mar-13",
+        "OPERATION_FINISH_DATE": "22-Jan-14"
+      },
+      "diagnosis": "No timestamped outage, occupancy or meter-health evidence establishes the cause; registry status is not a day-specific diagnosis."
+    }
+  ],
+  "policy": "Preserve raw readings; quarantine any continuous 24-hour zero run in history or target; near-zero alone is a review flag, not an exclusion."
+}

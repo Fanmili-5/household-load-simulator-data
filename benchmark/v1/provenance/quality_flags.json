@@ -1,0 +1,1753 @@
+[
+  {
+    "sample_id": "sgsc:10111896:2013-11-28",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10131368:2013-11-28",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10218392:2013-11-28",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1740,
+    "daily_totals_kwh": [
+      0.0,
+      1.1300000000000003,
+      0.4250000000000001,
+      0.7090000000000002,
+      0.4340000000000001,
+      0.026000000000000002,
+      0.8699999999999999,
+      1.014
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10218392:2013-12-09",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 4260,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.004,
+      0.0,
+      0.0,
+      0.576,
+      0.3690000000000001,
+      0.026000000000000016
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10218392:2013-12-10",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 4110,
+    "daily_totals_kwh": [
+      0.0,
+      0.004,
+      0.0,
+      0.0,
+      0.576,
+      0.3690000000000001,
+      0.026000000000000016,
+      0.017000000000000008
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10390039:2013-03-07",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 9210,
+    "daily_totals_kwh": [
+      0.0,
+      0.007,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10390039:2013-03-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 8010,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.004,
+      0.0,
+      0.002
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10390039:2013-03-22",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 5010,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      12.119,
+      1.0310000000000001,
+      1.071,
+      1.387,
+      1.06
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10420903:2013-07-24",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 1680,
+    "daily_totals_kwh": [
+      0.019,
+      0.002,
+      2.1830000000000003,
+      7.987000000000001,
+      4.745999999999999,
+      0.004,
+      0.001,
+      0.4880000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:10420903:2013-08-02",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 2160,
+    "daily_totals_kwh": [
+      0.0,
+      0.002,
+      0.002,
+      0.002,
+      0.001,
+      14.484,
+      25.436000000000003,
+      47.69299999999999
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:11094878:2013-02-08",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:11139813:2013-08-02",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 8520,
+    "daily_totals_kwh": [
+      0.123,
+      0.077,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      8.04
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:11139945:2013-02-08",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:11162775:2013-03-07",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 5670,
+    "daily_totals_kwh": [
+      0.004,
+      0.0,
+      0.0,
+      0.0,
+      0.8859999999999999,
+      0.0,
+      0.006,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:11162775:2013-03-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 2670,
+    "daily_totals_kwh": [
+      0.006,
+      0.0,
+      0.136,
+      2.116,
+      0.657,
+      1.634,
+      1.7689999999999988,
+      0.6290000000000003
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8149943:2013-11-28",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 8010,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.18100000000000002,
+      0.463,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8149943:2013-12-09",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8165799:2014-01-16",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 10950,
+    "daily_totals_kwh": [
+      1.758,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8165799:2014-01-31",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 10950,
+    "daily_totals_kwh": [
+      9.184,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8165799:2014-02-13",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 9630,
+    "daily_totals_kwh": [
+      6.993,
+      3.895,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8169009:2013-07-24",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1470,
+    "daily_totals_kwh": [
+      1.455,
+      1.0470000000000004,
+      1.0270000000000004,
+      1.0250000000000004,
+      3.1049999999999995,
+      0.5690000000000001,
+      1.3059999999999998,
+      1.0260000000000005
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8169317:2013-12-09",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 5190,
+    "daily_totals_kwh": [
+      6.764999999999999,
+      0.8620000000000004,
+      0.3220000000000001,
+      0.0,
+      0.011,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8169317:2013-12-10",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 6090,
+    "daily_totals_kwh": [
+      0.8620000000000004,
+      0.3220000000000001,
+      0.0,
+      0.011,
+      0.0,
+      0.0,
+      0.0,
+      0.026999999999999996
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8181617:2013-11-28",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 3840,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.451,
+      0.301,
+      0.41200000000000003,
+      0.0,
+      0.0,
+      0.131
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8193493:2014-02-13",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2340,
+    "daily_totals_kwh": [
+      4.839,
+      4.187,
+      5.319,
+      2.102,
+      2.133,
+      0.0,
+      2.878,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8202481:2013-03-22",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1440,
+    "daily_totals_kwh": [
+      19.636999999999997,
+      6.502000000000001,
+      3.984,
+      1.676,
+      2.949,
+      2.3449999999999998,
+      1.5379999999999998,
+      1.543
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8202481:2013-03-28",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1440,
+    "daily_totals_kwh": [
+      1.5379999999999998,
+      1.543,
+      3.2079999999999993,
+      8.36,
+      1.446,
+      1.558,
+      2.09,
+      1.393
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8213205:2014-01-16",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 9870,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.194,
+      0.042
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8241802:2013-12-09",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2160,
+    "daily_totals_kwh": [
+      0.0,
+      7.633999999999999,
+      19.668000000000003,
+      11.108000000000002,
+      10.448999999999998,
+      14.488999999999997,
+      30.205000000000002,
+      25.483
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8304798:2014-01-29",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1950,
+    "daily_totals_kwh": [
+      8.212,
+      9.454,
+      6.357000000000001,
+      4.329000000000001,
+      1.823,
+      1.027,
+      0.099,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8304798:2014-01-30",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2460,
+    "daily_totals_kwh": [
+      9.454,
+      6.357000000000001,
+      4.329000000000001,
+      1.823,
+      1.027,
+      0.099,
+      0.0,
+      2.832
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8304798:2014-02-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 7680,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5210000000000004,
+      0.7860000000000006,
+      1.0270000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8316472:2013-03-07",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 5070,
+    "daily_totals_kwh": [
+      0.20100000000000012,
+      0.21000000000000013,
+      0.24400000000000013,
+      0.3420000000000001,
+      0.09400000000000004,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8316472:2013-03-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 4140,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.12300000000000001,
+      0.0,
+      0.0,
+      0.09899999999999999,
+      1.636,
+      1.1629999999999998
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-03-07",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-03-13",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-03-22",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-03-28",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-07-24",
+    "flags": [
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 960,
+    "daily_totals_kwh": [
+      0.003,
+      0.003,
+      0.002,
+      1.5859999999999999,
+      0.003,
+      0.001,
+      0.002,
+      0.003
+    ],
+    "disposition": "retain",
+    "cause": null
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-08-02",
+    "flags": [
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 750,
+    "daily_totals_kwh": [
+      0.003,
+      2.104999999999998,
+      0.11100000000000006,
+      0.10000000000000006,
+      0.08700000000000005,
+      0.11100000000000006,
+      0.11500000000000006,
+      0.10400000000000005
+    ],
+    "disposition": "retain",
+    "cause": null
+  },
+  {
+    "sample_id": "sgsc:8332870:2013-12-04",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 2520,
+    "daily_totals_kwh": [
+      20.188999999999997,
+      19.671,
+      19.933999999999997,
+      17.037000000000006,
+      3.991000000000001,
+      1.6819999999999995,
+      0.002,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8332870:2014-01-16",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 3210,
+    "daily_totals_kwh": [
+      0.0,
+      0.002,
+      0.0,
+      8.658,
+      0.0,
+      4.272000000000001,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8377884:2014-01-16",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8402996:2014-01-16",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 10830,
+    "daily_totals_kwh": [
+      6.8839999999999995,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8473721:2013-08-02",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 8070,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0210000000000001,
+      0.0,
+      8.213000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8473721:2013-08-08",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1920,
+    "daily_totals_kwh": [
+      0.0,
+      8.213000000000001,
+      20.824,
+      26.759999999999998,
+      17.840000000000003,
+      17.465999999999998,
+      16.716,
+      14.967999999999998
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8573089:2014-01-31",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8573089:2014-02-13",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8579359:2013-03-13",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 4290,
+    "daily_totals_kwh": [
+      5.675,
+      5.463000000000001,
+      6.138,
+      2.343,
+      0.0,
+      0.0,
+      0.15100000000000008,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8579359:2013-03-22",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 6660,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.003,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8579359:2013-03-28",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 7890,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.6420000000000003,
+      0.5570000000000003,
+      13.684
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8603962:2014-01-29",
+    "flags": [
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 630,
+    "daily_totals_kwh": [
+      0.023000000000000013,
+      0.013000000000000005,
+      0.019000000000000003,
+      0.014000000000000005,
+      0.006,
+      0.010000000000000002,
+      0.026000000000000006,
+      6.4879999999999995
+    ],
+    "disposition": "retain",
+    "cause": null
+  },
+  {
+    "sample_id": "sgsc:8603962:2014-01-30",
+    "flags": [
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 630,
+    "daily_totals_kwh": [
+      0.013000000000000005,
+      0.019000000000000003,
+      0.014000000000000005,
+      0.006,
+      0.010000000000000002,
+      0.026000000000000006,
+      6.4879999999999995,
+      10.281
+    ],
+    "disposition": "retain",
+    "cause": null
+  },
+  {
+    "sample_id": "sgsc:8614453:2013-07-24",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 4050,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      23.908999999999995,
+      59.567999999999984,
+      51.467000000000006,
+      54.288999999999994,
+      54.478,
+      35.215999999999994
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8633067:2014-01-16",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 4110,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      9.981,
+      23.0,
+      8.342,
+      4.627000000000001,
+      4.760000000000002,
+      34.053999999999995
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8636517:2014-02-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 6300,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.21200000000000002,
+      0.0,
+      0.0,
+      0.028999999999999998
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8638543:2013-12-04",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8638543:2014-01-16",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 5160,
+    "daily_totals_kwh": [
+      0.184,
+      0.552,
+      0.0,
+      0.0,
+      0.0,
+      1.1480000000000001,
+      1.4859999999999998,
+      1.331
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8638543:2014-01-31",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 5910,
+    "daily_totals_kwh": [
+      0.189,
+      0.0,
+      0.0,
+      0.0,
+      0.068,
+      0.0,
+      0.10400000000000001,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8639653:2013-03-07",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2940,
+    "daily_totals_kwh": [
+      1.2130000000000003,
+      1.2160000000000002,
+      1.2090000000000003,
+      0.5970000000000003,
+      0.0,
+      0.038,
+      0.9230000000000006,
+      1.28
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8639653:2013-03-13",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 6030,
+    "daily_totals_kwh": [
+      0.9230000000000006,
+      1.28,
+      1.1860000000000004,
+      0.9860000000000004,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8639653:2013-03-22",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 7290,
+    "daily_totals_kwh": [
+      2.471000000000001,
+      2.769,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.41800000000000015,
+      1.0150000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8639653:2013-03-28",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 7620,
+    "daily_totals_kwh": [
+      0.41800000000000015,
+      1.0150000000000001,
+      0.27699999999999997,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8654003:2013-03-07",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 3360,
+    "daily_totals_kwh": [
+      14.823999999999998,
+      10.607999999999999,
+      2.4679999999999995,
+      0.30200000000000005,
+      1.069,
+      0.009000000000000001,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8654003:2013-03-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 3750,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.065,
+      0.37,
+      0.28,
+      0.23700000000000004,
+      0.0,
+      1.023
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8654003:2013-03-22",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2250,
+    "daily_totals_kwh": [
+      0.0,
+      0.137,
+      2.087,
+      4.444000000000001,
+      5.495000000000002,
+      6.245000000000002,
+      6.303000000000001,
+      7.333
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:8686270:2013-03-07",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 1800,
+    "daily_totals_kwh": [
+      16.169000000000004,
+      21.266999999999996,
+      27.681,
+      21.220000000000002,
+      17.648000000000007,
+      7.106000000000001,
+      16.753,
+      16.131
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9615206:2013-07-24",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 7890,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      8.460999999999999,
+      10.556000000000003,
+      17.424000000000003
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9615210:2013-08-02",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 4260,
+    "daily_totals_kwh": [
+      4.004,
+      0.4600000000000001,
+      0.0,
+      0.0,
+      0.19400000000000012,
+      2.3250000000000006,
+      0.3150000000000002,
+      1.0310000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9615264:2013-03-07",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9615264:2013-03-13",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9615264:2013-03-22",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9615264:2013-03-28",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9754414:2013-03-22",
+    "flags": [
+      "zero_target_day",
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 6720,
+    "daily_totals_kwh": [
+      0.002,
+      0.0,
+      0.0,
+      0.003,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9754414:2013-03-28",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 6600,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.8069999999999999,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.24800000000000003
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9754414:2013-07-24",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 4140,
+    "daily_totals_kwh": [
+      2.426,
+      6.4959999999999996,
+      0.002,
+      0.0,
+      0.0,
+      0.20600000000000002,
+      0.6439999999999999,
+      0.8640000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9754414:2013-08-02",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 7680,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.24500000000000002,
+      0.22800000000000004,
+      0.6930000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2013-11-28",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 3960,
+    "daily_totals_kwh": [
+      0.19400000000000003,
+      0.025000000000000012,
+      0.0,
+      0.0,
+      0.001,
+      0.09100000000000004,
+      0.082,
+      0.10000000000000005
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2013-12-09",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 2340,
+    "daily_totals_kwh": [
+      1.065,
+      0.004,
+      0.735,
+      2.0669999999999997,
+      4.208,
+      4.954000000000001,
+      0.0,
+      5.809
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2013-12-10",
+    "flags": [
+      "continuous_zero_at_least_24_hours",
+      "near_zero_day_up_to_0_01_kwh_review_flag"
+    ],
+    "longest_zero_minutes": 2340,
+    "daily_totals_kwh": [
+      0.004,
+      0.735,
+      2.0669999999999997,
+      4.208,
+      4.954000000000001,
+      0.0,
+      5.809,
+      5.614000000000001
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2014-01-16",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2430,
+    "daily_totals_kwh": [
+      0.301,
+      0.08500000000000002,
+      0.248,
+      0.0,
+      1.1349999999999998,
+      1.6079999999999999,
+      0.22800000000000004,
+      2.879
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2014-01-29",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 3750,
+    "daily_totals_kwh": [
+      6.014,
+      7.145999999999999,
+      5.566,
+      1.0859999999999999,
+      0.0,
+      0.0,
+      4.292000000000001,
+      3.9039999999999995
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2014-01-30",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 3750,
+    "daily_totals_kwh": [
+      7.145999999999999,
+      5.566,
+      1.0859999999999999,
+      0.0,
+      0.0,
+      4.292000000000001,
+      3.9039999999999995,
+      0.122
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9822290:2014-02-13",
+    "flags": [
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 2340,
+    "daily_totals_kwh": [
+      5.507999999999999,
+      4.9639999999999995,
+      4.7749999999999995,
+      0.0,
+      1.194,
+      2.4899999999999998,
+      0.0,
+      5.33
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9997650:2013-11-28",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9997650:2013-12-09",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9997650:2013-12-10",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  },
+  {
+    "sample_id": "sgsc:9997650:2014-01-16",
+    "flags": [
+      "zero_target_day",
+      "zero_entire_eight_day_window",
+      "continuous_zero_at_least_24_hours"
+    ],
+    "longest_zero_minutes": 11520,
+    "daily_totals_kwh": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "disposition": "quarantine",
+    "cause": "unresolved_zero_readings"
+  }
+]

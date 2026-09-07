@@ -2,3 +2,5 @@
 # Keep versioned artifact bytes identical across checkouts (manifest hashes).
 baseline/** -text
 baseline/**/*.csv whitespace=cr-at-eol
+benchmark/** -text
+benchmark/**/*.csv whitespace=cr-at-eol

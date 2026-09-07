@@ -1,56 +1,47 @@
-# 家庭模拟数据 baseline：SGSC / iFlex
+# 家庭负荷模拟 benchmark：SGSC / iFlex
 
-当前交付为 **[baseline v1.0.0](baseline/v1/README.md)**：统一家庭字段、同户七天历史、当天条件和完整日实测答案。研究思路、论文依据与设计取舍放在 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)。
+当前交付为 **[benchmark v1.0.0](benchmark/v1/README.md)**：统一家庭表示、同户七天历史与全天实测答案、质量隔离、固定家庭划分、输入转换及评分代码。当前任务是**给定已记录家庭与活动条件的回顾性整户负荷预测**。论文与研究取舍见 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)。
 
-| 来源 | 家庭数 | 完整家庭日 | 历史点数 | 全天答案 |
+| 来源 | 有保留样本的家庭 | 保留家庭日 | 隔离家庭日 | 原生全天答案 |
 |---|---:|---:|---:|---|
-| SGSC（澳大利亚） | 2,078 | 16,330 | 336 | 48 个半小时 kWh |
-| iFlex（挪威） | 314 | 2,071 | 168 | 24 个小时 kWh |
+| SGSC | 2,076 | 16,246 | 84 | 48 个半小时 kWh |
+| iFlex | 314 | 2,071 | 0 | 24 个小时 kWh |
 
-每条样本保留同一户的家庭成员、住房、20 类设备的统一字段、能源服务、使用习惯、偏好和逐车资料。设备目录统一，已知值按真实记录填入；没有记录的信息保持未知。20 类目录不等于每户都有这些设备或来源调查了全部类别。
+合计 **2,390 户、18,317 条保留样本**。画像文件仍保留原来全部 2,392 户，供追溯。隔离的 84 条在历史或目标中存在连续至少 24 小时零读数，原因未明，原值完整保存在隔离文件。iFlex 22 户的明确无车回答已统一为汽车和电动车数量为零，影响 149 条样本。
 
-SGSC 另有 12 条原活动记录无法组成完整窗口，已列明原因。两份数据合计 **2,392 户、18,401 条完整日样本**。数据构造已完成，逐户画像采集与通知送达时刻仍有待核实项，故未标为正式训练发布；没有运行模型训练。
+每户采用相同字段框架，未知保持未知。20 类设备是目录容量；不能理解为每户都有完整的 20 类调查。此版不补造设备、作息、费率或电量。
 
-## 直接查看
+## 文件入口
 
-- 完整样例：[SGSC](baseline/v1/examples/sgsc.json) · [iFlex](baseline/v1/examples/iflex.json)。两例都使用完整语义画像。
-- 全部家庭日：[SGSC](baseline/v1/data/sgsc.jsonl.gz) · [iFlex](baseline/v1/data/iflex.jsonl.gz)。每行包含完整输入和实测答案。
-- 每户画像及来源：[SGSC](baseline/v1/profiles/sgsc.jsonl.gz) · [iFlex](baseline/v1/profiles/iflex.jsonl.gz)。原回答和质量标记保存在这里。
-- 格式定义：[家庭 schema](baseline/v1/schema/profile.schema.json) · [样本 schema](baseline/v1/schema/sample.schema.json)。
-- 核对信息是否遗漏：[142 个源字段的去向](baseline/v1/provenance/source_field_mapping.csv) · [实际字段覆盖](baseline/v1/provenance/profile_field_coverage.csv)。
-- 验收：[版本清单](baseline/v1/manifest.json) · [验证结果](baseline/v1/validation.json) · [窗口剔除表](baseline/v1/provenance/window_exclusions.json)。
-- 读取、转换规则、按家庭划分及重建命令：[交付说明](baseline/v1/README.md)。
+- 数据与完整样例：[交付说明](benchmark/v1/README.md)、[SGSC 样例](benchmark/v1/examples/sgsc.json)、[iFlex 样例](benchmark/v1/examples/iflex.json)。
+- 修正与隔离：[画像修正](benchmark/v1/provenance/profile_corrections.json)、[隔离索引](benchmark/v1/quarantine/index.csv)、[原读数复核](benchmark/v1/provenance/zero_review.json)。
+- 输入依据：[时间和费率证据](benchmark/v1/provenance/input_evidence.json)、[字段覆盖](benchmark/v1/provenance/profile_field_coverage.csv)。
+- 格式与评测：[样本 schema](benchmark/v1/schema/sample.schema.json)、[评测协议](benchmark/v1/evaluation/protocol.json)、[固定划分](benchmark/v1/splits/household_holdout.csv)。
+- 验证：[清单](benchmark/v1/manifest.json)、[全量验证](benchmark/v1/validation.json)。
 
 ## 读取与检查
 
 ```bash
-git clone https://github.com/Fanmili-5/household-load-simulator-data.git
-cd household-load-simulator-data
-python3 scripts/read_baseline.py --source iflex
-python3 scripts/verify_baseline.py
+python3 scripts/verify_benchmark.py
+python3 -m unittest discover -s tests -v
 ```
-
-在仓库中使用 Python：
 
 ```python
-from scripts.read_baseline import read_samples
-
-sample = next(read_samples("sgsc", split="train"))
-profile = sample["input"]["profile"]
-history = sample["input"]["history"]
-context = sample["input"]["context"]
-answer = sample["output"]["energy_kwh"]
+from scripts.benchmark_io import read_samples
+sample = next(read_samples("iflex", split="train"))
 ```
 
-将固定训练分区转换成消息格式，不会运行训练：
+导出训练分区的 SFT 消息候选，不启动模型：
 
 ```bash
-python3 scripts/export_baseline_sft.py --split train --output outputs/baseline_train.jsonl.gz
+python3 scripts/benchmark_io.py --split train --track retrospective_conditional --variant full --output outputs/benchmark_train.jsonl.gz
 ```
+
+当前有回顾性评测接口；逐户问卷时刻与通知送达时刻未获完整核实，严格实时预测集合为空。SGSC 费率保持未知，活动类型与白天在家字段完全重合；评分按来源和活动类型分别输出，另提供去掉白天在家字段的输入版本。不能用这个分组关系证明居家习惯的独立作用。
 
 ## 已保留的原观测与旧示例
 
-根目录 `data/`、`tables/`、`examples/` 保存此前的观测版本和部分字段演示，供追溯及复现。旧 SGSC 的 16,342 条记录只覆盖活动窗口；新的全天 baseline 在 `baseline/v1/`。两者不能混计样本数。旧字段说明见 [FIELDS](docs/FIELDS.md)，来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
+根目录 `data/`、`tables/`、`examples/` 保存此前的观测版本和部分字段演示，供追溯及复现。旧 SGSC 的 16,342 条记录只覆盖活动窗口；首个全天观测版本在 `baseline/v1/`；当前 benchmark 在 `benchmark/v1/`。两者不能混计样本数。旧字段说明见 [FIELDS](docs/FIELDS.md)，来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
 
 SGSC 按登记表计合计家庭电量：单表使用普通供电，两表逐点加上受控负荷。原先排除的 258 条条件冲突记录仍未纳入；1,526 条缺辅助产品佐证的记录保留原证据状态，详见旧观测的 [剔除表](tables/sgsc_exclusions.csv)与元数据。
 
