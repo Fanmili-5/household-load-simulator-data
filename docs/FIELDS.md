@@ -6,6 +6,11 @@
 |---|---|
 | `source`、`sample_id`、`household_id`、`event_id` | 数据集、样本、匿名家庭和事件标识。跨源关联必须同时带上 `source`，不能按相似户号拼接。 |
 | `input.profile.household` | 同户问卷资料。SGSC 保留原列名；iFlex 的 q4 房型、q5 面积、q6 自有住房、q7 建造年代、q19 人数、q23 白天在家。 |
+| `input.profile.people` | 整理后的家庭人数、年龄分布、生活状态、教育、收入和家庭类型。异常年龄分布留空。 |
+| `input.profile.dwelling` | 住房类型、面积、产权、建造年代、改造与合住等信息；未采集项为 `null`。 |
+| `input.profile.preferences` / `usage_habits` | 舒适温度、在家情况、温控和设备使用习惯。问卷的一般习惯，不是活动日的实测操作。 |
+| `input.profile.energy_attitudes` / `energy_systems` | 用电与价格关注、节电努力、互联网接入、合同及能源用途。 |
+| `input.profile.vehicles` | 车辆持有和数量，以及按车辆序号关联的充电信息。未知车辆配置为 `null`，明确无电动车时逐车列表为空。 |
 | `input.profile.appliances` | 电器类别、持有状态、数量及原始回答。`null` 表示未知；`false` 表示已知不持有。iFlex 供暖题的 No 表示不用该方式供暖，所以 `present` 仍可能为 `null`。 |
 | `input.history` | 七个来源日期的用电列表，每天都有 `energy_kwh`。SGSC 每天 48 点，iFlex 每天 24 点。 |
 | `input.context` | SGSC 的活动类型、起止和产品代码；iFlex 的当天 24 点实验价格等。 |
@@ -13,6 +18,7 @@
 | `target.channels_kwh` | SGSC 各分路原值，用于回查；其中电量已按适用范围计入合计，不能再把各通道与合计一起相加。 |
 | `estimated_reference` | 已有流程估计的历史参考，可为 `null`。这是单独保存的辅助量，不是真实无活动反事实。 |
 | `metadata` | 原批次、源行号、表计类型、条件证据分组、原核验状态。不是模型输入。 |
+| `metadata.profile_provenance` | 同户原回答、来源文件哈希、含表头的记录编号、字段来源与状态、异常和采集时点说明。管理或事后字段只保存在这里。 |
 
 ## 时间
 
@@ -39,3 +45,5 @@ SGSC 活动类型 DPR 对应节电奖励、DPP 对应高峰价格惩罚安排。
 | `evidence_group` | 条件证据状态，含缺辅助产品佐证但保留的记录。 |
 
 CSV 空白统一表示未知或不适用，完整 JSON 保留更细的区别。SGSC 的原房型与归纳房型各有一列，没有自动相互补值；iFlex 的人数等字段也未跨源补给 SGSC。
+
+新增的 `profile_*` 列对应扩展画像；字典和列表用 JSON 单元格保存。`*_households.csv` 每户一行，不重复活动；`*_events.csv` 每条活动一行。`profile_quality_flags` 用于筛查异常。旧字段清单及新增处理详见 [画像更新](PROFILE_UPDATE_20260908.md)。

@@ -11,7 +11,8 @@
     "excluded rows absent",
     "full-day examples separate",
     "no local paths or recognized credential prefixes in records",
-    "every exported source input, measured target and existing reference compared with original batch"
+    "expanded household profiles, original answers, EV counts, demographic quality flags, household tables and all examples",
+    "all original curve/context values and legacy profile fields preserved; every full profile matched to original household CSV or Survey 1"
   ],
   "records": {
     "sgsc": {

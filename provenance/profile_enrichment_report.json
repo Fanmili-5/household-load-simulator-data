@@ -1,0 +1,31 @@
+{
+  "updated_on": "2026-09-08",
+  "sources": {
+    "sgsc": {
+      "households_enriched": 2078,
+      "raw_field_count_distribution": {
+        "46": 2078
+      },
+      "quality_flags": {},
+      "ev_count_distribution": {
+        "None": 2078
+      }
+    },
+    "iflex": {
+      "households_enriched": 314,
+      "raw_field_count_distribution": {
+        "96": 314
+      },
+      "quality_flags": {
+        "age_distribution_inconsistent_with_household_size": 10,
+        "life_status_count_exceeds_household_size": 1
+      },
+      "ev_count_distribution": {
+        "None": 199,
+        "2": 16,
+        "1": 99
+      }
+    }
+  },
+  "curves_and_membership_changed": false
+}

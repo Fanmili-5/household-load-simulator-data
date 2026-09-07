@@ -1,6 +1,6 @@
 {
-  "snapshot_date": "2026-09-07",
-  "schema_version": "energybridge-observation-share/1",
+  "snapshot_date": "2026-09-08",
+  "schema_version": "household-observation-share/2",
   "selection_sha256": "13029695b845b1aeda9bc15591cb340b60a7b306378e2bdd9f857be72d4a374e",
   "branches": {
     "sgsc_single": {
@@ -42,8 +42,8 @@
       "source_batch": "iflex_all_candidates_v1",
       "source_file_sha256": "9f2ebe59061d17a6c806cf91bbc4a18aef6d5337785512764f72eaf5769c901a",
       "file": "data/iflex.jsonl.gz",
-      "sha256": "535ee51c27accec9d9e9cfabb761b38286eb065f350acfd3eb7ecfebd76f7261",
-      "bytes": 1155099,
+      "sha256": "a78f5011957559dec56d037a10673bcac6c3c86659fa5521da93b71f93c45746",
+      "bytes": 1623835,
       "evidence_groups": {
         "iflex_existing_candidate": 2071
       },
@@ -53,18 +53,28 @@
     }
   },
   "scope": "candidate observations in existing source windows; not a full-day SFT release",
+  "profile_sources": {
+    "sgsc": {
+      "filename": "sgsc-ct-customer-household-data-revised.csv",
+      "sha256": "21c1fd83d25ce78bd244d2cb55b95796f78a0e02ed9a5fb2d13c57d640cf321f"
+    },
+    "iflex": {
+      "filename": "survey1_answers.csv",
+      "sha256": "39181e74b65cbbaf77a565f23c7d1bd5b3674f7b7dea630fc2a5e1a3768cf1e8"
+    }
+  },
   "data_files": {
     "sgsc": {
       "file": "data/sgsc.jsonl.gz",
-      "sha256": "1296c20ee29b055420c4839a9d7f7716ac8084fe6f7dd986edce32ca3149cb95",
-      "bytes": 29339285,
+      "sha256": "6c652d6dc770de802a1872347f2e5a00391c348afdaad65188a9b4bdd53e7e95",
+      "bytes": 30980540,
       "records": 16342,
       "households": 2078
     },
     "iflex": {
       "file": "data/iflex.jsonl.gz",
-      "sha256": "535ee51c27accec9d9e9cfabb761b38286eb065f350acfd3eb7ecfebd76f7261",
-      "bytes": 1155099,
+      "sha256": "a78f5011957559dec56d037a10673bcac6c3c86659fa5521da93b71f93c45746",
+      "bytes": 1623835,
       "records": 2071,
       "households": 314
     }

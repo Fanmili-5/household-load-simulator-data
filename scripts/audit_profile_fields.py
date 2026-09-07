@@ -31,7 +31,8 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--survey-directory',required=True,type=Path)
     args=p.parse_args()
-    existing={r['household_id']:r['input']['profile'] for r in read_records('iflex')}
+    current={r['household_id']:r for r in read_records('iflex')}
+    existing={k:r['input']['profile'] for k,r in current.items()}
     paths={n:args.survey_directory/n for n in ('survey1_answers.csv','survey1_questions.csv')}
     with paths['survey1_answers.csv'].open(encoding='utf-8-sig') as f:
         reader=csv.DictReader(f);columns=reader.fieldnames
@@ -42,6 +43,9 @@ def main():
         for row in csv.DictReader(f):questions.setdefault(row['Question_ID'],row['Question'])
     # Source selection additionally used meter questions; these are not model profile fields.
     used={'q4','q5','q6','q7','q19','q23','q9N1','q9N2','q9N3','q14','q16_bil_b'}
+    for r in current.values():
+        used.update(k for k in r['metadata'].get('profile_provenance',{}).get('field_sources',{}).values() if k)
+        used.update(a.get('source_field') for a in r['input']['profile']['appliances'] if a.get('source_field'))
     selection={'q17','q18','q6b1','q6b2'}
     missing={'','NA','NaN','nan'}
     unknown={"Don't know","Don't want to answer","Unsure / don't know",'-'}
@@ -51,7 +55,7 @@ def main():
             'category':category(k),'households':314,
             'non_missing_answers':sum(r[k] not in missing for r in rows),
             'explicit_unknown_or_declined_answers':sum(r[k] in unknown for r in rows),
-            'current_use':'linkage' if k=='ID' else 'exported_profile' if k in used else 'selection_only' if k in selection else 'not_exported',
+            'current_use':'linkage_and_raw_metadata' if k=='ID' else 'profile_and_raw_metadata' if k in used else 'selection_and_raw_metadata' if k in selection else 'raw_metadata_only',
             'timing_basis':'Survey 1; retained phase-1 cohort; no individual response timestamp established here'})
     age_oversized=age_sum_mismatch=life_oversized=0
     for r in rows:
@@ -63,7 +67,7 @@ def main():
         life_oversized+=any(n<0 or n>size for n in life)
     out=ROOT/'provenance'
     with (out/'iflex_profile_field_inventory.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=list(inventory[0]));w.writeheader();w.writerows(inventory)
+        w=csv.DictWriter(f,fieldnames=list(inventory[0]),lineterminator="\n");w.writeheader();w.writerows(inventory)
     report={'retained_households':314,'answer_columns_inventoried':len(columns),
         'question_columns_without_label':[r['field'] for r in inventory if not r['question']],
         'unclassified_fields':[r['field'] for r in inventory if r['category']=='requires_classification'],

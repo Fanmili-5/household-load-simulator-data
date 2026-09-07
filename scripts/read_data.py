@@ -71,6 +71,10 @@ def summary_row(r):
         row[category + '_present'] = present
         row[category + '_count'] = a.get('count')
         row[category + '_answer_raw'] = a.get('source_value', a.get('usage_level_raw', a.get('type_raw')))
+    for group in ('people','dwelling','preferences','usage_habits','energy_attitudes','energy_systems','vehicles'):
+        for key,value in p.get(group,{}).items():
+            row['profile_'+group+'_'+key]=json.dumps(value,ensure_ascii=False,sort_keys=True) if isinstance(value,(dict,list)) else value
+    row['profile_quality_flags']=json.dumps(r['metadata'].get('profile_provenance',{}).get('quality_flags',[]))
     return row
 
 
@@ -82,7 +86,7 @@ def export_summary(records, destination):
         for record in records:
             row = summary_row(record)
             if writer is None:
-                writer = csv.DictWriter(stream, fieldnames=list(row))
+                writer = csv.DictWriter(stream, fieldnames=list(row), lineterminator="\n")
                 writer.writeheader()
             writer.writerow(row)
 

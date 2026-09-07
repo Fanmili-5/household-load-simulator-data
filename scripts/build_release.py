@@ -1,6 +1,6 @@
 """Package existing local observations; never rebuild targets or train models.
 
-Usage: python3 scripts/build_release.py --pipeline-root /path/to/load_response_pipeline
+Usage: python3 scripts/build_release.py --pipeline-root /path/to/load_response_pipeline --sgsc-households /path/to/sgsc-ct-customer-household-data-revised.csv
 The local cleaning workspace is required only for rebuilding this export.
 """
 import argparse
@@ -14,6 +14,7 @@ import shutil
 from collections import Counter
 from pathlib import Path
 from read_data import ROOT, read_records, export_summary
+from enrich_profiles import ProfileSources
 
 BATCHES = {
     'sgsc_single': 'sgsc_all_response_verified_v1',
@@ -41,7 +42,7 @@ def project(r, branch, batch, line, evidence):
         'reported_household_demand_no_reported_pv_business_or_shared_rental_meter')
     provenance = r['provenance']
     result = {
-        'schema_version': 'energybridge-observation-share/1',
+        'schema_version': 'household-observation-share/2',
         **{k: r[k] for k in ['source', 'sample_id', 'household_id', 'event_id',
                              'input', 'target', 'estimated_reference']},
         'metadata': {
@@ -66,13 +67,17 @@ def project(r, branch, batch, line, evidence):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--pipeline-root', required=True, type=Path)
+    parser.add_argument('--sgsc-households', required=True, type=Path)
     args = parser.parse_args()
     base = args.pipeline_root
     selection = base/'evidence/20260907_sgsc_condition_reaudit/sample_evidence_groups.jsonl'
     groups = {r['sample_id']:r for r in map(json.loads,selection.open())}
-    manifest = {'snapshot_date': '2026-09-07', 'schema_version': 'energybridge-observation-share/1',
+    profiles = ProfileSources(base,args.sgsc_households,groups)
+    manifest = {'snapshot_date': '2026-09-08', 'schema_version': 'household-observation-share/2',
                 'selection_sha256': sha(selection), 'branches': {},
                 'scope': 'candidate observations in existing source windows; not a full-day SFT release'}
+    manifest['profile_sources']=profiles.files
+    retained_profiles={}
     excluded, all_ids, household_sets = [], set(), {}
     for branch, batch in BATCHES.items():
         src = base/'runs'/batch/'observations.jsonl'
@@ -91,6 +96,14 @@ def main():
                         assert r['sample_id'] not in all_ids
                         all_ids.add(r['sample_id'])
                         row = project(r,branch,batch,line,g)
+                        row['schema_version']='household-observation-share/2'
+                        profile,profile_provenance=profiles.apply(r,g)
+                        row['input']['profile']=profile
+                        row['metadata']['profile_provenance']=profile_provenance
+                        key=(r['source'],r['household_id'])
+                        if key in retained_profiles:
+                            assert retained_profiles[key]==(profile,profile_provenance)
+                        else:retained_profiles[key]=(profile,profile_provenance)
                         out.write(json.dumps(row,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n')
                         if n==0:
                             write_json(ROOT/'examples'/f'{branch}_observation.json',row)
@@ -125,13 +138,34 @@ def main():
         for key in ('file','sha256','bytes'):
             manifest['branches'][branch].pop(key)
     with (ROOT/'tables'/'sgsc_exclusions.csv').open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=list(excluded[0]));w.writeheader();w.writerows(excluded)
+        w=csv.DictWriter(f,fieldnames=list(excluded[0]),lineterminator="\n");w.writeheader();w.writerows(excluded)
     for source in ['sgsc','iflex']:
-        shutil.copyfile(base/'reports/notion_day_audit_20260907'/f'{source}_day_example.json',
-                        ROOT/'examples'/f'{source}_full_day_example.json')
+        example=json.loads((base/'reports/notion_day_audit_20260907'/f'{source}_day_example.json').read_text())
+        profile,provenance=retained_profiles[(source,example['metadata']['household_id'])]
+        example['input']['profile']=profile
+        example['metadata']['profile_provenance']=provenance
+        example['schema_version']='household-day-example/2'
+        write_json(ROOT/'examples'/f'{source}_full_day_example.json',example)
     manifest['excluded_sgsc_records']=len(excluded)
     manifest['total_candidate_records']=len(all_ids)
     write_json(ROOT/'provenance'/'manifest.json',manifest)
+    from read_data import summary_row
+    coverage={}
+    for source in ['sgsc','iflex']:
+        seen=set();rows=[];flags=Counter();fields=Counter();vehicle_counts=Counter()
+        for r in read_records(source):
+            hid=r['household_id']
+            if hid in seen:continue
+            seen.add(hid)
+            summary=summary_row(r)
+            rows.append({k:v for k,v in summary.items() if k in ('source','household_id','meter_configuration') or k.startswith('profile_')})
+            prov=r['metadata']['profile_provenance'];flags.update(prov['quality_flags'])
+            fields[len(prov['raw_answers'])]+=1
+            vehicle_counts[str(r['input']['profile']['vehicles']['electric_or_plugin_hybrid_count'])]+=1
+        with (ROOT/'tables'/f'{source}_households.csv').open('w',encoding='utf-8-sig',newline='') as f:
+            w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");w.writeheader();w.writerows(rows)
+        coverage[source]={'households_enriched':len(seen),'raw_field_count_distribution':dict(fields),'quality_flags':dict(flags),'ev_count_distribution':dict(vehicle_counts)}
+    write_json(ROOT/'provenance/profile_enrichment_report.json',{'updated_on':'2026-09-08','sources':coverage,'curves_and_membership_changed':False})
     print(json.dumps(manifest,ensure_ascii=False,indent=2))
 
 
