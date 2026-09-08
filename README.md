@@ -13,7 +13,7 @@
 
 ## 文件入口
 
-初次阅读可先看 [完整单条 JSONL](sharing/iflex_Exp_1_2020-02-11.jsonl) 和 [中文字段说明](sharing/iflex_Exp_1_2020-02-11_字段说明.md)。
+初次阅读建议先看 [中文字段说明](sharing/iflex_Exp_1_2020-02-11_字段说明.md)，再对照 [完整单条 JSONL](sharing/iflex_Exp_1_2020-02-11.jsonl)。全量数据可下载 [SGSC](https://raw.githubusercontent.com/Fanmili-5/household-load-simulator-data/benchmark-v1.0.0/benchmark/v1/data/sgsc.jsonl.gz) 和 [iFlex](https://raw.githubusercontent.com/Fanmili-5/household-load-simulator-data/benchmark-v1.0.0/benchmark/v1/data/iflex.jsonl.gz)，均为 Gzip 压缩的 JSONL，一行对应一个家庭日。
 
 - 数据与完整样例：[交付说明](benchmark/v1/README.md)、[SGSC 样例](benchmark/v1/examples/sgsc.json)、[iFlex 样例](benchmark/v1/examples/iflex.json)。
 - 修正与隔离：[画像修正](benchmark/v1/provenance/profile_corrections.json)、[隔离索引](benchmark/v1/quarantine/index.csv)、[原读数复核](benchmark/v1/provenance/zero_review.json)。
@@ -41,10 +41,8 @@ python3 scripts/benchmark_io.py --split train --track retrospective_conditional 
 
 当前有回顾性评测接口；逐户问卷时刻与通知送达时刻未获完整核实，严格实时预测集合为空。SGSC 费率保持未知，活动类型与白天在家字段完全重合；评分按来源和活动类型分别输出，另提供去掉白天在家字段的输入版本。不能用这个分组关系证明居家习惯的独立作用。
 
-## 已保留的原观测与旧示例
+## 复现所需的源文件
 
-根目录 `data/`、`tables/`、`examples/` 保存此前的观测版本和部分字段演示，供追溯及复现。旧 SGSC 的 16,342 条记录只覆盖活动窗口；首个全天观测版本在 `baseline/v1/`；当前 benchmark 在 `benchmark/v1/`。两者不能混计样本数。旧字段说明见 [FIELDS](docs/FIELDS.md)，来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
-
-SGSC 按登记表计合计家庭电量：单表使用普通供电，两表逐点加上受控负荷。原先排除的 258 条条件冲突记录仍未纳入；旧观测批次曾单列 1,526 条缺辅助产品佐证的记录，详见旧观测的 [剔除表](tables/sgsc_exclusions.csv)与元数据。
+当前使用 `benchmark/v1/`。根目录的 `data/`、`tables/`、`examples/` 及 `baseline/v1/` 是早期观测或本版构造输入，供复现和追溯；其中的窗口与样例不作为当前训练格式。来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
 
 数据来源和复用条件见 [DATA_LICENSES.md](DATA_LICENSES.md)。
