@@ -1,0 +1,327 @@
+{
+  "schema_version": "household-benchmark/1.0.0",
+  "cohort": "distinct households with at least one retained day; not all archived profiles",
+  "known_definition": "non-null, including explicit false or zero; not a positive ownership count",
+  "denominator_note": "Appliance presence percentage uses 20 fixed categories per household. It measures template coverage, not lost source records.",
+  "benchmark_manifest_sha256": "b16ddb04736b2fea4ab3ea452dd2369df52dec8e4fb3eeb77f0a4a7e78beb9d8",
+  "sources": {
+    "sgsc": {
+      "households": 2076,
+      "retained_days": 16246,
+      "complete_history_and_target_days": 16246,
+      "days_with_numeric_price_sequence": 0,
+      "known_households_by_field": {
+        "household.resident_count": 0,
+        "dwelling.type": 985,
+        "dwelling.source_classified_type": 2076,
+        "dwelling.floor_area_m2.lower": 0,
+        "preferences.living_room_comfort_temperature_c": 0
+      },
+      "appliances": {
+        "refrigerator": {
+          "present_true": 2076,
+          "present_false": 0,
+          "present_unknown": 0,
+          "count_known_including_zero": 2076,
+          "positive_count_known": 2076
+        },
+        "freezer": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "washing_machine": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "dishwasher": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "clothes_dryer": {
+          "present_true": 1606,
+          "present_false": 0,
+          "present_unknown": 470,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "air_conditioner": {
+          "present_true": 1651,
+          "present_false": 425,
+          "present_unknown": 0,
+          "count_known_including_zero": 425,
+          "positive_count_known": 0
+        },
+        "panel_heater": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_underfloor_heating": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "heat_pump": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_water_heater": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "fireplace_or_wood_stove": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "fuel_heater": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "pool_pump": {
+          "present_true": 471,
+          "present_false": 1605,
+          "present_unknown": 0,
+          "count_known_including_zero": 1605,
+          "positive_count_known": 0
+        },
+        "electric_or_plugin_hybrid_vehicle": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "solar_pv": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "battery_storage": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "mechanical_ventilation": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_cooking_appliance": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "television": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "lighting": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 2076,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        }
+      },
+      "median_known_appliance_presence_categories": 4.0,
+      "unknown_presence_cells": 33686,
+      "all_presence_cells": 41520,
+      "unknown_presence_percent": 81.132
+    },
+    "iflex": {
+      "households": 314,
+      "retained_days": 2071,
+      "complete_history_and_target_days": 2071,
+      "days_with_numeric_price_sequence": 2071,
+      "known_households_by_field": {
+        "household.resident_count": 314,
+        "dwelling.type": 314,
+        "dwelling.source_classified_type": 0,
+        "dwelling.floor_area_m2.lower": 314,
+        "preferences.living_room_comfort_temperature_c": 314
+      },
+      "appliances": {
+        "refrigerator": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "freezer": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "washing_machine": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "dishwasher": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "clothes_dryer": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "air_conditioner": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "panel_heater": {
+          "present_true": 258,
+          "present_false": 0,
+          "present_unknown": 56,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_underfloor_heating": {
+          "present_true": 264,
+          "present_false": 0,
+          "present_unknown": 50,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "heat_pump": {
+          "present_true": 98,
+          "present_false": 0,
+          "present_unknown": 216,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_water_heater": {
+          "present_true": 271,
+          "present_false": 0,
+          "present_unknown": 43,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "fireplace_or_wood_stove": {
+          "present_true": 216,
+          "present_false": 0,
+          "present_unknown": 98,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "fuel_heater": {
+          "present_true": 21,
+          "present_false": 0,
+          "present_unknown": 293,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "pool_pump": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_or_plugin_hybrid_vehicle": {
+          "present_true": 115,
+          "present_false": 199,
+          "present_unknown": 0,
+          "count_known_including_zero": 314,
+          "positive_count_known": 115
+        },
+        "solar_pv": {
+          "present_true": 0,
+          "present_false": 314,
+          "present_unknown": 0,
+          "count_known_including_zero": 314,
+          "positive_count_known": 0
+        },
+        "battery_storage": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "mechanical_ventilation": {
+          "present_true": 107,
+          "present_false": 0,
+          "present_unknown": 207,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "electric_cooking_appliance": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "television": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        },
+        "lighting": {
+          "present_true": 0,
+          "present_false": 0,
+          "present_unknown": 314,
+          "count_known_including_zero": 0,
+          "positive_count_known": 0
+        }
+      },
+      "median_known_appliance_presence_categories": 6.0,
+      "unknown_presence_cells": 4417,
+      "all_presence_cells": 6280,
+      "unknown_presence_percent": 70.334
+    }
+  }
+}
