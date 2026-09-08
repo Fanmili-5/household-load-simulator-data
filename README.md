@@ -20,6 +20,7 @@
 - 输入依据：[时间和费率证据](benchmark/v1/provenance/input_evidence.json)、[字段覆盖](benchmark/v1/provenance/profile_field_coverage.csv)。
 - 格式与评测：[样本 schema](benchmark/v1/schema/sample.schema.json)、[评测协议](benchmark/v1/evaluation/protocol.json)、[固定划分](benchmark/v1/splits/household_holdout.csv)。
 - 验证：[清单](benchmark/v1/manifest.json)、[全量验证](benchmark/v1/validation.json)。
+- 可选扩展：[iFlex 历史气温与家庭变化复核](extensions/iflex_context_v1/README.md)。气温可作为额外历史输入；事后问卷仅供复核，主版本与划分保持原样。
 
 ## 读取与检查
 

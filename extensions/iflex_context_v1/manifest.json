@@ -1,0 +1,50 @@
+{
+  "extension_version": "iflex-context/1.0.0",
+  "parent_version": "household-benchmark/1.0.0",
+  "parent_iflex_data_sha256": "1ea1c01a8fd3ce471b282ce7c1317ed26d2dc05cc85e982777975be2b2acdab5",
+  "parent_manifest_sha256": "b16ddb04736b2fea4ab3ea452dd2369df52dec8e4fb3eeb77f0a4a7e78beb9d8",
+  "implementation_sha256": "15da7e98bceb175f36cd5b8f7c4e29286daacf8df83bf78591da2457fe7c8dcf",
+  "counts": {
+    "samples_with_history_weather": 2071,
+    "households": 314,
+    "followup_status_households": {
+      "no_change_details_recorded": 220,
+      "followup_unavailable": 70,
+      "reported_change_detail": 24
+    },
+    "reported_change_household_samples_in_february": 86,
+    "reported_change_household_samples_in_march": 76,
+    "reported_change_categories_households": {
+      "other_unspecified": 10,
+      "resident_count_change": 4,
+      "home_in_february_due_to_coronavirus_self_report": 9,
+      "water_based_heating": 1,
+      "reduced_building_heat_loss": 3,
+      "electric_car_purchase": 1,
+      "space_heating_equipment_purchase": 1
+    }
+  },
+  "example_sha256": "1acaeb956d7577f830970baace5dff2f8b577f8dda41b1c6e52f95c53a1716bc",
+  "target_day_actual_weather_in_inputs": false,
+  "followup_answers_in_inputs": false,
+  "split_assignment": "inherit parent household_holdout.csv; no resplitting",
+  "weather_track": "optional iFlex retrospective extension; report separately from v1 input variants",
+  "prospective_weather_publication_latency_verified": false,
+  "limits": [
+    "No imputation; no new households or days.",
+    "Reported change is not proof a particular sample has a stale profile.",
+    "No change details and missing follow-up are not proof of stability.",
+    "February change dates and persistence into March are unknown.",
+    "Aq1_1 polarity is not used; explicit detail answers determine status.",
+    "Survey reports are not independently verified device events.",
+    "Historical regional weather does not establish a measured appliance trajectory."
+  ],
+  "artifacts": {
+    "sources/extraction.json": "661a002a0622cb3d6e0c174a45e8895f03b91dcbf9c233e5bfd0589df0482a10",
+    "sources/regional_temperature.jsonl.gz": "d687e943f91df12d254f5f1e5880acaf28e942eaa729209438ade30f7796b0fc",
+    "sources/survey2_change_answers.jsonl": "ecd495b5ede7660f87f029fdf362388525863c80c562e11cc4078ae574ab311f",
+    "sources/survey2_change_dictionary.json": "e38a63aeda2c79f391177a1b58ab6e70a900505e190e8afe73ba4c7bde096795",
+    "inputs/history_weather.jsonl.gz": "817f483996798e5769dc43d3fbca01095ae2d8f1229990fcae43ed58e0147a68",
+    "review/household_changes.jsonl": "be3234c2115e8d4ca4d751f9104530da169f1d8df81401d04b234f6ec477403e"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_doi": "10.5281/zenodo.8248802",
+  "paper_doi": "10.1016/j.dib.2023.109571",
+  "temperature_definition": "Regional station air temperature 2 m above ground, degrees Celsius; paper Table 11",
+  "station_mapping_evidence": "Paper Table 7",
+  "hourly_csv_sha256": "e3e857f0797aae1878492580fc68b3bca797989352ba1114b3908c13f2d77524",
+  "survey_files": {
+    "survey2_answers.csv": {
+      "md5": "d25f3dfc6fd44faf8b189e5d72bd5b2b",
+      "sha256": "fd18796393528fdcf7abedddfa95cc0e854255355ef3fff184cb3f62d5032efc"
+    },
+    "survey2_questions.csv": {
+      "md5": "7bad88234d50a86e7360c006cbca58b4",
+      "sha256": "856f26bfd988aea94000c96e79d9f3397fc2dd0e3a237880557c367fb8cf6b7e"
+    }
+  },
+  "unique_household_hours_demand_checked": 189528,
+  "unique_region_hours": 2376,
+  "demand_alignment_tolerance_kwh": 1e-09,
+  "temperature_imputation": false,
+  "regional_values_checked_equal_across_matched_households": true
+}

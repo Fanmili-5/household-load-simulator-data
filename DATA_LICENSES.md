@@ -24,3 +24,5 @@ baseline v1.0.0 另外将这两份来源映射为统一家庭字段，从同户�
 仓库中的读取和核验脚本供复现本次分析数据包使用；未另外指定软件开源许可。原始数据本身仍适用上表许可。
 
 benchmark v1.0.0 在上述全天观测上按连续零读数规则隔离 84 条 SGSC 窗口，并根据 iFlex 22 户明确无车回答整理问卷跳题语义。`benchmark/v1/` 的数据、画像、隔离文件及派生统计继续分别适用上述来源许可；`benchmark/source_evidence_v1/` 保存构造核查记录。没有修改实测电量，旧版仍可追溯。
+
+`extensions/iflex_context_v1/` 从同一 iFlex v2 来源提取历史室外气温和 Survey 2 家庭变化问答，继续采用 CC BY 4.0。温度原采集方为 Norwegian Meteorological Institute，iFlex 作者按地区气象站整理。扩展只选择历史窗口、按地区去重及转换问卷选项，没有补造读数或修改父版本；事后问答单独保存，不作为预测输入。

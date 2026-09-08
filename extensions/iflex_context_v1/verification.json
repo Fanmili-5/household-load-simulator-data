@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "source alignment, history boundary, followup separation and reproducibility; not predictive validity",
+  "manifest_sha256": "a84315f8d553d425ffe597fa50e0871f89e39939854bab7ff285cff6cbb2c53a",
+  "sample_weather_values_checked": 347928,
+  "unique_source_household_hours_checked": 189528,
+  "parent_files_unchanged": 45,
+  "independent_rebuild_files_byte_equal": 8,
+  "unit_tests_passed": 25,
+  "source_hourly_sha256": "e3e857f0797aae1878492580fc68b3bca797989352ba1114b3908c13f2d77524",
+  "training_executed": false
+}

@@ -1,0 +1,63 @@
+{
+  "Aq1_1": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? No",
+    "answers": [
+      "No",
+      "Yes"
+    ]
+  },
+  "Aq1_2": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, bought an electric car",
+    "answers": [
+      "Yes, bought an electric car"
+    ]
+  },
+  "Aq1_3": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, bought new equipment for room heating (e.g. heat pump or additional heaters)",
+    "answers": [
+      "Yes, bought new equipment for room heating (e.g. heat pump or additional heaters)"
+    ]
+  },
+  "Aq1_4": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, have got a shared solution for heating or district heating",
+    "answers": [
+      "Yes, have got a shared solution for heating or district heating"
+    ]
+  },
+  "Aq1_5": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, have got water based heating system",
+    "answers": [
+      "Yes, have got water based heating system"
+    ]
+  },
+  "Aq1_6": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, have insulated my home or made other improvements that reduce heat loss from the home",
+    "answers": [
+      "Yes, have insulated my home or made other improvements that reduce heat loss from the home"
+    ]
+  },
+  "Aq1_7": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, have installed solar cells",
+    "answers": [
+      "Yes, have installed solar cells"
+    ]
+  },
+  "Aq1_8": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, we were more or fewer residents than in January",
+    "answers": [
+      "Yes, we were more or fewer residents than in January"
+    ]
+  },
+  "Aq1_9": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, was at home in February due to corona virus",
+    "answers": [
+      "Yes, was at home in February due to corona virus"
+    ]
+  },
+  "Aq1_10": {
+    "question": "Have there been any major changes in your household that may have affected your electricity consumption during February this year? Yes, other:",
+    "answers": [
+      "Yes, other:"
+    ]
+  }
+}
