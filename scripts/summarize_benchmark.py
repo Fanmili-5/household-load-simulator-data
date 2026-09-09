@@ -1,4 +1,4 @@
-"""Recompute report counts and snapshot ages from the actual published samples."""
+"""Recompute dataset counts and snapshot ages from the actual published samples."""
 import argparse
 from collections import Counter
 from datetime import datetime

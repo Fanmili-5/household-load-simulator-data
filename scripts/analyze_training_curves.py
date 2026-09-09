@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'docs/curve_evidence'
+OUT = ROOT / 'analysis/train_curves'
 SOURCES = {
     'sgsc': ('benchmark/v1/data/sgsc.jsonl.gz', 'benchmark/v1/splits/household_holdout.csv'),
     'iflex': ('benchmark/v1/data/iflex.jsonl.gz', 'benchmark/v1/splits/household_holdout.csv'),

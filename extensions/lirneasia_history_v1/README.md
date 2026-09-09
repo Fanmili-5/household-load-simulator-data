@@ -12,7 +12,7 @@
 - [隔离原记录](quarantine/lirneasia.jsonl.gz)、[逐窗零读数复核](evaluation/zero_reading_review.json)：335 条，原值完整保存。
 - [源摘录](sources/)：422 户原问卷字段、1,043 段累计电表读数，可以不下载 1.70 GB 原文件就重建当前发布窗口。
 - [构造检查](verification.json)、[源文件校验](provenance/source_integrity.json)、[发布清单](manifest.json)。
-- [全项目构造依据与细节](../../docs/BENCHMARK_CONSTRUCTION_20260909.md)。
+- [全项目构造依据与细节](../../docs/DATA_CONSTRUCTION.md)。
 
 ## 核验与筛选
 

@@ -1,74 +1,49 @@
-# 家庭负荷 benchmark：SGSC / iFlex / LIRNEasia
+# Household load benchmark
 
-研究主线同时包含家庭用能策略生成与负荷预测；当前仓库已实现的是数据与预测评测准备，策略生成及效果评估尚待实现。已补充 [真实曲线与训练分区预测诊断](docs/CURVE_EVIDENCE_20260909.md)。[主线、数据调研、获取进展与真实样例](docs/RESEARCH_ROUTE_AND_DATA_REVIEW_20260909.md)。
+真实家庭的画像、设备资料和连续用电记录。每条 JSONL 对应一个家庭日：以同户资料、此前七天的用电和目标日条件为输入，预测次日各时段的实测电量。
 
-本仓库提供真实家庭的画像、多设备信息、连续用电历史、实测答案、固定划分与评分代码。输入为同户资料、此前七天用电和目标日条件，预测完整一天的区间电量。**2026-09-09 已实际加入 LIRNEasia 数据扩展**。汇报入口：[Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)；[阶段汇报提纲](docs/REPORT_BRIEF_20260909.md)；[构造参考与完整细节](docs/BENCHMARK_CONSTRUCTION_20260909.md)。
-
-| 来源 | 默认保留家庭 | 默认家庭日 | 隔离家庭日 | 原生全天答案 | 版本与任务 |
+| 数据集 | 默认家庭数 | 默认家庭日 | 隔离家庭日 | 历史 → 答案 | 数据入口 |
 |---|---:|---:|---:|---|---|
-| SGSC | 2,076 | 16,246 | 84 | 48 个半小时 kWh | 冻结 v1：回顾性活动条件预测 |
-| iFlex | 314 | 2,071 | 0 | 24 个小时 kWh | 冻结 v1：实验价格条件预测 |
-| **LIRNEasia** | **410** | **6,325** | **335** | **96 个 15 分钟购电 kWh** | **独立扩展：日常次日预测** |
+| SGSC | 2,076 | 16,246 | 84 | 336 → 48 个半小时 kWh | [冻结 v1](benchmark/v1/README.md) |
+| iFlex | 314 | 2,071 | 0 | 168 → 24 个小时 kWh | [冻结 v1](benchmark/v1/README.md) |
+| LIRNEasia | 410 | 6,325 | 335 | 672 → 96 个 15 分钟购电 kWh | [独立扩展](extensions/lirneasia_history_v1/README.md) |
 
-默认保留资源合计 **2,800 户、24,642 个家庭日**，分别按来源使用和评测。原 [benchmark v1.0.0](benchmark/v1/README.md) 的 SGSC/iFlex 2,390 户、18,317 条与原划分保持冻结，不自动混为三来源排行榜。
+合计 2,800 户、24,642 个家庭日，按来源分别评测。SGSC/iFlex 的 `benchmark-v1.0.0` 数据、划分与协议保持冻结；LIRNEasia 使用独立的家庭划分。
 
-LIRNEasia 先完整核验得到 **422 户、6,660 个连续窗口**，再沿用连续至少 24 小时精确零读数隔离规则，默认保留 410 户、6,325 条。全部 422 户的原问卷、累计读数摘录和 335 条隔离原记录均保留。问卷早于历史窗口；没有实际调控事件或同意标签。它为真实同户画像与日常负荷的预测补充独立数据。
-
-## 新增 LIRNEasia：下载、读取与复现
-
-- [数据包与全部构造说明](extensions/lirneasia_history_v1/README.md)
-- [默认数据 JSONL.gz](extensions/lirneasia_history_v1/data/lirneasia.jsonl.gz) · [完整样例](extensions/lirneasia_history_v1/examples/lirneasia.json) · [家庭划分](extensions/lirneasia_history_v1/splits/household_holdout.csv)
-- [隔离原记录](extensions/lirneasia_history_v1/quarantine/lirneasia.jsonl.gz) · [原始来源与哈希](extensions/lirneasia_history_v1/provenance/source_integrity.json) · [全量验证](extensions/lirneasia_history_v1/verification.json)
-
-```bash
-python3 scripts/verify_lirneasia_extension.py
-python3 scripts/build_lirneasia_extension.py --output outputs/lirneasia_rebuilt
-```
+## 读取数据
 
 ```python
 import sys
 sys.path.insert(0, 'scripts')
-from lirneasia_io import read_samples, model_input
-sample = next(read_samples('train'))
-x = model_input(sample, 'history_profile')
+from benchmark_io import read_samples
+sample = next(read_samples('iflex', split='train'))
+x = sample['input']
 y = sample['output']['energy_kwh']
+
+from lirneasia_io import read_samples as read_lirneasia
+sample = next(read_lirneasia('train'))
 ```
 
-以下为冻结 SGSC/iFlex 主版本的入口与命令。家庭画像中的未知保持未知；整户电表答案不表示逐设备运行轨迹。
+`input.profile` 保存家庭与设备信息，`input.history` 保存连续七天的区间电量，`input.context` 保存目标时段及来源支持的条件。`output.energy_kwh` 是实测答案。未知值保留为 `null`；`metadata` 用于追溯与筛选，不应整体送入模型。
 
-## 文件入口
+- 下载：[SGSC](benchmark/v1/data/sgsc.jsonl.gz)、[iFlex](benchmark/v1/data/iflex.jsonl.gz)、[LIRNEasia](extensions/lirneasia_history_v1/data/lirneasia.jsonl.gz)。
+- 理解样本：[中文字段说明](sharing/iflex_Exp_1_2020-02-11_字段说明.md)、[三个实测样本与曲线](examples/measured/README.md)、[样本 schema](benchmark/v1/schema/sample.schema.json)。
+- 构造与筛选：[数据构造](docs/DATA_CONSTRUCTION.md)、[提取核验](docs/EXTRACTION_AUDIT_20260908.md)、[发布数据统计](provenance/dataset_statistics.json)。
+- 评测：[SGSC/iFlex 协议](benchmark/v1/evaluation/protocol.json)、[LIRNEasia 协议](extensions/lirneasia_history_v1/evaluation/protocol.json)。
+- 可选输入：[iFlex 历史气温扩展](extensions/iflex_context_v1/README.md)。事后问卷保留在复核文件中。
+- 已完成分析：[训练分区的家庭曲线与历史基线](analysis/train_curves/README.md)。
 
-初次阅读建议先看 [中文字段说明](sharing/iflex_Exp_1_2020-02-11_字段说明.md)，再对照 [完整单条 JSONL](sharing/iflex_Exp_1_2020-02-11.jsonl)。全量数据可下载 [SGSC](https://raw.githubusercontent.com/Fanmili-5/household-load-simulator-data/benchmark-v1.0.0/benchmark/v1/data/sgsc.jsonl.gz) 和 [iFlex](https://raw.githubusercontent.com/Fanmili-5/household-load-simulator-data/benchmark-v1.0.0/benchmark/v1/data/iflex.jsonl.gz)，均为 Gzip 压缩的 JSONL，一行对应一个家庭日。
-
-- 数据与完整样例：[交付说明](benchmark/v1/README.md)、[SGSC 样例](benchmark/v1/examples/sgsc.json)、[iFlex 样例](benchmark/v1/examples/iflex.json)。
-- 修正与隔离：[画像修正](benchmark/v1/provenance/profile_corrections.json)、[隔离索引](benchmark/v1/quarantine/index.csv)、[原读数复核](benchmark/v1/provenance/zero_review.json)。
-- 输入依据：[时间和费率证据](benchmark/v1/provenance/input_evidence.json)、[字段覆盖](benchmark/v1/provenance/profile_field_coverage.csv)。
-- 格式与评测：[样本 schema](benchmark/v1/schema/sample.schema.json)、[评测协议](benchmark/v1/evaluation/protocol.json)、[固定划分](benchmark/v1/splits/household_holdout.csv)。
-- 验证：[清单](benchmark/v1/manifest.json)、[全量验证](benchmark/v1/validation.json)。
-- 可选扩展：[iFlex 历史气温与家庭变化复核](extensions/iflex_context_v1/README.md)。气温可作为额外历史输入；事后问卷仅供复核，主版本与划分保持原样。
-
-## 读取与检查
+## 校验与复现
 
 ```bash
 python3 scripts/verify_benchmark.py
+python3 scripts/verify_lirneasia_extension.py
+python3 scripts/summarize_benchmark.py --output outputs/dataset_statistics.json
 python3 -m unittest discover -s tests -v
 ```
 
-```python
-from scripts.benchmark_io import read_samples
-sample = next(read_samples("iflex", split="train"))
-```
+各数据包的 README 提供完整重建命令。原始来源摘录、哈希、隔离记录及家庭划分随包保留。
 
-导出训练分区的 SFT 消息候选，不启动模型：
+SGSC 包含活动类型和时段，无法核实的数值费率留空；iFlex 包含实验奖励价格；LIRNEasia 是无调控事件标签的日常购电预测。SGSC/iFlex 当前协议为回顾性条件预测，逐户问卷及通知时间尚不足以建立严格实时预测集合。整户电量没有逐设备运行轨迹或新策略执行后的反事实答案。
 
-```bash
-python3 scripts/benchmark_io.py --split train --track retrospective_conditional --variant full --output outputs/benchmark_train.jsonl.gz
-```
-
-SGSC/iFlex v1 有回顾性评测接口；逐户问卷时刻与通知送达时刻未获完整核实，严格实时预测集合为空。SGSC 费率保持未知，活动类型与白天在家字段完全重合；评分按来源和活动类型分别输出，另提供去掉白天在家字段的输入版本。不能用这个分组关系证明居家习惯的独立作用。
-
-## 复现所需的源文件
-
-SGSC/iFlex 使用 `benchmark/v1/`，LIRNEasia 使用 `extensions/lirneasia_history_v1/`。根目录的 `data/`、`tables/`、`examples/` 及 `baseline/v1/` 是早期观测或本版构造输入，供复现和追溯；其中的窗口与样例不作为当前训练格式。来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
-
-数据来源和复用条件见 [DATA_LICENSES.md](DATA_LICENSES.md)。
+根目录 `data/`、`tables/` 及 `baseline/v1/` 保存构造输入和早期版本，供复现追溯。数据来源与复用条件见 [DATA_LICENSES.md](DATA_LICENSES.md)。

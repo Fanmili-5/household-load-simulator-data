@@ -1,6 +1,6 @@
-"""Build report examples directly from the three published sample files.
+"""Build measured-data examples directly from the three published sample files.
 
-Standard library creates JSON/Markdown; --plot additionally needs matplotlib.
+Standard library creates JSON; --plot additionally needs matplotlib.
 No benchmark data, labels, splits, or scoring implementation are changed.
 """
 import argparse
@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--plot', action='store_true')
     args = parser.parse_args()
-    out = ROOT / 'docs/report_examples'
+    out = ROOT / 'examples/measured'
     out.mkdir(parents=True, exist_ok=True)
     records, originals = {}, {}
     for source, relative in FILES.items():
