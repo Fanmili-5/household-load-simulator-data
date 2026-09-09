@@ -4,3 +4,6 @@ baseline/** -text
 baseline/**/*.csv whitespace=cr-at-eol
 benchmark/** -text
 benchmark/**/*.csv whitespace=cr-at-eol
+
+# Preserve exact bytes of hash-verified LIRNEasia CSV artifacts.
+extensions/lirneasia_history_v1/splits/*.csv -text

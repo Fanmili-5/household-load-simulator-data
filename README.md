@@ -1,15 +1,38 @@
-# 家庭负荷模拟 benchmark：SGSC / iFlex
+# 家庭负荷 benchmark：SGSC / iFlex / LIRNEasia
 
-本仓库提供 SGSC 和 iFlex 的家庭负荷预测数据、构造代码及评分工具。每条样本用家庭资料、此前七天用电和当天活动条件，预测同户当天的整户电量序列。当前版本为 **[benchmark v1.0.0](benchmark/v1/README.md)**，采用回顾性条件预测任务。研究说明见 [Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)。
+本仓库提供真实家庭的画像、多设备信息、连续用电历史、实测答案、固定划分与评分代码。输入为同户资料、此前七天用电和目标日条件，预测完整一天的区间电量。**2026-09-09 已实际加入 LIRNEasia 数据扩展**。汇报入口：[Notion](https://app.notion.com/p/3d406135328a817f94d9d1918f323c89)；[构造参考与完整细节](docs/BENCHMARK_CONSTRUCTION_20260909.md)。
 
-| 来源 | 有保留样本的家庭 | 保留家庭日 | 隔离家庭日 | 原生全天答案 |
-|---|---:|---:|---:|---|
-| SGSC | 2,076 | 16,246 | 84 | 48 个半小时 kWh |
-| iFlex | 314 | 2,071 | 0 | 24 个小时 kWh |
+| 来源 | 默认保留家庭 | 默认家庭日 | 隔离家庭日 | 原生全天答案 | 版本与任务 |
+|---|---:|---:|---:|---|---|
+| SGSC | 2,076 | 16,246 | 84 | 48 个半小时 kWh | 冻结 v1：回顾性活动条件预测 |
+| iFlex | 314 | 2,071 | 0 | 24 个小时 kWh | 冻结 v1：实验价格条件预测 |
+| **LIRNEasia** | **410** | **6,325** | **335** | **96 个 15 分钟购电 kWh** | **独立扩展：日常次日预测** |
 
-合计 **2,390 户、18,317 条保留样本**。画像文件仍保留原来全部 2,392 户，供追溯。隔离的 84 条在历史或目标中存在连续至少 24 小时零读数，原因未明，原值完整保存在隔离文件。iFlex 22 户的明确无车回答已统一为汽车和电动车数量为零，影响 149 条样本。
+默认保留资源合计 **2,800 户、24,642 个家庭日**，分别按来源使用和评测。原 [benchmark v1.0.0](benchmark/v1/README.md) 的 SGSC/iFlex 2,390 户、18,317 条与原划分保持冻结，不自动混为三来源排行榜。
 
-家庭成员、住房、设备和使用习惯按统一字段整理。来源没有记录的内容保留为未知；答案来自整户电表，未提供逐设备运行轨迹。
+LIRNEasia 先完整核验得到 **422 户、6,660 个连续窗口**，再沿用连续至少 24 小时精确零读数隔离规则，默认保留 410 户、6,325 条。全部 422 户的原问卷、累计读数摘录和 335 条隔离原记录均保留。问卷早于历史窗口；没有实际调控事件或同意标签。它为真实同户画像与日常负荷的预测补充独立数据。
+
+## 新增 LIRNEasia：下载、读取与复现
+
+- [数据包与全部构造说明](extensions/lirneasia_history_v1/README.md)
+- [默认数据 JSONL.gz](extensions/lirneasia_history_v1/data/lirneasia.jsonl.gz) · [完整样例](extensions/lirneasia_history_v1/examples/lirneasia.json) · [家庭划分](extensions/lirneasia_history_v1/splits/household_holdout.csv)
+- [隔离原记录](extensions/lirneasia_history_v1/quarantine/lirneasia.jsonl.gz) · [原始来源与哈希](extensions/lirneasia_history_v1/provenance/source_integrity.json) · [全量验证](extensions/lirneasia_history_v1/verification.json)
+
+```bash
+python3 scripts/verify_lirneasia_extension.py
+python3 scripts/build_lirneasia_extension.py --output outputs/lirneasia_rebuilt
+```
+
+```python
+import sys
+sys.path.insert(0, 'scripts')
+from lirneasia_io import read_samples, model_input
+sample = next(read_samples('train'))
+x = model_input(sample, 'history_profile')
+y = sample['output']['energy_kwh']
+```
+
+以下为冻结 SGSC/iFlex 主版本的入口与命令。家庭画像中的未知保持未知；整户电表答案不表示逐设备运行轨迹。
 
 ## 文件入口
 
@@ -40,10 +63,10 @@ sample = next(read_samples("iflex", split="train"))
 python3 scripts/benchmark_io.py --split train --track retrospective_conditional --variant full --output outputs/benchmark_train.jsonl.gz
 ```
 
-当前有回顾性评测接口；逐户问卷时刻与通知送达时刻未获完整核实，严格实时预测集合为空。SGSC 费率保持未知，活动类型与白天在家字段完全重合；评分按来源和活动类型分别输出，另提供去掉白天在家字段的输入版本。不能用这个分组关系证明居家习惯的独立作用。
+SGSC/iFlex v1 有回顾性评测接口；逐户问卷时刻与通知送达时刻未获完整核实，严格实时预测集合为空。SGSC 费率保持未知，活动类型与白天在家字段完全重合；评分按来源和活动类型分别输出，另提供去掉白天在家字段的输入版本。不能用这个分组关系证明居家习惯的独立作用。
 
 ## 复现所需的源文件
 
-当前使用 `benchmark/v1/`。根目录的 `data/`、`tables/`、`examples/` 及 `baseline/v1/` 是早期观测或本版构造输入，供复现和追溯；其中的窗口与样例不作为当前训练格式。来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
+SGSC/iFlex 使用 `benchmark/v1/`，LIRNEasia 使用 `extensions/lirneasia_history_v1/`。根目录的 `data/`、`tables/`、`examples/` 及 `baseline/v1/` 是早期观测或本版构造输入，供复现和追溯；其中的窗口与样例不作为当前训练格式。来源提取过程见 [提取复核](docs/EXTRACTION_AUDIT_20260908.md)。
 
 数据来源和复用条件见 [DATA_LICENSES.md](DATA_LICENSES.md)。

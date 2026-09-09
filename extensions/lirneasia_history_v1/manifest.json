@@ -1,0 +1,44 @@
+{
+  "version": "lirneasia-day-ahead/1.0.0",
+  "counts": {
+    "runs": 1043,
+    "unique_intervals": 1340256,
+    "qualified_windows": 6660,
+    "samples": 6325,
+    "quarantined_samples": 335,
+    "source_households": 422,
+    "households": 410
+  },
+  "split_source_households": {
+    "train": 295,
+    "validation": 63,
+    "test": 64
+  },
+  "split_households": {
+    "train": 287,
+    "validation": 62,
+    "test": 61
+  },
+  "split_quarantined_samples": {
+    "train": 282,
+    "test": 39,
+    "validation": 14
+  },
+  "split_samples": {
+    "train": 4309,
+    "validation": 911,
+    "test": 1105
+  },
+  "source_manifest_sha256": "3f71d9551e3470b5d1c714bf1d89cda1ae312ad4419709fa504e0dad992b2f1d",
+  "implementation_sha256": "66e5f43892f6daa48f2d36ca41b23e95f9c8a5da72c7d28544789bc4afe322d2",
+  "artifacts": {
+    "data/lirneasia.jsonl.gz": "cd3f86ba780e8a1c91e3675317838ad243fa3de29c06f2f50230a5835e94808c",
+    "splits/household_holdout.csv": "d347b74886aed455cc606c56af13d1fda92e0ceccb4291867e3962c93df553fc",
+    "examples/lirneasia.json": "1842e5cd13ae05af2c496fe930be1c8a3dd1f0abbcedd9ed88e21859382ecf51",
+    "evaluation/protocol.json": "1985efb691c48d04f65aade4d753a58f93dd1e24b36eac247d640f6579c8d4b3",
+    "evaluation/zero_reading_review.json": "da7e399c21c4940aed7e991a564f4c2ab06db57c0e746b97d30d5a9c38e0c9d2",
+    "quarantine/lirneasia.jsonl.gz": "23b799b2c7dcec3e9ced4e22d0cae952d75b7f4dec34a0e5735a36e42468957a"
+  },
+  "parent_benchmark_modified": false,
+  "model_training_executed": false
+}

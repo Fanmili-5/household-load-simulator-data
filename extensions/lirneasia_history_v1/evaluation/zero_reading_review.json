@@ -1,0 +1,1347 @@
+{
+  "quarantined_windows": 335,
+  "threshold_hours": 24,
+  "status": "quarantined; original values preserved; no attribution to vacancy or meter faults",
+  "windows": [
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-08",
+      "longest_exact_zero_hours": 156.75
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-09",
+      "longest_exact_zero_hours": 180.75
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-29",
+      "longest_exact_zero_hours": 65.5
+    },
+    {
+      "sample_id": "lirneasia:ID0060:2024-07-30",
+      "longest_exact_zero_hours": 41.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-03",
+      "longest_exact_zero_hours": 25.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-04",
+      "longest_exact_zero_hours": 25.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-05",
+      "longest_exact_zero_hours": 25.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-06",
+      "longest_exact_zero_hours": 25.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-07",
+      "longest_exact_zero_hours": 45.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-08",
+      "longest_exact_zero_hours": 45.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-09",
+      "longest_exact_zero_hours": 45.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-10",
+      "longest_exact_zero_hours": 45.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-11",
+      "longest_exact_zero_hours": 45.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-12",
+      "longest_exact_zero_hours": 45.5
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-13",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-14",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-15",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-16",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-17",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-18",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-19",
+      "longest_exact_zero_hours": 44.0
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-29",
+      "longest_exact_zero_hours": 36.75
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-30",
+      "longest_exact_zero_hours": 36.75
+    },
+    {
+      "sample_id": "lirneasia:ID0310:2024-05-31",
+      "longest_exact_zero_hours": 36.75
+    },
+    {
+      "sample_id": "lirneasia:ID0351:2024-04-20",
+      "longest_exact_zero_hours": 121.75
+    },
+    {
+      "sample_id": "lirneasia:ID0351:2024-04-21",
+      "longest_exact_zero_hours": 97.75
+    },
+    {
+      "sample_id": "lirneasia:ID0351:2024-04-22",
+      "longest_exact_zero_hours": 73.75
+    },
+    {
+      "sample_id": "lirneasia:ID0351:2024-04-23",
+      "longest_exact_zero_hours": 49.75
+    },
+    {
+      "sample_id": "lirneasia:ID0351:2024-04-24",
+      "longest_exact_zero_hours": 25.75
+    },
+    {
+      "sample_id": "lirneasia:ID0351:2024-07-20",
+      "longest_exact_zero_hours": 27.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0491:2024-07-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-12",
+      "longest_exact_zero_hours": 28.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-13",
+      "longest_exact_zero_hours": 39.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-14",
+      "longest_exact_zero_hours": 39.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-15",
+      "longest_exact_zero_hours": 39.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-16",
+      "longest_exact_zero_hours": 39.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-17",
+      "longest_exact_zero_hours": 39.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-18",
+      "longest_exact_zero_hours": 39.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-19",
+      "longest_exact_zero_hours": 35.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-05-20",
+      "longest_exact_zero_hours": 33.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-08",
+      "longest_exact_zero_hours": 34.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-09",
+      "longest_exact_zero_hours": 34.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-10",
+      "longest_exact_zero_hours": 34.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-11",
+      "longest_exact_zero_hours": 34.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-12",
+      "longest_exact_zero_hours": 34.0
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-13",
+      "longest_exact_zero_hours": 56.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-14",
+      "longest_exact_zero_hours": 80.5
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-15",
+      "longest_exact_zero_hours": 90.75
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-16",
+      "longest_exact_zero_hours": 90.75
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-17",
+      "longest_exact_zero_hours": 90.75
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-18",
+      "longest_exact_zero_hours": 90.75
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-19",
+      "longest_exact_zero_hours": 82.25
+    },
+    {
+      "sample_id": "lirneasia:ID0613:2024-07-20",
+      "longest_exact_zero_hours": 58.25
+    },
+    {
+      "sample_id": "lirneasia:ID0632:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0632:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0632:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0632:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0632:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0632:2024-07-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0685:2024-07-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0685:2024-07-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0685:2024-07-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0685:2024-07-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0685:2024-07-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0685:2024-07-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID0808:2024-05-29",
+      "longest_exact_zero_hours": 98.75
+    },
+    {
+      "sample_id": "lirneasia:ID0808:2024-05-30",
+      "longest_exact_zero_hours": 82.0
+    },
+    {
+      "sample_id": "lirneasia:ID0808:2024-05-31",
+      "longest_exact_zero_hours": 58.0
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-13",
+      "longest_exact_zero_hours": 153.5
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-14",
+      "longest_exact_zero_hours": 129.5
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-15",
+      "longest_exact_zero_hours": 105.5
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-16",
+      "longest_exact_zero_hours": 81.5
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-17",
+      "longest_exact_zero_hours": 57.5
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-30",
+      "longest_exact_zero_hours": 89.75
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-05-31",
+      "longest_exact_zero_hours": 113.75
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-06-01",
+      "longest_exact_zero_hours": 137.75
+    },
+    {
+      "sample_id": "lirneasia:ID0854:2024-06-02",
+      "longest_exact_zero_hours": 161.75
+    },
+    {
+      "sample_id": "lirneasia:ID0947:2024-06-01",
+      "longest_exact_zero_hours": 56.25
+    },
+    {
+      "sample_id": "lirneasia:ID0947:2024-06-02",
+      "longest_exact_zero_hours": 63.75
+    },
+    {
+      "sample_id": "lirneasia:ID1135:2024-04-27",
+      "longest_exact_zero_hours": 39.75
+    },
+    {
+      "sample_id": "lirneasia:ID1223:2024-04-20",
+      "longest_exact_zero_hours": 63.75
+    },
+    {
+      "sample_id": "lirneasia:ID1223:2024-04-21",
+      "longest_exact_zero_hours": 39.75
+    },
+    {
+      "sample_id": "lirneasia:ID1488:2024-07-13",
+      "longest_exact_zero_hours": 30.5
+    },
+    {
+      "sample_id": "lirneasia:ID1538:2024-05-29",
+      "longest_exact_zero_hours": 48.5
+    },
+    {
+      "sample_id": "lirneasia:ID1538:2024-05-30",
+      "longest_exact_zero_hours": 48.5
+    },
+    {
+      "sample_id": "lirneasia:ID1538:2024-05-31",
+      "longest_exact_zero_hours": 48.5
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-21",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-22",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-23",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-24",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-25",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-26",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-27",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-28",
+      "longest_exact_zero_hours": 27.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-04-29",
+      "longest_exact_zero_hours": 27.25
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-05-09",
+      "longest_exact_zero_hours": 31.5
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-05-10",
+      "longest_exact_zero_hours": 31.5
+    },
+    {
+      "sample_id": "lirneasia:ID1542:2024-05-11",
+      "longest_exact_zero_hours": 31.5
+    },
+    {
+      "sample_id": "lirneasia:ID1587:2024-07-24",
+      "longest_exact_zero_hours": 35.75
+    },
+    {
+      "sample_id": "lirneasia:ID1587:2024-07-25",
+      "longest_exact_zero_hours": 59.75
+    },
+    {
+      "sample_id": "lirneasia:ID1652:2024-04-20",
+      "longest_exact_zero_hours": 43.25
+    },
+    {
+      "sample_id": "lirneasia:ID1652:2024-04-21",
+      "longest_exact_zero_hours": 43.25
+    },
+    {
+      "sample_id": "lirneasia:ID1652:2024-04-22",
+      "longest_exact_zero_hours": 43.25
+    },
+    {
+      "sample_id": "lirneasia:ID1652:2024-04-23",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-08",
+      "longest_exact_zero_hours": 147.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-09",
+      "longest_exact_zero_hours": 171.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-12",
+      "longest_exact_zero_hours": 176.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-13",
+      "longest_exact_zero_hours": 152.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-14",
+      "longest_exact_zero_hours": 128.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-15",
+      "longest_exact_zero_hours": 104.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-16",
+      "longest_exact_zero_hours": 80.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-17",
+      "longest_exact_zero_hours": 56.0
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-18",
+      "longest_exact_zero_hours": 70.25
+    },
+    {
+      "sample_id": "lirneasia:ID1670:2024-05-19",
+      "longest_exact_zero_hours": 94.25
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-04-20",
+      "longest_exact_zero_hours": 91.75
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-04-21",
+      "longest_exact_zero_hours": 91.75
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-05-14",
+      "longest_exact_zero_hours": 40.0
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-05-15",
+      "longest_exact_zero_hours": 61.25
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-05-16",
+      "longest_exact_zero_hours": 61.25
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-05-17",
+      "longest_exact_zero_hours": 61.25
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-05-18",
+      "longest_exact_zero_hours": 61.25
+    },
+    {
+      "sample_id": "lirneasia:ID1687:2024-05-19",
+      "longest_exact_zero_hours": 61.25
+    },
+    {
+      "sample_id": "lirneasia:ID1766:2024-05-16",
+      "longest_exact_zero_hours": 41.0
+    },
+    {
+      "sample_id": "lirneasia:ID1766:2024-05-17",
+      "longest_exact_zero_hours": 65.0
+    },
+    {
+      "sample_id": "lirneasia:ID1766:2024-05-18",
+      "longest_exact_zero_hours": 89.0
+    },
+    {
+      "sample_id": "lirneasia:ID1766:2024-05-19",
+      "longest_exact_zero_hours": 100.0
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-09",
+      "longest_exact_zero_hours": 178.25
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-10",
+      "longest_exact_zero_hours": 154.25
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-11",
+      "longest_exact_zero_hours": 130.25
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-12",
+      "longest_exact_zero_hours": 106.25
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-13",
+      "longest_exact_zero_hours": 82.25
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-14",
+      "longest_exact_zero_hours": 58.25
+    },
+    {
+      "sample_id": "lirneasia:ID1789:2024-07-15",
+      "longest_exact_zero_hours": 34.25
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-08",
+      "longest_exact_zero_hours": 65.5
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-09",
+      "longest_exact_zero_hours": 65.5
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-10",
+      "longest_exact_zero_hours": 73.5
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-11",
+      "longest_exact_zero_hours": 97.5
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-12",
+      "longest_exact_zero_hours": 110.25
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-13",
+      "longest_exact_zero_hours": 110.25
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-14",
+      "longest_exact_zero_hours": 110.25
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-15",
+      "longest_exact_zero_hours": 108.75
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-16",
+      "longest_exact_zero_hours": 84.75
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-17",
+      "longest_exact_zero_hours": 60.75
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-18",
+      "longest_exact_zero_hours": 45.25
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-19",
+      "longest_exact_zero_hours": 45.25
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-29",
+      "longest_exact_zero_hours": 76.75
+    },
+    {
+      "sample_id": "lirneasia:ID1809:2024-05-30",
+      "longest_exact_zero_hours": 76.75
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-04-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-04-21",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-05-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1812:2024-07-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-04-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-04-21",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-05-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1849:2024-07-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-11",
+      "longest_exact_zero_hours": 25.75
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-12",
+      "longest_exact_zero_hours": 49.75
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-13",
+      "longest_exact_zero_hours": 71.75
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-14",
+      "longest_exact_zero_hours": 71.75
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-15",
+      "longest_exact_zero_hours": 71.75
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-16",
+      "longest_exact_zero_hours": 71.75
+    },
+    {
+      "sample_id": "lirneasia:ID1859:2024-05-25",
+      "longest_exact_zero_hours": 42.25
+    },
+    {
+      "sample_id": "lirneasia:ID2028:2024-07-30",
+      "longest_exact_zero_hours": 39.75
+    },
+    {
+      "sample_id": "lirneasia:ID2074:2024-05-01",
+      "longest_exact_zero_hours": 31.5
+    },
+    {
+      "sample_id": "lirneasia:ID2074:2024-05-02",
+      "longest_exact_zero_hours": 37.0
+    },
+    {
+      "sample_id": "lirneasia:ID2074:2024-05-03",
+      "longest_exact_zero_hours": 37.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2075:2024-07-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-03",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-04",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-13",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-14",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-15",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-16",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-17",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-18",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-19",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-05-20",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2090:2024-07-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2125:2024-05-28",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2125:2024-05-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2125:2024-05-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2125:2024-05-31",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2125:2024-06-01",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-22",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-23",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-24",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-25",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-26",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-27",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-28",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2133:2024-07-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2184:2024-07-08",
+      "longest_exact_zero_hours": 41.5
+    },
+    {
+      "sample_id": "lirneasia:ID2184:2024-07-09",
+      "longest_exact_zero_hours": 41.5
+    },
+    {
+      "sample_id": "lirneasia:ID2184:2024-07-10",
+      "longest_exact_zero_hours": 41.5
+    },
+    {
+      "sample_id": "lirneasia:ID2184:2024-07-11",
+      "longest_exact_zero_hours": 41.5
+    },
+    {
+      "sample_id": "lirneasia:ID2184:2024-07-12",
+      "longest_exact_zero_hours": 41.5
+    },
+    {
+      "sample_id": "lirneasia:ID2193:2024-04-20",
+      "longest_exact_zero_hours": 40.5
+    },
+    {
+      "sample_id": "lirneasia:ID2193:2024-04-21",
+      "longest_exact_zero_hours": 40.5
+    },
+    {
+      "sample_id": "lirneasia:ID2193:2024-04-22",
+      "longest_exact_zero_hours": 40.5
+    },
+    {
+      "sample_id": "lirneasia:ID2193:2024-04-23",
+      "longest_exact_zero_hours": 32.5
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-04-27",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-04-28",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-04-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-04-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-05-01",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-05-02",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2256:2024-05-03",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-29",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2289:2024-07-30",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2327:2024-06-01",
+      "longest_exact_zero_hours": 146.75
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-12",
+      "longest_exact_zero_hours": 29.25
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-13",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-14",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-15",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-16",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-17",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-18",
+      "longest_exact_zero_hours": 38.5
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-19",
+      "longest_exact_zero_hours": 33.25
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-05-20",
+      "longest_exact_zero_hours": 41.75
+    },
+    {
+      "sample_id": "lirneasia:ID2373:2024-07-20",
+      "longest_exact_zero_hours": 27.0
+    },
+    {
+      "sample_id": "lirneasia:ID2429:2024-07-10",
+      "longest_exact_zero_hours": 27.25
+    },
+    {
+      "sample_id": "lirneasia:ID2429:2024-07-11",
+      "longest_exact_zero_hours": 27.25
+    },
+    {
+      "sample_id": "lirneasia:ID2429:2024-07-12",
+      "longest_exact_zero_hours": 27.25
+    },
+    {
+      "sample_id": "lirneasia:ID2429:2024-07-13",
+      "longest_exact_zero_hours": 27.25
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-02",
+      "longest_exact_zero_hours": 174.0
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-03",
+      "longest_exact_zero_hours": 161.0
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-04",
+      "longest_exact_zero_hours": 137.0
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-05",
+      "longest_exact_zero_hours": 113.0
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-06",
+      "longest_exact_zero_hours": 89.0
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-07",
+      "longest_exact_zero_hours": 65.0
+    },
+    {
+      "sample_id": "lirneasia:ID2491:2024-05-08",
+      "longest_exact_zero_hours": 41.0
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-08",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-09",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-10",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-11",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-12",
+      "longest_exact_zero_hours": 192.0
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-29",
+      "longest_exact_zero_hours": 185.75
+    },
+    {
+      "sample_id": "lirneasia:ID2567:2024-07-30",
+      "longest_exact_zero_hours": 161.75
+    },
+    {
+      "sample_id": "lirneasia:ID2615:2024-04-20",
+      "longest_exact_zero_hours": 68.25
+    },
+    {
+      "sample_id": "lirneasia:ID2615:2024-05-12",
+      "longest_exact_zero_hours": 32.75
+    },
+    {
+      "sample_id": "lirneasia:ID2615:2024-05-13",
+      "longest_exact_zero_hours": 36.5
+    },
+    {
+      "sample_id": "lirneasia:ID2615:2024-05-14",
+      "longest_exact_zero_hours": 36.5
+    },
+    {
+      "sample_id": "lirneasia:ID2658:2024-07-13",
+      "longest_exact_zero_hours": 32.75
+    },
+    {
+      "sample_id": "lirneasia:ID2658:2024-07-14",
+      "longest_exact_zero_hours": 32.75
+    },
+    {
+      "sample_id": "lirneasia:ID2658:2024-07-15",
+      "longest_exact_zero_hours": 32.75
+    },
+    {
+      "sample_id": "lirneasia:ID2776:2024-05-08",
+      "longest_exact_zero_hours": 29.75
+    },
+    {
+      "sample_id": "lirneasia:ID2776:2024-05-09",
+      "longest_exact_zero_hours": 53.75
+    },
+    {
+      "sample_id": "lirneasia:ID2776:2024-05-10",
+      "longest_exact_zero_hours": 77.75
+    },
+    {
+      "sample_id": "lirneasia:ID2776:2024-05-11",
+      "longest_exact_zero_hours": 97.0
+    }
+  ]
+}

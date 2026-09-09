@@ -1,0 +1,16 @@
+{
+  "full_fresh_in_memory_rebuild_completed": true,
+  "counts_unchanged": true,
+  "byte_identity": {
+    "qualified_intervals.parquet": true,
+    "windows_7plus1.csv": true,
+    "household_profiles.json": true,
+    "household_demographics.json": true,
+    "household_appliances.json": true,
+    "household_ac_roster.json": true,
+    "household_fan_roster.json": true,
+    "household_light_roster.json": true,
+    "household_generation.json": true,
+    "strict_counts.json": true
+  }
+}

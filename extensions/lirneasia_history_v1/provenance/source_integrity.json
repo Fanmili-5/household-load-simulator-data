@@ -1,0 +1,113 @@
+{
+  "dataset_doi": "10.21227/n1dk-q860",
+  "publisher": "LIRNEasia",
+  "author_repository": "https://github.com/LIRNEasia/SL_electricity_consumption",
+  "zenodo_record": "https://zenodo.org/records/15023048",
+  "kaggle_mirror": "https://www.kaggle.com/datasets/lirneasia/sri-lankan-residential-electricity-consumption",
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "creators": [
+    {
+      "name": "Algama, Chanuka Ravishan",
+      "affiliation": "LIRNEasia",
+      "orcid": "0009-0009-3808-2869"
+    },
+    {
+      "name": "Fernando, Isuruni",
+      "affiliation": "LIRNEasia"
+    },
+    {
+      "name": "Chandana, Merl",
+      "affiliation": "LIRNEasia"
+    },
+    {
+      "name": "Ranage, Pasindu",
+      "affiliation": "LIRNEasia"
+    },
+    {
+      "name": "Dissanayake, Dinithi",
+      "affiliation": "National University of Singapore"
+    },
+    {
+      "name": "Ramos, Jesus",
+      "affiliation": "California policy labs"
+    },
+    {
+      "name": "Amarasinghe, Kasun",
+      "affiliation": "Carnegie Mellon University",
+      "orcid": "0000-0002-5395-4575"
+    }
+  ],
+  "license_evidence": "Original Zenodo metadata archived 2026-09-06 and reread 2026-09-09; current Zenodo API refresh timed out.",
+  "raw_meter_member": {
+    "raw_bytes": 1696953202,
+    "sha256": "4c6f9bb5ad9ff89ed5db7776f42cbbacd54f5b40ff709b13a3ea236ba6bc87f3",
+    "md5": "49b43a35ecc685610ac3bcbe5a8cd992",
+    "publisher_md5_verified": true,
+    "zenodo_member_crc32": "d27a37cf",
+    "zenodo_member_crc32_verified": true,
+    "full_zenodo_archive_verified": false,
+    "source": "Official author-linked Kaggle mirror, smart_15min_2.csv"
+  },
+  "survey_members": [
+    {
+      "bytes": 169607,
+      "sha256": "184a2c195c3f3c8a69ee612dca2f664b44b2c017675c64023e83876db95c6757",
+      "crc32": "ace9982f",
+      "original_member_crc_verified": true,
+      "filename": "survey_dates.csv"
+    },
+    {
+      "bytes": 1987517,
+      "sha256": "95290ed05be83002ba4cc9e96f60e463f10868aa07d26d4f8ffb647d998a6869",
+      "crc32": "14a36cb7",
+      "original_member_crc_verified": true,
+      "filename": "w1_appliances.csv"
+    },
+    {
+      "bytes": 1353533,
+      "sha256": "c3f7feec3d76ec5bcd0e2666c78bf49a9e493f7f9adeefd5fcffe7cf82a385cd",
+      "crc32": "8774515d",
+      "original_member_crc_verified": true,
+      "filename": "w1_household_information_and_history.csv"
+    },
+    {
+      "bytes": 996222,
+      "sha256": "16cc129c71ee85d3be9871e01dbd4d0a0cd4c9af0d3b855861a1a99ddd964063",
+      "crc32": "5ba3f899",
+      "original_member_crc_verified": true,
+      "filename": "w1_electricity_generation_water_heating_cooking.csv"
+    },
+    {
+      "bytes": 257580,
+      "sha256": "276b27de9a49ae908396bd258e1a226a32e28175b4dfa8e6808447670a692fac",
+      "crc32": "e59e4f97",
+      "original_member_crc_verified": true,
+      "filename": "w1_ac_roster.csv"
+    },
+    {
+      "bytes": 547691,
+      "sha256": "48c28e1335bfc024ca23de8d4eac90037b114325068b502731e5a6ea4f54223c",
+      "crc32": "b7eaac13",
+      "original_member_crc_verified": true,
+      "filename": "w1_fan_roster.csv"
+    },
+    {
+      "bytes": 1609360,
+      "sha256": "4f664582bb0747fd53ebe9c5317cd46b7e441371729f4e96dedb70ba186ca3f5",
+      "crc32": "3c558361",
+      "original_member_crc_verified": true,
+      "filename": "w1_light_roster.csv"
+    },
+    {
+      "bytes": 3301460,
+      "sha256": "dc7150405b69702dbd8c6a341d029a7d6fcc9cdf032ad80b7d77b0d027545abf",
+      "crc32": "c660a0fe",
+      "zenodo_member_crc_verified": true,
+      "filename": "w1_demographics.csv"
+    }
+  ],
+  "full_archive_downloaded": false,
+  "extraction": "Only selected, verified household profiles and complete cumulative runs are redistributed; default builder reconstructs selected samples, not all source exclusions."
+}

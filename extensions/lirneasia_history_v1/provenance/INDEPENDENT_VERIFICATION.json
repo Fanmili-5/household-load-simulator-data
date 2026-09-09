@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "households": 422,
+  "windows": 6660,
+  "runs": 1043,
+  "interval_rows": 1340256,
+  "history_intervals_per_window": 672,
+  "target_intervals_per_window": 96,
+  "all_window_continuity_verified": true,
+  "all_profile_asof_verified": true,
+  "all_member_counts_match": true,
+  "all_same_household_joins_verified": true,
+  "independent_raw_readings_verified": 7690,
+  "raw_readings_sample_households": 10,
+  "raw_reader": "pandas independently streamed entire source CSV",
+  "ordinary_appliance_rows": 5213,
+  "member_rows": 1736,
+  "minimum_ordinary_appliance_types": 2,
+  "minimum_run_days": 8,
+  "maximum_run_days": 37
+}

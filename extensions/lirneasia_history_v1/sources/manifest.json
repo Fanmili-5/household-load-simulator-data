@@ -1,0 +1,16 @@
+{
+  "files": {
+    "cumulative_runs.jsonl.gz": "54f1ff6bc199694605209a7708fe8172fa83bb5f5f637e7efd6297f59b07c428",
+    "household_ac_roster.json": "4bc9a09b81ee207d4529fecb2817dd48a914db820994d426c376305c3fe31cb6",
+    "household_appliances.json": "ba408a4f5398392b8b9e82b004119a295701908e24013bbe07285bbae28ffb6a",
+    "household_demographics.json": "54944195299fdecefdc32f5de6ed661eb1a4fd2f1e8d9e485243b7a284e1a1a5",
+    "household_fan_roster.json": "ef3400a8b2a0eee10b4b44c34f4817f19bc623a258fa597bd284a4b74777194d",
+    "household_generation.json": "5a5d942d9828fc2fee4ec2d67d5bf01cdbf84cd215f6400acbdca55ea2143568",
+    "household_light_roster.json": "5b7e058f898acd3f5a1e3dbf5657b513cf785f70c6ab0ba778e01e746d189935",
+    "household_profiles.json": "b5eb461efaf61e129d96e31327944f1a98cb348438e71569e21d58cdf28aa5fa"
+  },
+  "households": 422,
+  "runs": 1043,
+  "windows": 6660,
+  "source_selection_date": "2026-09-09"
+}

@@ -26,3 +26,14 @@ baseline v1.0.0 另外将这两份来源映射为统一家庭字段，从同户�
 benchmark v1.0.0 在上述全天观测上按连续零读数规则隔离 84 条 SGSC 窗口，并根据 iFlex 22 户明确无车回答整理问卷跳题语义。`benchmark/v1/` 的数据、画像、隔离文件及派生统计继续分别适用上述来源许可；`benchmark/source_evidence_v1/` 保存构造核查记录。没有修改实测电量，旧版仍可追溯。
 
 `extensions/iflex_context_v1/` 从同一 iFlex v2 来源提取历史室外气温和 Survey 2 家庭变化问答，继续采用 CC BY 4.0。温度原采集方为 Norwegian Meteorological Institute，iFlex 作者按地区气象站整理。扩展只选择历史窗口、按地区去重及转换问卷选项，没有补造读数或修改父版本；事后问答单独保存，不作为预测输入。
+
+
+## 2026-09-09 新增 LIRNEasia 真实家庭扩展
+
+`extensions/lirneasia_history_v1/` 的源问卷摘录、累计读数片段、样本、隔离记录及派生统计来自 LIRNEasia：Algama, Chanuka Ravishan; Fernando, Isuruni; Chandana, Merl; Ranage, Pasindu; Dissanayake, Dinithi; Ramos, Jesus; Amarasinghe, Kasun. *Residential Electricity Consumption: Dataset Combining Multi-round Longitudinal Surveys and Energy Provider Data*. DOI [10.21227/n1dk-q860](https://doi.org/10.21227/n1dk-q860)，[Zenodo 原发布](https://zenodo.org/records/15023048)，[作者仓库](https://github.com/LIRNEasia/SL_electricity_consumption)。
+
+数据采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。依据是 2026-09-06 保存、2026-09-09 重新读取的原 Zenodo 元数据，见 [来源证据](extensions/lirneasia_history_v1/provenance/source_integrity.json)。本轮 Zenodo API 刷新超时，未声称实时刷新成功。Kaggle 镜像标签仅为 Other，不用它替代原发布许可。
+
+本次修改：从校验通过的完整文件筛出 422 户同户画像/设备/连续记录，累计表底转成相邻 15 分钟购电量；构造 6,660 个 7+1 天窗口，按连续零读数规则将 335 条完整保留于隔离集，默认 410 户/6,325 条；增加固定家庭划分、语义输入与追溯字段分离、数据和评分接口。没有补造家庭、设备、读数或事件。仅分发所选公开匿名化记录与复现必需摘录，不分发 1.70 GB 全部原始负荷文件、签名下载 URL 或本地运行路径。
+
+再次分享时须保留上述原作者、DOI、许可和修改说明，不将本项目筛选与构造署名成原始采集。派生结果不表示原作者认可，也没有更改 SGSC/iFlex 的许可。

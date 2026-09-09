@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "rebuild_artifacts_byte_identical": 6,
+  "rebuild_manifest_identical": true,
+  "frozen_parent_files_unchanged": 61,
+  "full_raw_cohort_reaudit_passed": true,
+  "all_published_survey_excerpts_match_full_reaudit": true,
+  "tests_passed": 32,
+  "evaluator_checks": {
+    "test_samples": 1105,
+    "identity_errors_zero": true,
+    "uniform_plus_1kw_expected_errors": true,
+    "missing_or_extra_predictions_rejected": true
+  },
+  "model_training_executed": false
+}

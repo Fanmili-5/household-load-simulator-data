@@ -1,0 +1,36 @@
+{
+  "version": "lirneasia-day-ahead/1.0.0",
+  "task": "asof_survey_day_ahead_grid_import",
+  "history_steps": 672,
+  "target_steps": 96,
+  "native_interval_minutes": 15,
+  "split": {
+    "method": "sort household IDs by SHA256(salt + ID), take floor(70%)/floor(15%)/remainder",
+    "salt": "lirneasia-household-v1:",
+    "generalization": "unseen households; calendar dates may overlap"
+  },
+  "input_variants": [
+    "history_only",
+    "history_profile"
+  ],
+  "variant_rule": "Both retain target clock and calendar; history_profile additionally has the native survey modules.",
+  "primary_metric": "hourly_mae_kw",
+  "secondary_metrics": [
+    "hourly_rmse_kw",
+    "daily_energy_absolute_error_kwh",
+    "hourly_peak_absolute_error_kw",
+    "native_15min_mae_kw"
+  ],
+  "aggregation": "average daily metrics within each household, then equal average over households",
+  "hourly_conversion": "sum four consecutive 15min kWh; divide by 1 hour for average kW",
+  "native_conversion": "15min kWh divided by 0.25 hour for native average kW",
+  "quality": "Preserve all 6660 audited windows; quarantine 335 with >=24h continuous exact-zero readings anywhere in 8 days; default evaluation uses 6325 windows from 410 households.",
+  "limits": [
+    "Target-dependent completeness/export screening is an offline cohort rule.",
+    "W1 snapshot does not prove equipment remained unchanged.",
+    "No tariff, notification, intervention, consent or causal-response labels.",
+    "No claims about future unseen dates, online availability or joint three-source ranking."
+  ],
+  "preprocessing": "fit transforms on train only; tune on validation; freeze before test",
+  "model_training_executed": false
+}

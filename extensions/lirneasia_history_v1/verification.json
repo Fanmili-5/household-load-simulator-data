@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "version": "lirneasia-day-ahead/1.0.0",
+  "counts": {
+    "runs": 1043,
+    "unique_intervals": 1340256,
+    "samples": 6325,
+    "quarantined_samples": 335,
+    "qualified_windows": 6660,
+    "source_households": 422,
+    "households": 410
+  },
+  "split_samples": {
+    "train": 4309,
+    "validation": 911,
+    "test": 1105
+  },
+  "checks": [
+    "source/artifact hashes",
+    "all 6660 histories and targets versus cumulative readings",
+    "complete native windows",
+    "all survey dates precede history",
+    "all same-household profiles",
+    "fixed household-disjoint split",
+    "no identity or answers in input",
+    "independent continuous-zero quarantine; all original windows preserved"
+  ],
+  "model_training_executed": false,
+  "scope": "construction integrity, not model accuracy or causal validity"
+}
