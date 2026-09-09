@@ -31,6 +31,7 @@ sample = next(read_lirneasia('train'))
 - 构造与筛选：[数据构造](docs/DATA_CONSTRUCTION.md)、[提取核验](docs/EXTRACTION_AUDIT_20260908.md)、[发布数据统计](provenance/dataset_statistics.json)。
 - 评测：[SGSC/iFlex 协议](benchmark/v1/evaluation/protocol.json)、[LIRNEasia 协议](extensions/lirneasia_history_v1/evaluation/protocol.json)。
 - 可选输入：[iFlex 历史气温扩展](extensions/iflex_context_v1/README.md)。事后问卷保留在复核文件中。
+- 已核验的相似户：[SGSC 两条源记录一致的家庭曲线](analysis/sgsc_matching_households/README.md)。
 - 已完成分析：[训练分区的家庭曲线与历史基线](analysis/train_curves/README.md)。
 
 ## 校验与复现
