@@ -1,0 +1,50 @@
+{
+  "sgsc": {
+    "households": 2076,
+    "samples": 16246,
+    "target_dates": 21,
+    "first_target_day": "2013-01-17",
+    "last_target_day": "2014-02-13",
+    "samples_per_household": {
+      "minimum": 1,
+      "median": 7.0,
+      "maximum": 15
+    },
+    "input_file": "benchmark/v1/data/sgsc.jsonl.gz",
+    "input_sha256": "dc09a822f90a8e79f0688063d0a864a30045756f8f5173200f97f6f3c708723b"
+  },
+  "iflex": {
+    "households": 314,
+    "samples": 2071,
+    "target_dates": 11,
+    "first_target_day": "2020-02-11",
+    "last_target_day": "2020-03-09",
+    "samples_per_household": {
+      "minimum": 5,
+      "median": 8.0,
+      "maximum": 8
+    },
+    "input_file": "benchmark/v1/data/iflex.jsonl.gz",
+    "input_sha256": "1ea1c01a8fd3ce471b282ce7c1317ed26d2dc05cc85e982777975be2b2acdab5"
+  },
+  "lirneasia": {
+    "households": 410,
+    "samples": 6325,
+    "target_dates": 91,
+    "first_target_day": "2024-04-05",
+    "last_target_day": "2024-07-30",
+    "samples_per_household": {
+      "minimum": 1,
+      "median": 13.0,
+      "maximum": 49
+    },
+    "input_file": "extensions/lirneasia_history_v1/data/lirneasia.jsonl.gz",
+    "input_sha256": "cd3f86ba780e8a1c91e3675317838ad243fa3de29c06f2f50230a5835e94808c",
+    "survey_age_at_target_days": {
+      "minimum": 8,
+      "median_over_samples": 124,
+      "maximum": 227
+    }
+  },
+  "audit_scope": "Independent streamed counts from released files; no predictive evaluation or model training."
+}
