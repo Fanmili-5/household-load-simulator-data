@@ -1,0 +1,23 @@
+{
+  "evidence_sha256": "9e21185e9bdc3a84dedcb30159c42b3eacc6f5ce44291876d00b0016032b379f",
+  "verification": "Independent standard-library native-grid forecasts scored with the existing source metric functions; equal-household aggregation. Matched members checked against actual train samples.",
+  "sources": {
+    "sgsc": {
+      "train_samples_checked": 11432,
+      "metrics_match_existing_scorer": true,
+      "seven_day_mae_reduction_vs_previous_day_percent": 10.129323875223218
+    },
+    "iflex": {
+      "train_samples_checked": 1449,
+      "metrics_match_existing_scorer": true,
+      "seven_day_mae_reduction_vs_previous_day_percent": 10.929546908016318
+    },
+    "lirneasia": {
+      "train_samples_checked": 4309,
+      "metrics_match_existing_scorer": true,
+      "seven_day_mae_reduction_vs_previous_day_percent": 15.291548096842678
+    }
+  },
+  "matched_member_count": 5,
+  "validation_test_used": false
+}

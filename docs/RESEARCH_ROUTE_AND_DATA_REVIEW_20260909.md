@@ -132,6 +132,10 @@
 
 样例来源、哈希、输入摘要、完整画像与差分核验见 [verified_examples.json](report_examples/verified_examples.json)，复算脚本为 [build_report_examples.py](../scripts/build_report_examples.py)。
 
+## 本轮新增：曲线支持的研究依据
+
+已补充 [同人数同设备家庭对比、同户历史、全训练家庭关联与朴素预测](CURVE_EVIDENCE_20260909.md)。五户匹配组不是按目标反差挑选，三来源诊断均只用train；已经有无需训练的探索性预测分数，尚无学习模型、画像增益或策略效果结果。
+
 ## 6. 下一步安排与汇报结论
 
 1. 数据端：整合已验证的 371 户恢复批次；CER 等继续按原始文件获取进度汇报；HEAPO/xKy 的局部可构造结果列清尚欠的验收项。

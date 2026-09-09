@@ -127,9 +127,9 @@ SGSC/iFlex 原划分不变。新来源先按固定盐与户号的 SHA256 排序�
 - 读取/评分：[lirneasia_io.py](../scripts/lirneasia_io.py)；[固定协议](../extensions/lirneasia_history_v1/evaluation/protocol.json)。
 - 许可与原作者署名：[DATA_LICENSES.md](../DATA_LICENSES.md)。
 
-### 后续最小比较方案（尚未执行）
+### 训练分区探索与后续正式比较
 
-先比较复制前一天、复制前一周同日和七天同槽均值等只依赖允许历史的朴素预测；再用同一模型和预算比较加入画像前后，SGSC/iFlex 另比较事件／价格条件。模型选择仅用 validation，冻结后再评 test；画像新旧程度、去掉回忆行为字段和历史长度的影响作为后续分析。当前没有这些方法的实测分数。
+先比较复制前一天、复制前一周同日和七天同槽均值等只依赖允许历史的朴素预测；再用同一模型和预算比较加入画像前后，SGSC/iFlex 另比较事件／价格条件。模型选择仅用 validation，冻结后再评 test；画像新旧程度、去掉回忆行为字段和历史长度的影响作为后续分析。本轮已完成上述三种朴素方法的train分区探索评分，见 [曲线证据](CURVE_EVIDENCE_20260909.md)；尚无学习模型、画像增益或validation/test成绩。
 
 ## 8. 汇报可以说到哪里
 
