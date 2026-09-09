@@ -1,0 +1,1114 @@
+{
+  "sgsc": {
+    "source_file": "benchmark/v1/examples/sgsc.json",
+    "source_sha256": "e17e0921471bad622cb8fcef7544285f5ca6d008a4bad0c0a6d4ff7efc5bb9b9",
+    "sample_id": "sgsc:10041674:2013-01-17",
+    "profile": {
+      "household": {
+        "resident_count": null,
+        "composition": null,
+        "respondent_sex": null,
+        "highest_household_education": null,
+        "gross_income_band": {
+          "lower": null,
+          "upper": null,
+          "lower_inclusive": null,
+          "upper_inclusive": null,
+          "currency": null,
+          "period": null
+        },
+        "age_group_counts": {
+          "0_1": null,
+          "2_5": null,
+          "6_15": null,
+          "16_22": null,
+          "23_29": null,
+          "30_39": null,
+          "40_49": null,
+          "50_66": null,
+          "67_plus": null
+        },
+        "life_status_counts": {
+          "school_or_kindergarten": null,
+          "student": null,
+          "part_time_work": null,
+          "full_time_work": null,
+          "unemployed_or_not_in_education": null,
+          "retired": null,
+          "other": null
+        },
+        "car_present": null,
+        "car_count": null,
+        "internet_access": false
+      },
+      "dwelling": {
+        "type": "detached_house",
+        "owner_occupied": null,
+        "energy_renovation_reported": null,
+        "rental_unit_present": null,
+        "rental_unit_separate_meter": null,
+        "shared_flat": null,
+        "heated_room_count": 3,
+        "floor_area_m2": {
+          "lower": null,
+          "upper": null,
+          "lower_inclusive": null,
+          "upper_inclusive": null
+        },
+        "construction_year": {
+          "lower": null,
+          "upper": null,
+          "lower_inclusive": null,
+          "upper_inclusive": null
+        },
+        "source_classified_type": "not_apartment",
+        "climate_zone": "mild_temperate"
+      },
+      "appliances": [
+        {
+          "type": "refrigerator",
+          "present": true,
+          "count": 1,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "freezer",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "washing_machine",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "dishwasher",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "clothes_dryer",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "air_conditioner",
+          "present": true,
+          "count": null,
+          "subtype": "split_system",
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "panel_heater",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_underfloor_heating",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "heat_pump",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_water_heater",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "fireplace_or_wood_stove",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "fuel_heater",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "pool_pump",
+          "present": false,
+          "count": 0,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_or_plugin_hybrid_vehicle",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "solar_pv",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "battery_storage",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "mechanical_ventilation",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_cooking_appliance",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "television",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "lighting",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        }
+      ],
+      "energy_services": {
+        "space_heating": {
+          "gas_used": true,
+          "options": null
+        },
+        "hot_water": {
+          "gas_used": true,
+          "technology": null
+        },
+        "cooking": {
+          "gas_used": true
+        },
+        "other_gas_use": {
+          "gas_used": false
+        },
+        "ventilation": {
+          "technologies": null
+        },
+        "supply": {
+          "gas_available": true,
+          "electricity_contract": null,
+          "respondent_receives_bill": null,
+          "renewable_electricity_contract": null,
+          "battery_connected_to_pv": null,
+          "farm_or_business_shares_meter": null
+        }
+      },
+      "usage_habits": [
+        {
+          "subject_type": "household",
+          "subject_id": "self",
+          "behavior": "someone_home",
+          "value": false,
+          "unit": null,
+          "time_scope": "weekday_daytime"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "space_heating",
+          "behavior": "lower_temperature_in_less_used_rooms",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "space_heating",
+          "behavior": "reduce_temperature_at_night_or_away",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "space_heating",
+          "behavior": "control_mode",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "hot_water",
+          "behavior": "control_mode",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "appliance_category",
+          "subject_id": "clothes_dryer",
+          "behavior": "reported_use_level",
+          "value": "none",
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "appliance_category",
+          "subject_id": "fireplace_or_wood_stove",
+          "behavior": "reported_use_conditions",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        }
+      ],
+      "preferences": {
+        "living_room_comfort_temperature_c": null,
+        "reported_electricity_reduction_effort": "low",
+        "follows_electricity_use": null,
+        "follows_electricity_prices": null,
+        "use_information_channels": null,
+        "price_information_channels": null
+      },
+      "vehicle_details": null
+    },
+    "history_start": "2013-01-10T00:00:00",
+    "history_end": "2013-01-17T00:00:00",
+    "history_points": 336,
+    "history_first_four_kwh": [
+      0.129,
+      0.045,
+      0.09,
+      0.04
+    ],
+    "context": {
+      "forecast_origin": "2013-01-17T00:00:00",
+      "target_window": {
+        "start": "2013-01-17T00:00:00",
+        "end": "2013-01-18T00:00:00",
+        "horizon_hours": 24,
+        "interval_minutes": 30
+      },
+      "country": "AU",
+      "region": null,
+      "time_basis": "source_clock_intervals_no_utc_conversion",
+      "measurement_scope": "single_general_supply",
+      "events": [
+        {
+          "start": "2013-01-17T12:00:00",
+          "end": "2013-01-17T16:00:00",
+          "type": "reduction_reward",
+          "currency": "AUD",
+          "price_per_kwh": null,
+          "price_interval_minutes": null,
+          "rate_per_reduced_kwh": null
+        }
+      ]
+    },
+    "target_points": 48,
+    "target_first_four_kwh": [
+      0.211,
+      0.117,
+      0.097,
+      0.105
+    ],
+    "target_total_kwh": 26.293,
+    "strategy_label_present": false
+  },
+  "iflex": {
+    "source_file": "benchmark/v1/examples/iflex.json",
+    "source_sha256": "eb2454a470de90aeecde8a4750f12bd112ddb80fb27fcec2d25e1dd126368cf7",
+    "sample_id": "iflex:Exp_1:2020-02-11",
+    "profile": {
+      "household": {
+        "resident_count": 2,
+        "composition": "couple_without_children_living_at_home",
+        "respondent_sex": "man",
+        "highest_household_education": "secondary",
+        "gross_income_band": {
+          "lower": null,
+          "upper": null,
+          "lower_inclusive": null,
+          "upper_inclusive": null,
+          "currency": "NOK",
+          "period": null
+        },
+        "age_group_counts": {
+          "0_1": 0,
+          "2_5": 0,
+          "6_15": 0,
+          "16_22": 0,
+          "23_29": 0,
+          "30_39": 0,
+          "40_49": 0,
+          "50_66": 0,
+          "67_plus": 2
+        },
+        "life_status_counts": {
+          "school_or_kindergarten": 0,
+          "student": 0,
+          "part_time_work": 0,
+          "full_time_work": 0,
+          "unemployed_or_not_in_education": 0,
+          "retired": 2,
+          "other": 0
+        },
+        "car_present": true,
+        "car_count": 1,
+        "internet_access": null
+      },
+      "dwelling": {
+        "type": "detached_house",
+        "owner_occupied": true,
+        "energy_renovation_reported": false,
+        "rental_unit_present": false,
+        "rental_unit_separate_meter": null,
+        "shared_flat": null,
+        "heated_room_count": null,
+        "floor_area_m2": {
+          "lower": 80,
+          "upper": 99,
+          "lower_inclusive": true,
+          "upper_inclusive": true
+        },
+        "construction_year": {
+          "lower": 1946,
+          "upper": 1960,
+          "lower_inclusive": true,
+          "upper_inclusive": true
+        },
+        "source_classified_type": null,
+        "climate_zone": null
+      },
+      "appliances": [
+        {
+          "type": "refrigerator",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "freezer",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "washing_machine",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "dishwasher",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "clothes_dryer",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "air_conditioner",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "panel_heater",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_underfloor_heating",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "heat_pump",
+          "present": true,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_water_heater",
+          "present": true,
+          "count": null,
+          "subtype": "separate",
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "fireplace_or_wood_stove",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "fuel_heater",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "pool_pump",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_or_plugin_hybrid_vehicle",
+          "present": false,
+          "count": 0,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "solar_pv",
+          "present": false,
+          "count": 0,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "battery_storage",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "mechanical_ventilation",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "electric_cooking_appliance",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "television",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        },
+        {
+          "type": "lighting",
+          "present": null,
+          "count": null,
+          "subtype": null,
+          "rated_power_w": null,
+          "capacity_kw": null,
+          "capacity_kwh": null
+        }
+      ],
+      "energy_services": {
+        "space_heating": {
+          "gas_used": null,
+          "options": [
+            {
+              "technology": "electric_panel",
+              "device_type_ref": "panel_heater",
+              "role": "not_used"
+            },
+            {
+              "technology": "electric_underfloor",
+              "device_type_ref": "electric_underfloor_heating",
+              "role": "not_used"
+            },
+            {
+              "technology": "heat_pump",
+              "device_type_ref": "heat_pump",
+              "role": "main"
+            },
+            {
+              "technology": "geothermal",
+              "device_type_ref": null,
+              "role": "not_used"
+            },
+            {
+              "technology": "wood_fire",
+              "device_type_ref": "fireplace_or_wood_stove",
+              "role": "not_used"
+            },
+            {
+              "technology": "oil_paraffin_gas_or_bio",
+              "device_type_ref": "fuel_heater",
+              "role": "not_used"
+            },
+            {
+              "technology": "district_or_shared",
+              "device_type_ref": null,
+              "role": "not_used"
+            },
+            {
+              "technology": "other",
+              "device_type_ref": null,
+              "role": "not_used"
+            }
+          ]
+        },
+        "hot_water": {
+          "gas_used": null,
+          "technology": "separate_electric_water_heater"
+        },
+        "cooking": {
+          "gas_used": null
+        },
+        "other_gas_use": {
+          "gas_used": null
+        },
+        "ventilation": {
+          "technologies": [
+            "natural_ventilation"
+          ]
+        },
+        "supply": {
+          "gas_available": null,
+          "electricity_contract": null,
+          "respondent_receives_bill": true,
+          "renewable_electricity_contract": null,
+          "battery_connected_to_pv": null,
+          "farm_or_business_shares_meter": false
+        }
+      },
+      "usage_habits": [
+        {
+          "subject_type": "household",
+          "subject_id": "self",
+          "behavior": "someone_home",
+          "value": true,
+          "unit": null,
+          "time_scope": "weekday_daytime"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "space_heating",
+          "behavior": "lower_temperature_in_less_used_rooms",
+          "value": true,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "space_heating",
+          "behavior": "reduce_temperature_at_night_or_away",
+          "value": false,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "space_heating",
+          "behavior": "control_mode",
+          "value": "time_scheduled",
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "energy_service",
+          "subject_id": "hot_water",
+          "behavior": "control_mode",
+          "value": "none",
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "appliance_category",
+          "subject_id": "clothes_dryer",
+          "behavior": "reported_use_level",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        },
+        {
+          "subject_type": "appliance_category",
+          "subject_id": "fireplace_or_wood_stove",
+          "behavior": "reported_use_conditions",
+          "value": null,
+          "unit": null,
+          "time_scope": "usual"
+        }
+      ],
+      "preferences": {
+        "living_room_comfort_temperature_c": 24.0,
+        "reported_electricity_reduction_effort": null,
+        "follows_electricity_use": false,
+        "follows_electricity_prices": false,
+        "use_information_channels": null,
+        "price_information_channels": null
+      },
+      "vehicle_details": []
+    },
+    "history_start": "2020-02-04T00:00:00",
+    "history_end": "2020-02-11T00:00:00",
+    "history_points": 168,
+    "history_first_four_kwh": [
+      2.87,
+      2.658,
+      2.952,
+      3.035
+    ],
+    "context": {
+      "forecast_origin": "2020-02-11T00:00:00",
+      "target_window": {
+        "start": "2020-02-11T00:00:00",
+        "end": "2020-02-12T00:00:00",
+        "horizon_hours": 24,
+        "interval_minutes": 60
+      },
+      "country": "NO",
+      "region": "Bergen",
+      "time_basis": "source_clock_intervals_no_utc_conversion",
+      "measurement_scope": "reported_household_demand_no_reported_pv_business_or_shared_rental_meter",
+      "events": [
+        {
+          "start": "2020-02-11T00:00:00",
+          "end": "2020-02-12T00:00:00",
+          "type": "experimental_price_for_reward_calculation",
+          "currency": "NOK",
+          "price_per_kwh": [
+            1.0,
+            0.99,
+            0.95,
+            0.95,
+            0.96,
+            1.0,
+            2.74,
+            4.98,
+            5.07,
+            5.03,
+            4.94,
+            4.98,
+            5.07,
+            5.0,
+            5.03,
+            4.94,
+            4.98,
+            5.07,
+            5.03,
+            4.94,
+            2.77,
+            1.1,
+            1.06,
+            1.0
+          ],
+          "price_interval_minutes": 60,
+          "rate_per_reduced_kwh": null
+        }
+      ]
+    },
+    "target_points": 24,
+    "target_first_four_kwh": [
+      2.892,
+      2.154,
+      2.267,
+      2.183
+    ],
+    "target_total_kwh": 65.314,
+    "strategy_label_present": false
+  },
+  "lirneasia": {
+    "source_file": "extensions/lirneasia_history_v1/examples/lirneasia.json",
+    "source_sha256": "1842e5cd13ae05af2c496fe930be1c8a3dd1f0abbcedd9ed88e21859382ecf51",
+    "sample_id": "lirneasia:ID0053:2024-04-27",
+    "profile": {
+      "household": {
+        "no_of_electricity_meters": "1",
+        "electricity_provider_csc_area": "MORATUWA SOUTH",
+        "own_the_house_or_living_on_rent": "Yes, I or a household member owns it.",
+        "occupy_renters_boarders": "I don't occupy any of the above.",
+        "awareness_of_electricity_consumption_of_renters": null,
+        "built_year_of_the_house": "Before 1980",
+        "type_of_house": "Attached house / Annex",
+        "floor_which_house_located": null,
+        "no_of_storeys": "0.0",
+        "floor_area": "140.0",
+        "no_of_household_members": "5",
+        "charging_method_of_renters_for_electricity": null,
+        "charged_method_for_rent_for_electricity": null,
+        "is_there_business_carried_out_in_the_household": "No",
+        "type_of_business": null,
+        "whom_or_how_the_house_was_designed": "I am not aware of that.",
+        "availability_of_certificate_of_compliance": "Don't know",
+        "main_material_used_for_walls_of_the_house": "Brick",
+        "main_material_used_for_roof_of_the_house": "Asbestos",
+        "any_constructions_or_renovations_in_the_household": "No",
+        "highest_level_of_education_of_the_chief_wage_earner": "Schooling up to Grade 6 - 9",
+        "occupation_of_the_chief_wage_earner": "Skilled Worker",
+        "socio_economic_class": "SEC D",
+        "total_monthly_expenditure_of_last_month": "45000.0",
+        "type_of_electricity_meter": "Smart meter"
+      },
+      "demographics": [
+        {
+          "age": "65",
+          "relationship_to_the_head_of_household": "Head of the household",
+          "gender": "Male",
+          "marital_status": "Currently married (registered)",
+          "current_attendance_in_any_education_instituition": "Does not attend",
+          "highest_level_of_education": "Passed Grade 7",
+          "main_activity_engaged_in": "Engaged in economic activity/ currently employed/ engaged in own business",
+          "main_occupation": "Craft and related worker",
+          "daily_wage_owner_or_not": "No",
+          "employment_status_of_the_main_occupation": "Private sector employee",
+          "no_of_hours_stayed_at_home_during_last_week": "88.0",
+          "member_went_out_for_work_or_not_during_last_week": "Yes, went on most of the days"
+        },
+        {
+          "age": "62",
+          "relationship_to_the_head_of_household": "Wife/Husband",
+          "gender": "Female",
+          "marital_status": "Currently married (registered)",
+          "current_attendance_in_any_education_instituition": "Does not attend",
+          "highest_level_of_education": "Passed Grade 7",
+          "main_activity_engaged_in": "Engaged in economic activity/ currently employed/ engaged in own business",
+          "main_occupation": "Service worker and shop and market sales worker",
+          "daily_wage_owner_or_not": "Yes",
+          "employment_status_of_the_main_occupation": "Private sector employee",
+          "no_of_hours_stayed_at_home_during_last_week": "153.0",
+          "member_went_out_for_work_or_not_during_last_week": "Yes, went on most of the days"
+        },
+        {
+          "age": "30",
+          "relationship_to_the_head_of_household": "Son/daughter",
+          "gender": "Male",
+          "marital_status": "Never married",
+          "current_attendance_in_any_education_instituition": "Does not attend",
+          "highest_level_of_education": "Passed Grade 9",
+          "main_activity_engaged_in": "Retired - Obtaining government/semi-government pension payment and currently not engaged in economic activity (not employed elsewhere or not engaged in any own business)",
+          "main_occupation": null,
+          "daily_wage_owner_or_not": null,
+          "employment_status_of_the_main_occupation": null,
+          "no_of_hours_stayed_at_home_during_last_week": "168.0",
+          "member_went_out_for_work_or_not_during_last_week": null
+        },
+        {
+          "age": "28",
+          "relationship_to_the_head_of_household": "Son/daughter",
+          "gender": "Female",
+          "marital_status": "Currently married (registered)",
+          "current_attendance_in_any_education_instituition": "Does not attend",
+          "highest_level_of_education": "Passed Grade 10",
+          "main_activity_engaged_in": "Retired - Obtaining government/semi-government pension payment and currently not engaged in economic activity (not employed elsewhere or not engaged in any own business)",
+          "main_occupation": null,
+          "daily_wage_owner_or_not": null,
+          "employment_status_of_the_main_occupation": null,
+          "no_of_hours_stayed_at_home_during_last_week": "168.0",
+          "member_went_out_for_work_or_not_during_last_week": null
+        },
+        {
+          "age": "31",
+          "relationship_to_the_head_of_household": "Son-in-law/Daughter in law",
+          "gender": "Male",
+          "marital_status": "Currently married (registered)",
+          "current_attendance_in_any_education_instituition": "Does not attend",
+          "highest_level_of_education": "Passed Grade 9",
+          "main_activity_engaged_in": "Engaged in economic activity/ currently employed/ engaged in own business",
+          "main_occupation": "Service worker and shop and market sales worker",
+          "daily_wage_owner_or_not": "No",
+          "employment_status_of_the_main_occupation": "Private sector employee",
+          "no_of_hours_stayed_at_home_during_last_week": "84.0",
+          "member_went_out_for_work_or_not_during_last_week": "Yes, went on most of the days"
+        }
+      ],
+      "appliances": [
+        {
+          "appliance_type": "Refrigerator",
+          "no_of_hours_used_during_last_week": "163.0"
+        },
+        {
+          "appliance_type": "Electric Iron including electric steam iron",
+          "no_of_hours_used_during_last_week": "0.5"
+        },
+        {
+          "appliance_type": "TV",
+          "no_of_hours_used_during_last_week": "28.0"
+        },
+        {
+          "appliance_type": "TV antenna",
+          "no_of_hours_used_during_last_week": null
+        },
+        {
+          "appliance_type": "Mobile phone - Smart phones",
+          "no_of_hours_used_during_last_week": null
+        },
+        {
+          "appliance_type": "Mobile phone - Smart phones",
+          "no_of_hours_used_during_last_week": null
+        },
+        {
+          "appliance_type": "Mobile phone - Feature phones",
+          "no_of_hours_used_during_last_week": null
+        },
+        {
+          "appliance_type": "Electrical exhaust fan fitted above the oven or the hot plate",
+          "no_of_hours_used_during_last_week": "0.0"
+        },
+        {
+          "appliance_type": "Electric Blender",
+          "no_of_hours_used_during_last_week": "0.25"
+        }
+      ],
+      "ac_roster": [],
+      "fan_roster": [
+        {
+          "type_of_the_fan": "Pedestal fan/ Stand fan",
+          "no_of_hours_fan_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_fan_was_on_during_night_last_week": "0.0"
+        },
+        {
+          "type_of_the_fan": "Pedestal fan/ Stand fan",
+          "no_of_hours_fan_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_fan_was_on_during_night_last_week": "63.0"
+        }
+      ],
+      "light_roster": [
+        {
+          "type_of_the_bulb": "Tube Light (conventional)",
+          "wattage_of_the_bulb": null,
+          "no_of_hours_bulb_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_bulb_was_on_during_night_last_week": "35.0"
+        },
+        {
+          "type_of_the_bulb": "CFL",
+          "wattage_of_the_bulb": "80.0",
+          "no_of_hours_bulb_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_bulb_was_on_during_night_last_week": "35.0"
+        },
+        {
+          "type_of_the_bulb": "CFL",
+          "wattage_of_the_bulb": "80.0",
+          "no_of_hours_bulb_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_bulb_was_on_during_night_last_week": "5.0"
+        },
+        {
+          "type_of_the_bulb": "CFL",
+          "wattage_of_the_bulb": "80.0",
+          "no_of_hours_bulb_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_bulb_was_on_during_night_last_week": "36.0"
+        },
+        {
+          "type_of_the_bulb": "CFL",
+          "wattage_of_the_bulb": "80.0",
+          "no_of_hours_bulb_was_on_during_daytime_last_week": "0.0",
+          "no_of_hours_bulb_was_on_during_night_last_week": "6.0"
+        }
+      ],
+      "generation": [
+        {
+          "have_backup_generator": "No",
+          "generate_electicity_using_solar_energy": "No",
+          "generate_electicity_using_bio_energy": "No",
+          "generate_electicity_using_mini_hydropower": "No",
+          "generate_electicity_using_wind_power": "No",
+          "generate_electicity_using_other_methods": "No",
+          "solar_system_ongrid_or_offgird": null,
+          "solar_system_invertor_or_noninvertor": null,
+          "solar_energy_used_for_water_heating": null,
+          "solar_energy_used_for_cooking": null,
+          "solar_energy_used_for_outdoor_lighting": null,
+          "solar_energy_used_for_car_charging": null,
+          "solar_energy_used_for_agricultural_systems": null,
+          "solar_energy_used_for_all_above": null,
+          "solar_energy_used_for_other_purposes": null,
+          "aware_of_no_of_units_generated_by_solar_system": null,
+          "no_of_units_generated_by_solar_system": null,
+          "when_was_solar_system_installed": null,
+          "have_system_to_store_backup_energy": "No",
+          "method_of_receiving_water": "Tap Water (National Water Supply and drainage board)",
+          "water_heating_method_for_bathing": "None, we do not use hot water for bathing or body wash purposes.",
+          "does_water_heating_equipment_serve_other_housing_units": null,
+          "household_members_used_hot_water_last_week": null,
+          "boil_water_before_drinking": "No",
+          "source_of_energy_for_boiling_drinking_water": null,
+          "no_of_times_food_cooked_last_week": "8 - 14 times",
+          "gas_used_for_cooking": "No",
+          "electricity_from_national_grid_used_for_cooking": "No",
+          "electricity_generated_using_solar_energy_used_for_cooking": "No",
+          "firewood_used_for_cooking": "Yes",
+          "kerosene_used_for_cooking": "No",
+          "sawdust_or_paddy_husk_used_for_cooking": "No",
+          "biogas_used_for_cooking": "No",
+          "coconut_shells_or_charcoal_used_for_cooking": "No",
+          "other_methods_used_for_cooking": "No"
+        }
+      ]
+    },
+    "history_start": "2024-04-20T00:00:00",
+    "history_end": "2024-04-27T00:00:00",
+    "history_points": 672,
+    "history_first_four_kwh": [
+      0.010999999999967258,
+      0.009900000000016007,
+      0.010999999999967258,
+      0.010000000000218279
+    ],
+    "context": {
+      "forecast_origin": "2024-04-27T00:00:00",
+      "target_window": {
+        "start": "2024-04-27T00:00:00",
+        "end": "2024-04-28T00:00:00",
+        "interval_minutes": 15
+      },
+      "time_basis": "native_date_time; UTC offset and publication latency not independently established",
+      "measurement_scope": "grid_import_interval_energy_kwh",
+      "calendar": {
+        "target_weekday_monday_zero": 5
+      }
+    },
+    "target_points": 96,
+    "target_first_four_kwh": [
+      0.010999999999967258,
+      0.010000000000218279,
+      0.010999999999967258,
+      0.010099999999965803
+    ],
+    "target_total_kwh": 1.7270000000003165,
+    "strategy_label_present": false,
+    "first_history_registers_kwh": [
+      2549.5081,
+      2549.5191,
+      2549.529,
+      2549.54,
+      2549.55
+    ],
+    "first_target_registers_kwh": [
+      2557.408,
+      2557.419,
+      2557.429,
+      2557.44,
+      2557.4501
+    ],
+    "all_768_differences_exactly_match": true
+  }
+}
